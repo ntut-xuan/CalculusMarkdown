@@ -1134,7 +1134,267 @@ $\therefore 3 \times 5 = 15$
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin 3x \sin 5x}{x^2} = 15$
 
+
+
 ### Practice 1
+
+#### Statement
+
+假設對所有$x$，$1-x^2-x^4\le f(x)\le 1-x^2+x^6$恆成立，求$\displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-1}{x^2}$
+
+
+
+#### Solution
+
+$1-x^2-x^4 \le f(x) \le 1-x^2+x^6$
+
+$-x^2-x^4 \le f(x) - 1 \le -x^2+x^6$
+
+$\dfrac{-x^2-x^4}{x^2} \le \dfrac{f(x)-1}{x^2} \le \dfrac{-x^2+x^6}{x^2}$
+
+$-1 + x^2 \le \dfrac{f(x)-1}{x^2} \le -1 + x^4$
+
+$\displaystyle \lim_{x\rightarrow 0} -1+x^2 \le \displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-1}{x^2} \le \lim_{x\rightarrow 0} -1+x^4$
+
+$-1 \le \displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-1}{x^2} \le -1$
+
+根據夾擠定理，得到$\displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-1}{x^2} = -1$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-1}{x^2} = -1$
+
+
+
+### Practice 2
+
+#### Statement
+
+求 $\displaystyle \lim_{x\rightarrow \infty}[\sin(\sqrt{x+1}) - \sin(\sqrt{x})]$
+
+
+
+#### Solution
+
+利用積化和差，$\sin(a) - \sin(b) = 2\cos\dfrac{a+b}{2} \sin\dfrac{a-b}{2}$。
+
+因此$\sin(\sqrt{x+1})-\sin(\sqrt{x}) = 2\cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2}\sin\dfrac{\sqrt{x+1}-\sqrt{x}}{2}$
+
+改寫式子得到$\displaystyle \lim_{x\rightarrow \infty} 2\cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2}\sin\dfrac{\sqrt{x+1}-\sqrt{x}}{2}$
+
+$= 2\displaystyle \lim_{x\rightarrow \infty} \cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2} \sin\dfrac{(\sqrt{x+1}-\sqrt{x})(\sqrt{x+1}+\sqrt{x})}{2(\sqrt{x+1}+\sqrt{x})}$
+
+$= 2\displaystyle \lim_{x\rightarrow \infty} \cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2} \sin\dfrac{x+1-x}{2(\sqrt{x+1}+\sqrt{x})}$
+
+$= 2\displaystyle \lim_{x\rightarrow \infty} \cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2} \sin\dfrac{1}{2(\sqrt{x+1}+\sqrt{x})}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \sin\dfrac{1}{2\sqrt{x+1}+2\sqrt{x}} = \sin0 = 0$
+
+因此我們可以用夾擠。
+
+$\displaystyle -1 \le \lim_{x\rightarrow \infty} \cos \dfrac{\sqrt{x+1}+\sqrt{x}}{2} \le 1$
+
+$\Rightarrow \displaystyle -1\times 0 \le \lim_{x\rightarrow \infty} \cos \dfrac{\sqrt{x+1}+\sqrt{x}}{2}\sin\dfrac{1}{2(\sqrt{x+1}+\sqrt{x})} \le 1\times 0$
+
+$\Rightarrow \displaystyle 0 \le \lim_{x\rightarrow \infty} \cos \dfrac{\sqrt{x+1}+\sqrt{x}}{2}\sin\dfrac{1}{2(\sqrt{x+1}+\sqrt{x})} \le 0$
+
+因此$\displaystyle 2\lim_{x\rightarrow \infty} \cos\dfrac{\sqrt{x+1}+\sqrt{x}}{2} \sin\dfrac{1}{2(\sqrt{x+1}+\sqrt{x})} = 2\times 0 = 0$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow \infty}[\sin(\sqrt{x+1}) - \sin(\sqrt{x})] = 0$
+
+
+
+### Practice 3
+
+#### Statement
+
+若$a,b \in \mathbb{R}$，$\displaystyle \lim_{x\rightarrow -\infty}(x+\sqrt{x^2+ax})=b$且$b \neq 0$，求$\dfrac{a}{b}$之值
+
+
+
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow -\infty}(x+\sqrt{x^2+ax})=b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{(x + \sqrt{x^2+ax})(x - \sqrt{x^2+ax})}{(x - \sqrt{x^2+ax})} = b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{x^2-x^2-ax}{x-\sqrt{x^2+ax}} = b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{-ax}{x-|x|\sqrt{1+\dfrac{a}{x}}} = b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{-ax}{x+x\sqrt{1+\dfrac{a}{x}}} = b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{-ax}{x(1+\sqrt{1+\dfrac{a}{x}})} = b$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow -\infty} \dfrac{-a}{(1+\sqrt{1+\dfrac{a}{x}})} = b$
+
+$\Rightarrow \dfrac{-a}{2} = b$
+
+$\Rightarrow \dfrac{a}{b} =  -2$
+
+
+
+#### Answer
+
+$\dfrac{a}{b} = -2$
+
+
+
+### Practice 4
+
+#### Statement
+
+已知$f(x) = \dfrac{a\sqrt{x^2+21}-b}{x-2}$ 且 $\displaystyle \lim_{x\rightarrow \infty} f(x) = 3$。若$\displaystyle \lim_{x\rightarrow 2} f(x)$存在，求$\displaystyle \lim_{x\rightarrow 2} f(x)$
+
+
+
+#### Solution
+
+$f(x) = \dfrac{a\sqrt{x^2+21}-b}{x-2}$
+
+$= \dfrac{a|x|\sqrt{1+\dfrac{1}{x^2}}-b}{x-2}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \displaystyle \dfrac{a|x|\sqrt{1+\dfrac{1}{x^2}}-b}{x-2}$
+
+$\because x \rightarrow \infty \\ \therefore x  > 0,\ |x| \Rightarrow x$
+
+$= \displaystyle \lim_{x\rightarrow \infty} \displaystyle \dfrac{ax\sqrt{1+\dfrac{1}{x^2}}-b}{x-2}$
+
+$= \displaystyle \lim_{x\rightarrow \infty} \displaystyle \dfrac{x(a\sqrt{1+\dfrac{1}{x^2}}-\dfrac{b}{x})}{x(1-\dfrac{2}{x})}$
+
+$= \displaystyle \lim_{x\rightarrow \infty} \displaystyle \dfrac{(a\sqrt{1+\dfrac{1}{x^2}}-\dfrac{b}{x})}{(1-\dfrac{2}{x})} = a = 3$
+
+$f(x) = \dfrac{3\sqrt{x^2+21}-b}{x-2}$
+
+求$\displaystyle \lim_{x\rightarrow 2} f(x)$存在，因此分子必定可以被$x-2$整除。
+
+$3\sqrt{2^2+21}-b=0,\ b = 15$
+
+$$\ $$
+
+$f(x) = \dfrac{3\sqrt{x^2+21}-15}{x-2}$，求$\displaystyle \lim_{x\rightarrow 2} \dfrac{3\sqrt{x^2+21}-{15}}{x-2}$
+
+$\displaystyle \lim_{x\rightarrow 2} \dfrac{3\sqrt{x^2+21}-{15}}{x-2}$
+
+$\Rightarrow \displaystyle \lim_{x\rightarrow 2} 3\dfrac{\sqrt{x^2+21}-{5}}{x-2}$
+
+$\Rightarrow  3\displaystyle \lim_{x\rightarrow 2} \dfrac{\sqrt{x^2+21}-{5}}{x-2}$
+
+$\Rightarrow 3 \displaystyle \lim_{x\rightarrow 2} \dfrac{(\sqrt{x^2+21}-5)(\sqrt{x^2+21}+5)}{x-2(\sqrt{x^2+21}+5)}$
+
+$\Rightarrow 3 \displaystyle \lim_{x\rightarrow 2} \dfrac{x^2+21-25}{(x-2)(\sqrt{x^2+21}+5)}$
+
+$\Rightarrow 3 \displaystyle \lim_{x\rightarrow 2} \dfrac{x^2-4}{(x-2)(\sqrt{x^2+21}+5)}$
+
+$\Rightarrow 3 \displaystyle \lim_{x\rightarrow 2} \dfrac{(x-2)(x+2)}{(x-2)(\sqrt{x^2+21}+5)}$
+
+$\Rightarrow 3 \displaystyle \lim_{x\rightarrow 2} \dfrac{(x+2)}{(\sqrt{x^2+21}+5)}$
+
+$\Rightarrow 3\times \dfrac{4}{10} = \dfrac{6}{5}$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 2} f(x) = \dfrac{6}{5}$
+
+
+
+### Practice 5
+
+#### Statement
+
+若$\displaystyle \lim_{x\rightarrow \infty}[(ax+b)+\sqrt{x^2+3x}] = 0$，求$a,b$之值。
+
+
+
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow \infty}[(ax+b)+\sqrt{x^2+3x}] = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{[(ax+b)+\sqrt{x^2+3x}][(ax+b)-\sqrt{x^2+3x}]}{[(ax+b)-\sqrt{x^2+3x}]} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{(ax+b)^2-(x^2+3x)}{[(ax+b)-\sqrt{x^2+3x}]} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{a^2x^2+2abx+b^2-x^2-3x}{[(ax+b)-\sqrt{x^2+3x}]} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{(a^2-1)x^2+(2ab-3)x+b^2}{[(ax+b)-\sqrt{x^2+3x}]} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{(a^2-1)x^2+(2ab-3)x+b^2}{[(ax+b)-|x|\sqrt{1+\dfrac{3}{x}}]} = 0$
+
+$\because x \rightarrow \infty \\ \therefore x  > 0,\ |x| \Rightarrow x$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{(a^2-1)x^2+(2ab-3)x+b^2}{ax+b-x\sqrt{1+\dfrac{3}{x}}} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty}\dfrac{(a^2-1)x^2+(2ab-3)x+b^2}{(a-\sqrt{1+\dfrac{3}{x}})x+b} = 0$
+
+我們可以令$(a^2-1) = 0, (2ab-3) = 0$
+
+可以得到$a = \pm 1$
+
+$\ $
+
+考慮$a = 1$時的情況，得到$b = \dfrac{3}{2}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \dfrac{(\dfrac{3}{2})^2}{(1-\sqrt{1+\dfrac{3}{x}})x+\dfrac{3}{2}} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty} \dfrac{\dfrac{9}{4x}}{(1-\sqrt{1+\dfrac{3}{x}})+\dfrac{3}{2x}} = \dfrac{0}{0}$
+
+因此$a = 1$不合。
+
+$\ $
+
+考慮$a=-1$時的情況，得到$b=\dfrac{-3}{2}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \dfrac{(\dfrac{-3}{2})^2}{(-1-\sqrt{1+\dfrac{3}{x}})x+\dfrac{-3}{2}}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \dfrac{\dfrac{9}{4}}{(-1-\sqrt{1+\dfrac{3}{x}})x-\dfrac{3}{2}}$
+
+$\displaystyle \lim_{x\rightarrow \infty} \dfrac{\dfrac{9}{4x}}{(-1-\sqrt{1+\dfrac{3}{x}})-\dfrac{3}{2x}} = \dfrac{0}{(-1-\sqrt{1})-0} = 0$
+
+
+
+因此$a = -1,\ b = \dfrac{-3}{2}$
+
+#### Answer
+
+$a = -1,\ b = \dfrac{-3}{2}$
+
+
+
+### Practice 6
+
+#### Statement
+
+利用夾擠定理求$\displaystyle \lim_{n\rightarrow \infty} (\dfrac{1}{n^2+1} + \dfrac{1}{n^2+2} + ... + \dfrac{1}{n^2+n})$
+
+
+
+#### Solution
+
+$\displaystyle \lim_{n\rightarrow \infty} (\dfrac{1}{n^2+1} + \dfrac{1}{n^2+2} + ... + \dfrac{1}{n^2+n})$
+
+$= \displaystyle \lim_{n\rightarrow \infty} \dfrac{1}{n^2+1} + \lim_{n\rightarrow \infty} \dfrac{1}{n^2+2} + ... + \lim_{n\rightarrow \infty} \dfrac{1}{n^2+n}$
+
+$= \displaystyle \lim_{n\rightarrow \infty} \dfrac{\dfrac{1}{n^2}}{1+\dfrac{1}{n^2}} + \lim_{n\rightarrow \infty} \dfrac{\dfrac{1}{n^2}}{1+\dfrac{2}{n^2}} + ... + \lim_{n\rightarrow \infty} \dfrac{\dfrac{1}{n^2}}{1+\dfrac{1}{n}}$
+
+$= 0$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{n\rightarrow \infty} (\dfrac{1}{n^2+1} + \dfrac{1}{n^2+2} + ... + \dfrac{1}{n^2+n}) = 0$
+
+
+
+### Practice 7
 
 #### Statement
 
