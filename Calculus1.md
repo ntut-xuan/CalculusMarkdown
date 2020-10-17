@@ -308,6 +308,50 @@ $f(x)$ is even.
 
 
 
+### Practice 1
+
+#### Statement
+
+假設$f(x)=x-1$且$g(x)=2x+3$，求一函數$h(x)$使得$g(x) = f(h(x))$。
+
+
+
+#### Solution
+
+考慮$f(h(x))=g(x)$，那麼$h(x) - 1 = 2x+3$，得到$h(x) = 2x+4$
+
+因此$h(x) = 2x+4$
+
+
+
+#### Answer
+
+$h(x) = 2x+4$
+
+
+
+### Practice 2
+
+#### Statement
+
+假設$f(x) = \dfrac{2}{x+\dfrac{2}{x+\dfrac{2}{x+\dfrac{2}{x+...}}}}$，求$f(1)$
+
+
+
+#### Solution
+
+考慮成$f(x) = \dfrac{2}{x + f(x)}$，得到$f^2(x) + f(x)x - 2 = 0$
+
+令$x=1$，因此$f^2(x)+f(x) = 2$，$f(x) = 1$或者$f(x) = 0$(不合)。
+
+
+
+#### Answer
+
+$f(1) = 1$
+
+
+
 ## Sec 1.2
 
 ### Exercise 19
