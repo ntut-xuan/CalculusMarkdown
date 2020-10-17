@@ -1,5 +1,7 @@
 # 微積分Practice Ch3
 
+###### tags: `微積分題目紀錄`
+
 ## Sec 3.5
 
 ### Exercise 32
@@ -58,7 +60,7 @@ If $g(x) = x \sin^{-1}(\dfrac{x}{4}) + \sqrt{16 - x^2}$, find $g'(2)$
 
 $g'(x) = \dfrac{x}{dx}(x \sin^{-1} (\dfrac{x}{4})) + \dfrac{x}{dx} \sqrt{16-x^2}$
 
-$ = x \dfrac{x}{dx} \sin^{-1}(\dfrac{x}{4}) + \dfrac{x}{dx}x \cdot \sin^{-1}(\dfrac{x}{4}) + \dfrac{1}{2\sqrt{16-x^2}} \cdot (16-x^2)\dfrac{d}{dx}$
+$= x \dfrac{x}{dx} \sin^{-1}(\dfrac{x}{4}) + \dfrac{x}{dx}x \cdot \sin^{-1}(\dfrac{x}{4}) + \dfrac{1}{2\sqrt{16-x^2}} \cdot (16-x^2)\dfrac{d}{dx}$
 
 $= x \dfrac{1}{\sqrt{1-(\dfrac{x}{4})^2}} \dfrac{d}{dx}(\dfrac{x}{4}) + \sin^{-1}(\dfrac{x}{4}) + \dfrac{-2x}{2\sqrt{16-x^2}}$
 
