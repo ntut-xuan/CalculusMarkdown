@@ -674,3 +674,160 @@ $2f'(1) + 3f'(1) = 10$，$f'(1) = 2$
 
 $f'(1) = 2$
 
+
+
+## Sec 2.2
+
+### Exercise 1
+
+#### Statement
+
+求函數的導函數。
+
+$f(x) = 3x^2-2x+5$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{d}{dx} 3x^2 - \dfrac{d}{dx} 2x + \dfrac{d}{dx} 5$
+
+$= 6x - 2$
+
+
+
+#### Answer
+
+$f'(x) = 6x-2$
+
+
+
+
+### Exercise 2
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = x^{\pi}+\pi x$
+
+
+
+#### Solution
+
+$g'(x) = \dfrac{d}{dx}x^{\pi} + \dfrac{d}{dx} \pi x$
+
+$= \pi x^{\pi-1} + \pi$
+
+
+
+#### Answer
+
+$g'(x) = \pi x^{\pi-1} + \pi$
+
+
+
+### Exercise 3
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = \dfrac{2x^3-x^2+3}{x}$
+
+
+
+#### Solution
+
+$g(x) = \dfrac{2x^3-x^2+3}{x} = 2x^2-x+3x^{-1}$
+
+$g'(x) = \dfrac{d}{dx} 2x^2 - \dfrac{d}{dx} x + \dfrac{d}{dx} 3x^{-1}$
+
+$= 4x - 1 -3x^{-2}$
+
+$= 4x-1-\dfrac{3}{x^2}$
+
+
+
+#### Answer
+
+$g'(x) = 4x-1-\dfrac{3}{x^2}$
+
+
+
+### Exercise 4
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = \dfrac{1}{10}x^{10}-4x^\frac{3}{2}+3$
+
+
+
+
+#### Solution
+
+$g'(x) = \dfrac{d}{dx}\dfrac{1}{10}x^{10} - \dfrac{d}{dx}4x^\frac{3}{2} + \dfrac{d}{dx}3$
+
+$ = x^9 - 6x^\frac{1}{2}$
+
+$= x^9-6\sqrt{x}$
+
+
+
+#### Answer
+
+$g'(x) = x^9-6\sqrt{x}$
+
+
+
+### Exercise 5
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = 3x-\cos x+\tan x$
+
+
+
+#### Solution
+
+$g'(x) = \dfrac{d}{dx} 3x - \dfrac{d}{dx}\cos x + \dfrac{d}{dx} \tan x$
+
+$= 3 - (-\sin x) + \sec^2 x$
+
+$= 3+\sin x + \sec^2x$
+
+
+
+#### Answer
+
+$g'(x) = 3 + \sin x + \sec^2 x$
+
+
+
+### Exercise 6
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = 2 - \dfrac{1}{x^2} - \dfrac{2}{x^5}$
+
+
+
+#### Solution
+
+$g(x) = 2 - \dfrac{1}{x^2} - \dfrac{2}{x^5} = 2 - x^{-2} - 2x^{-5}$
+
+$g'(x) = \dfrac{d}{dx} 2 - \dfrac{d}{dx} x^{-2} - \dfrac{d}{dx} 2x^{-5}$
+
+$= 0 - (-2x^{-3}) - (-10x^{-6}) = 2x^{-3} + 10x^{-6}$
+
+
+
+#### Answer
+
+$2x^{-3} + 10x^{-6}$
