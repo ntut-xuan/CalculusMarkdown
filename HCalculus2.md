@@ -1065,6 +1065,266 @@ $= \dfrac{6x-2x^3 - (-6x-2x^3)}{(3-x^2)^2}$
 
 
 
+### Exercise 16
+
+#### Statement
+
+求導函數。
+
+$y = \dfrac{3+2\sin x}{3-2\sin x}$
+
+
+
+#### Solution
+
+$y' = \dfrac{(3-2\sin x)(3+2\sin x)' - (3+2\sin x)(3-2\sin x)'}{(3-2\sin x)^2}$
+
+$= \dfrac{(3-2\sin x)(2\cos x)-(3+2\sin x)(-2\cos x)}{(3-2\sin x)^2}$
+
+$= \dfrac{(3-2\sin x)(2\cos x)+(3+2\sin x)(2\cos x)}{(3-2\sin x)^2}$
+
+$= \dfrac{6\cos x - 4\sin x\cos x + 6\cos x + 4\sin x \cos x}{(3-2\sin x)^2}$
+
+$= \dfrac{12\cos x}{(3-2\sin x)^2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{12\cos x}{(3-2\sin x)^2}$
+
+
+
+### Exercise 17
+
+#### Statement
+
+求導函數。
+
+$f(x) = \dfrac{\sqrt{x}-1}{\sqrt{x}+1}$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{d}{dx}\dfrac{\sqrt{x}-1}{\sqrt{x}+1}$
+
+$= \dfrac{(\sqrt{x}+1)(\sqrt{x}-1)' - (\sqrt{x}-1)(\sqrt{x}+1)'}{(\sqrt{x}+1)^2}$
+
+$= \dfrac{(\sqrt{x}+1)(\dfrac{1}{2\sqrt{x}}) - (\sqrt{x}-1)(\dfrac{1}{2\sqrt{x}})}{(\sqrt{x}+1)^2}$
+
+$= \dfrac{[\sqrt{x}+1-(\sqrt{x}-1)]\dfrac{1}{2\sqrt{x}}}{(\sqrt{x}+1)^2}$
+
+$= \dfrac{\dfrac{1}{\sqrt{x}}}{(\sqrt{x}+1)^2}$
+
+$= \dfrac{1}{\sqrt{x}(\sqrt{x}+1)^2}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{1}{\sqrt{x}(\sqrt{x}+1)}$
+
+
+
+### Exercise 18
+
+#### Statement
+
+求導數。
+
+$f(x) = \dfrac{\tan x}{x^3+1}$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{(x^3+1)(\tan x)' - (\tan x)(x^3+1)'}{(x^3+1)^2}$
+
+$= \dfrac{(x^3+1)(\sec^2 x) - (\tan x)(3x^2)}{(x^3+1)^2}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{(x^3+1)(\sec^2 x) - (\tan x)(3x^2)}{(x^3+1)^2}$
+
+
+
+### Exercise 19
+
+#### Statement
+
+求導數。
+
+$f(x) = \dfrac{2x-1}{\cos x}$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{(\cos x)(2x-1)' - (2x-1)(\cos x)'}{\cos^2 x}$
+
+$= \dfrac{(\cos x)(2) - (2x-1)(-\sin x)}{\cos^2 x}$
+
+$= \dfrac{2\cos x - (-2x\sin x+\sin x)}{\cos^2 x}$
+
+$= \dfrac{2\cos x + 2x\sin x - \sin x}{\cos^2 x}$
+
+$= 2\sec x+ (2x-1)\tan x\sec x$
+
+
+
+#### Answer
+
+$f'(x) = 2\sec x+ (2x-1)\tan x\sec x$
+
+
+
+### Exercise 20
+
+#### Statement
+
+求導數。
+
+$f(x) = \dfrac{x\cos x}{x-1}$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{(x-1)(x\cos x)' - (x\cos x)(x-1)'}{(x-1)^2}$
+
+$= \dfrac{(x-1)(\cos x - x\sin x) - (x\cos x)(1)}{(x-1)^2}$
+
+$= \dfrac{(x-1)(\cos x - x\sin x) - (x\cos x)}{(x-1)^2}$
+
+$= \dfrac{x\cos  x - x^2\sin x-\cos x+x\sin x - x\cos x}{(x-1)^2}$
+
+$= \dfrac{-x^2\sin x - \cos x + x\sin x}{(x-1)^2}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{-x^2\sin x - \cos x + x\sin x}{(x-1)^2}$
+
+
+
+### Exercise 21
+
+#### Statement
+
+求導數。
+
+$y' = \dfrac{\sqrt{x}}{1+\sqrt{x}}$
+
+
+
+#### Solution
+
+$y' = \dfrac{(1+\sqrt{x})(\sqrt{x})' - (\sqrt{x})(1+\sqrt{x})'}{(1+\sqrt{x})^2}$
+
+$= \dfrac{(1+\sqrt{x})\dfrac{1}{2\sqrt{x}} - (\sqrt{x})(\dfrac{1}{2\sqrt{x}})}{(1+\sqrt{x})^2}$
+
+$= \dfrac{\dfrac{1}{2\sqrt{x}}}{(1+\sqrt{x})^2} = \dfrac{1}{2\sqrt{x}(1+\sqrt{x})^2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{1}{2\sqrt{x}(1+\sqrt{x})^2}$
+
+
+
+### Exercise 22
+
+#### Statement
+
+求導數。
+
+$y = \dfrac{x}{x^2+1}$
+
+
+
+#### Solution
+
+$y' = \dfrac{(x^2+1)(x)' - (x)(x^2+1)'}{(x^2+1)^2}$
+
+$= \dfrac{(x^2+1)-x(2x)}{(x^2+1)^2}$
+
+$= \dfrac{(x^2+1)-2x^2}{(x^2+1)^2}$
+
+$= \dfrac{-x^2+1}{(x^2+1)^2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{-x^2+1}{(x^2+1)^2}$
+
+
+
+### Exercise 23
+
+#### Statement
+
+求導數。
+
+$y = \sqrt{x}(x-1)$
+
+
+
+#### Solution
+
+$y = x^\frac{1}{2}(x-1)$
+
+$= x^\frac{3}{2} - x^\frac{1}{2}$
+
+
+
+$y' = \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-1}{2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-1}{2}$
+
+
+
+### Exercise 24
+
+#### Statement
+
+求導數。
+
+$y = \dfrac{x^3-x^2+1}{\sqrt{x}}$
+
+
+
+#### Solution
+
+$y = \dfrac{x^3-x^2+1}{x^\frac{1}{2}}$
+
+$= x^\frac{5}{2} - x^\frac{3}{2} + x^\frac{-1}{2}$
+
+
+
+$y' = \dfrac{5}{2}x^\frac{3}{2} - \dfrac{3}{2}x^\frac{1}{2} + \dfrac{-1}{2}x^\frac{-3}{2}$
+
+$= \dfrac{5}{2}x^\frac{3}{2} - \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-3}{2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{5}{2}x^\frac{3}{2} - \dfrac{3}{2}x^\frac{1}{2} + \dfrac{-1}{2}x^\frac{-3}{2}$
+
+$= \dfrac{1}{2} (5x\sqrt{x} - 3\sqrt{x} - \dfrac{1}{x\sqrt{x}})$
+
+
+
 ### Exercise 34
 
 #### Statement
