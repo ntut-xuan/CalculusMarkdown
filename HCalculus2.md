@@ -1325,6 +1325,274 @@ $= \dfrac{1}{2} (5x\sqrt{x} - 3\sqrt{x} - \dfrac{1}{x\sqrt{x}})$
 
 
 
+### Exercise 25
+
+#### Statement
+
+求導數。
+
+$y = \dfrac{\sqrt{x}}{1-x}$
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx} \dfrac{\sqrt{x}}{1-x}$
+
+$= \dfrac{(1-x)(\sqrt{x})' - (\sqrt{x})(1-x)'}{(1-x)^2}$
+
+$= \dfrac{(1-x)(\dfrac{1}{2\sqrt{x}}) - (\sqrt{x})(-1)}{(1-x)^2}$
+
+$= \dfrac{(1-x)(\dfrac{1}{2\sqrt{x}}) + \sqrt{x}}{(1-x)^2}$
+
+$= \dfrac{(1-x)(\dfrac{1}{2\sqrt{x}}) + \dfrac{2x}{2\sqrt{x}}}{(1-x)^2}$
+
+$= \dfrac{\dfrac{1+x}{2\sqrt{x}}}{(1-x)^2}$
+
+$= \dfrac{1+x}{2\sqrt{x}(1-x)^2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{1+x}{2\sqrt{x}(1-x)^2}$
+
+
+
+### Exercise 26
+
+#### Statement
+
+求導數。
+
+$y = \sqrt[3]{x}(x-4)$
+
+
+
+#### Solution
+
+$y = x^\frac{1}{3}(x-4)$
+
+$= x^\frac{4}{3} - 4x^\frac{1}{3}$
+
+$= \dfrac{4}{3}x^\frac{1}{3} - \dfrac{4}{3}x^\frac{-2}{3}$
+
+$= \dfrac{4}{3}(x^\frac{1}{3}-x^\frac{-2}{3})$
+
+#### Answer
+
+$y' = \dfrac{4}{3}(x^\frac{1}{3}-x^\frac{-2}{3})$
+
+
+
+### Exercise 27
+
+#### Statement
+
+求導數。
+
+$y = \dfrac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}$
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx}\dfrac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}$
+
+$= \dfrac{(\sqrt[3]{x}+1)(\sqrt[3]{x}-1)' - (\sqrt[3]{x}-1)(\sqrt[3]{x}+1)'}{(\sqrt[3]{x}+1)^2}$
+
+$= \dfrac{(\sqrt[3]{x}+1)(\dfrac{1}{3}x^\frac{-2}{3}) - (\sqrt[3]{x}-1)(\dfrac{1}{3}x^\frac{-2}{3})}{(\sqrt[3]{x}+1)^2}$
+
+$= \dfrac{\dfrac{2}{3}x^\frac{-2}{3}}{(\sqrt[3]{x}+1)^2}$
+
+$= \dfrac{2}{3\sqrt[3]{x^2}(\sqrt[3]{x}+1)^2}$
+
+#### Answer
+
+$y' = \dfrac{2}{3\sqrt[3]{x^2}(\sqrt[3]{x}+1)^2}$
+
+
+
+### Exercise 28
+
+#### Statement
+
+求導數。
+
+$y = \dfrac{x+\cos x}{x-\cos x}$
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx} \dfrac{x+\cos x}{x-\cos x}$
+
+$= \dfrac{(x-\cos x)(x+\cos x)' - (x+\cos x)(x-\cos x)'}{(x-\cos x)^2}$
+
+$= \dfrac{(x-\cos x)(1-\sin x) - (x+\cos x)(1+\sin x)}{(x-\cos x)^2}$
+
+$= \dfrac{x-x\sin x-\cos x+\sin x\cos x - (x+x\sin x+\cos x+\sin x\cos x)}{(x-\cos x)^2}$
+
+$= \dfrac{x-x\sin x-\cos x+\sin x\cos x - x - x\sin x - \cos x - \sin x\cos x}{(x-\cos x)^2}$
+
+$= \dfrac{-2x\sin x-2\cos x}{(x-\cos x)^2}$
+
+
+
+#### Answer
+
+$y' = \dfrac{-2x\sin x-2\cos x}{(x-\cos x)^2}$
+
+
+
+### Exercise 29
+
+#### Statement
+
+求$\displaystyle \lim_{x\rightarrow -1} \dfrac{x^{2010}+2x+1}{x+1}$
+
+
+
+#### Solution
+
+利用導數定義，$f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
+
+比較係數後，得到$a = -1$
+
+
+
+因此$f(x) - f(a) = x^{2010}+2x+1$
+
+又因$f(a)$為常數，故$f(x) = x^{2010}+2x+c$，$c = 1 - f(a) \in \mathbb{R}$
+
+因此$f'(x) = \dfrac{d}{dx} x^{2010} + \dfrac{d}{dx} 2x + \dfrac{d}{dx} c = 2010x^{2009} + 2$
+
+帶入$x = -1$，得到$f'(-1) = 2010 \times (-1)^{2009} + 2 = -2008$
+
+
+
+#### Answer
+
+$f'(1) = -2008$
+
+
+
+### Exercise 30
+
+#### Statement
+
+假設$f(x) = x\sin x\cos x$，求$f'(x)$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{d}{dx}(x\sin x\cos x)$
+
+$= \dfrac{d}{dx}(x\sin x)(\cos x) + (x\sin x)\dfrac{d}{dx}(\cos x)$
+
+$= (\dfrac{d}{dx}x \sin x + x\dfrac{d}{dx}\sin x)(\cos x) + (x\sin x)\dfrac{d}{dx}(\cos x)$
+
+$= (\sin x + x\cos x)(\cos x) + (x\sin x)(-\sin x)$
+
+$= \sin x\cos x + x\cos^2 x - x\sin^2 x$
+
+#### Answer
+
+$f'(x) =  \sin x\cos x + x\cos^2 x - x\sin^2 x$
+
+
+
+
+### Exercise 31
+
+#### Statement
+
+假設$f(x) = \dfrac{x(x-1)(x-2)(x-3)}{(x+1)(x+2)(x+3)}$，求$f'(1)$
+
+
+
+#### Solution
+
+$f(1) = \dfrac{1\times 0\times (-1)\times (-2)}{2\times 3\times 4} = 0$
+
+利用微分定義，$f'(1) = \displaystyle \lim_{x\rightarrow 1} \dfrac{f(x)-f(1)}{x-1}$
+
+因此$f'(1) = \displaystyle \lim_{x\rightarrow 1} \dfrac{\dfrac{x(x-1)(x-2)(x-3)}{(x+1)(x+2)(x+3)}}{x-1}$
+
+$= \displaystyle \lim_{x\rightarrow 1} \dfrac{x(x-1)(x-2)(x-3)}{(x+1)(x+2)(x+3)(x-1)}$
+
+$= \displaystyle \lim_{x\rightarrow 1} \dfrac{x(x-2)(x-3)}{(x+1)(x+2)(x+3)}$
+
+$= \dfrac{1\times (-1)\times (-2)}{2\times 3\times 4} = \dfrac{1}{12}$
+
+
+
+#### Answer
+
+$f'(1) = \dfrac{1}{12}$
+
+
+### Exercise 32
+
+#### Statement
+
+假設$f(x) = \dfrac{x(x+1)(x+2)(x+3)(x+4)(x+5)}{(x-1)(x-2)(x-3)(x-4)}$，求$f'(-1)$
+
+
+
+#### Solution
+
+$f(-1) = \dfrac{-1\times 0\times 1\times 2\times 3\times 4}{-2\times -3\times -4\times -5} = 0$
+
+利用微分定義，$f'(-1) = \displaystyle \lim_{x\rightarrow -1} \dfrac{f(x)-f(-1)}{x+1}$
+
+因此$f'(1) = \displaystyle \lim_{x\rightarrow -1} \dfrac{\dfrac{x(x+1)(x+2)(x+3)(x+4)(x+5)}{(x-1)(x-2)(x-3)(x-4)}}{x+1}$
+
+$= \displaystyle \lim_{x\rightarrow -1} \dfrac{x(x+1)(x+2)(x+3)(x+4)(x+5)}{(x-1)(x-2)(x-3)(x-4)(x+1)}$
+
+$= \displaystyle \lim_{x\rightarrow -1} \dfrac{x(x+2)(x+3)(x+4)(x+5)}{(x-1)(x-2)(x-3)(x-4)}$
+
+$= \dfrac{-1\times 1\times 2\times 3\times 4}{-2\times -3\times -4\times -5} = \dfrac{-24}{120} = -\dfrac{1}{5}$
+
+
+
+#### Answer
+
+$f'(-1) = -\dfrac{1}{5}$
+
+
+
+### Exercise 33
+
+#### Statement
+
+假設$f(x) = \dfrac{x}{(x-1)(x-2)(x-3)(x-4)}$，求$f'(0)$
+
+
+
+#### Solution
+
+$f(0) = \dfrac{0}{-1\times -2\times -3\times -4} = 0$
+
+利用微分定義，$f'(-1) = \displaystyle \lim_{x\rightarrow 0} \dfrac{f(x)-f(0)}{x}$
+
+因此$f'(1) = \displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x}{(x-1)(x-2)(x-3)(x-4)}}{x}$
+
+$= \displaystyle \lim_{x\rightarrow 0} \dfrac{x}{x(x-1)(x-2)(x-3)(x-4)}$
+
+$= \displaystyle \lim_{x\rightarrow 0} \dfrac{1}{(x-1)(x-2)(x-3)(x-4)}$
+
+$= \dfrac{1}{-1\times -2\times -3\times -4} = \dfrac{1}{24}$
+
+
+
+#### Answer
+
+$f'(0) = \dfrac{1}{24}$
+
+
+
 ### Exercise 34
 
 #### Statement
@@ -1332,7 +1600,6 @@ $= \dfrac{1}{2} (5x\sqrt{x} - 3\sqrt{x} - \dfrac{1}{x\sqrt{x}})$
 求下列各極限。
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x}$
-
 
 
 #### Solution
