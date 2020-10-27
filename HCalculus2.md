@@ -831,3 +831,215 @@ $= 0 - (-2x^{-3}) - (-10x^{-6}) = 2x^{-3} + 10x^{-6}$
 #### Answer
 
 $2x^{-3} + 10x^{-6}$
+
+
+
+### Exercise 7
+
+#### Statement
+
+求函數的導函數。
+
+$f(t) = \dfrac{6}{t^3}-\dfrac{2}{t^2}+\dfrac{1}{t}$
+
+
+
+#### Solution
+
+$f(t) = \dfrac{6}{t^3} - \dfrac{2}{t^2} + \dfrac{1}{t} = 6t^{-3}-2t^{-2}+t^{-1}$
+
+$f'(t) = -18t^{-4} + 4t^{-3} - t^{-2}$
+
+
+
+#### Answer
+
+$f'(t) = -18t^{-4} + 4t^{-3} - t^{-2}$
+
+
+
+### Exercise 8
+
+#### Statement
+
+求函數的導函數。
+
+$g(x) = x^{2013}-6\sqrt{x}+2014$
+
+
+
+#### Solution
+
+$g'(x) = \dfrac{d}{dx} x^{2013} - \dfrac{d}{dx} 6x^\frac{1}{2} + \dfrac{d}{dx} 2014$
+
+$g'(x) = 2013x^{2012} - 3x^\frac{-1}{2}$
+
+
+
+#### Answer
+
+$g'(x) = 2013x^{2012} - 3x^\frac{-1}{2}$
+
+
+
+### Exercise 9
+
+#### Statement
+
+求函數的導函數。
+
+$y = 6\sqrt[3]{x}- \dfrac{2}{\sqrt{x}}$
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx} 6x^\frac{1}{3} - \dfrac{d}{dx} 2x^\frac{-1}{2}$
+
+$= 2x^\frac{-2}{3} - \dfrac{-1}{2} 2x^\frac{-3}{2}$
+
+$= 2x^\frac{-2}{3} + x^\frac{-3}{2}$
+
+
+
+#### Answer
+
+$y' = 2x^\frac{2}{3} + x^\frac{-3}{2}$
+
+
+
+### Exercise 10
+
+#### Statement
+
+求函數的導函數。
+
+$y = (x^2-3)^2$
+
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx}(x^2-3)^2$
+
+令$u = x^2-3$，而$y' = \dfrac{d}{dx} u^2$
+
+$y' = \dfrac{d}{du} u^2 \dfrac{du}{dx}$
+
+$= 2u\times \dfrac{d}{dx} u$
+
+$= 2(x^2-3) \times 2x$
+
+$= (2x^2-6)\times 2x$
+
+$= 4x^3-12x$
+
+
+
+#### Answer
+
+$y' = 4x^3-12$
+
+
+
+### Exercise 11
+
+#### Statement
+
+求函數的導函數。
+
+$y = \sec x - \dfrac{1}{x^{100}} + \pi$
+
+
+
+#### Solution
+
+$y' = \dfrac{d}{dx} \sec x - \dfrac{d}{dx} x^{-100} + \dfrac{d}{dx} \pi$
+
+$= \tan x \sec x - (-100)x^{-101}$
+
+$= \tan x \sec x + 100x^{-101}$
+
+
+
+#### Answer
+
+$y' = \tan x \sec x + 100x^{-101}$
+
+
+
+### Exercise 12
+
+#### Statement
+
+求函數的導函數。
+
+$f(x) = x^2\sin x$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{d}{dx}x^2\sin x + x^2\dfrac{d}{dx}\sin x$
+
+$f'(x) = 2x\sin x + x^2\cos x$
+
+
+
+#### Answer
+
+$f'(x) = 2x \sin x + x^2 \cos x$
+
+
+
+### Exercise 13
+
+#### Statement
+
+$f(x) = \sin x\cos x$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{d}{dx} \sin x \cos x + \sin x \dfrac{d}{dx} \cos x$
+
+$= \cos x \cos x + \sin x (-\sin x)$
+
+$= \cos^2 x - \sin^2 x = \cos 2x$
+
+
+
+#### Answer
+
+$f'(x) = \cos 2x$
+
+
+
+### Exercise 14
+
+#### Statement
+
+求函數的導函數。
+
+$f(x) = \dfrac{2x^2-x}{2x-3}$
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{(2x-3)(2x^2-x)' - (2x^2-x)(2x-3)'}{(2x-3)^2}$
+
+$= \dfrac{(2x-3)(4x-1)-(2x^2-x)(2)}{(2x-3)^2}$
+
+$=\dfrac{8x^2-2x-12x+3-4x^2+2x}{(2x-3)^2}$
+
+$= \dfrac{4x^2-12x+3}{(2x-3)^2}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{4x^2-12x+3}{(2x-3)^2}$
+
