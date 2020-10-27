@@ -1913,3 +1913,258 @@ $= \dfrac{-1-8}{1} = -9$
 #### Answer
 
 $h'(1) = -9$
+
+
+
+## Sec 2.3
+
+### Exercise 1
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = (2x-1)^5$
+
+
+
+#### Solution
+
+令$u = (2x-1)$，則$y = u^5$
+
+$\dfrac{d}{dx} y = \dfrac{d}{dx} u^5$
+
+$= \dfrac{d}{du} u^5 \dfrac{du}{dx}$
+
+$= 5u^4 \dfrac{du}{dx}$
+
+還原$u$得到$\dfrac{dy}{dx} = 5(2x-1)^4 \dfrac{d}{dx}(2x-1)$
+
+$= 5(2x-1)^4\times (2) = 10(2x-1)^4$
+
+
+
+因此$\dfrac{dy}{dx} = 10(2x-1)^4$
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = 10(2x-1)^4$
+
+
+
+### Exercise 2
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = \sqrt{x^2-3}$
+
+
+
+#### Solution
+
+令$u = x^2-3$，則$y = \sqrt{u} = u^\frac{1}{2}$
+
+$\dfrac{d}{dx} y = \dfrac{d}{dx} u^\frac{1}{2}$
+
+$= \dfrac{d}{du} u^\frac{1}{2} \dfrac{du}{dx}$
+
+$= \dfrac{1}{2}u^\frac{-1}{2} \dfrac{d}{dx} u = \dfrac{1}{2\sqrt{u}} \dfrac{d}{dx} u$
+
+還原$u$
+
+$\dfrac{dy}{dx} = \dfrac{1}{2\sqrt{x^2-3}} \dfrac{d}{dx}(x^2-3)$
+
+$= \dfrac{1}{2\sqrt{x^2-3}} \cdot 2x$
+
+$= \dfrac{2x}{2\sqrt{x^2-3}}$
+
+$= \dfrac{x}{\sqrt{x^2-3}}$
+
+
+
+因此$\dfrac{dy}{dx} = \dfrac{x}{\sqrt{x^2-3}}$。
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = \dfrac{x}{\sqrt{x^2-3}}$
+
+
+
+### Exercise 3
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$f(x) = (x^2+3)^6$
+
+
+
+#### Solution
+
+令$u = x^2+3$，則$f(x) = u^6$
+
+所以$f'(x) = \dfrac{d}{dx} u^6 = \dfrac{d}{du} u^6 \dfrac{du}{dx}$
+
+$= 6u^5 \dfrac{d}{dx} u$
+
+還原$u$得到$f'(x) = 6(x^2+3)^5 \dfrac{d}{dx}(x^2+3) = 6(x^2+5)^5\times 2x = 12x(x^2+5)^5$
+
+
+
+#### Answer
+
+$f'(x) =12x(x^2+5)^5$
+
+
+
+### Exercise 4
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = \sin 2x$
+
+
+
+#### Solution
+
+令$u = 2x$，則$\dfrac{d}{dx} y = \dfrac{d}{dx} \sin u$
+
+$= \dfrac{d}{du} \sin u \dfrac{du}{dx} = \cos u \dfrac{d}{dx} u$
+
+還原$u$得到$\dfrac{d}{dx}y = \cos2x \dfrac{d}{dx}(2x) = 2\cos 2x$
+
+
+
+因此$\dfrac{dy}{dx} = y' = 2\cos 2x$
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = 2\cos 2x$
+
+
+
+### Exercise 5
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = \sqrt{3x-2\cos x}$
+
+
+
+#### Solution
+
+令$u = 3x-2\cos x$，則$y = \sqrt{u}$
+
+$\dfrac{d}{dx} y = \dfrac{d}{dx} \sqrt{u}$
+
+$= \dfrac{d}{du} \sqrt{u} \dfrac{du}{dx}$
+
+$= \dfrac{1}{2\sqrt{u}} \dfrac{d}{dx} u$
+
+還原$u$，得到$\dfrac{dy}{dx} = \dfrac{1}{2\sqrt{3x-2\cos x}} \dfrac{d}{dx} (3x-2\cos x)$
+
+$= \dfrac{1}{2\sqrt{3x-2\cos x}} (3+2\sin x)$
+
+$= \dfrac{3+2\sin x}{2\sqrt{3x-2\cos x}} $
+
+
+
+因此$\dfrac{dy}{dx} = y' = \dfrac{3+2\sin x}{2\sqrt{3x-2\cos x}} $
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = \dfrac{3+2\sin x}{2\sqrt{3x-2\cos x}} $
+
+
+
+### Exercise 6
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = \tan \sqrt{x}$
+
+
+
+#### Solution
+
+令$u = \sqrt{x}$，則$y = \tan u$
+
+因此$\dfrac{d}{dx} y = \dfrac{d}{dx} \tan u$
+
+$= \dfrac{d}{du} \tan u \dfrac{du}{dx}$
+
+$= \sec^2 u \dfrac{d}{dx} u$
+
+還原$u$，得到$\dfrac{dy}{dx} = \sec^2(\sqrt{x}) \dfrac{1}{2\sqrt{x}}$
+
+$= \dfrac{\sec^2\sqrt{x}}{2\sqrt{x}}$
+
+
+
+因此$\dfrac{dy}{dx} = y' = \dfrac{\sec^2\sqrt{x}}{2\sqrt{x}}$
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = \dfrac{\sec^2\sqrt{x}}{2\sqrt{x}}$
+
+
+
+### Exercise 7
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$y = \dfrac{1}{\sqrt[3]{x^3-2}}$
+
+
+
+#### Solution
+
+$y = \dfrac{1}{\sqrt[3]{x^3-2}} = (x^3-2)^\frac{-1}{3}$
+
+令$u = x^3-2$，則$y = u^\frac{-1}{3}$
+
+
+
+$\dfrac{d}{dx} y = \dfrac{d}{dx} u^\frac{-1}{3}$
+
+$= \dfrac{d}{du} u^\frac{-1}{3} \dfrac{du}{dx}$
+
+$= \dfrac{-1}{3} u^\frac{-4}{3} \dfrac{d}{dx} u$
+
+$= \dfrac{-1}{3\sqrt[3]{u^4}} \dfrac{d}{dx} u$
+
+還原$u$，得到$\dfrac{dy}{dx} = \dfrac{-1}{3\sqrt[3]{(x^3-2)^4}} \dfrac{d}{dx}(x^3-2)$
+
+$= \dfrac{-1}{3\sqrt[3]{(x^3-2)^4}} \cdot 3x^2$
+
+$= \dfrac{-3x^2}{3\sqrt[3]{(x^3-2)^4}} = \dfrac{-x^2}{\sqrt[3]{(x^3-2)^4}}$
+
+
+
+#### Answer
+
+$\dfrac{dy}{dx} = y' = \dfrac{-x^2}{\sqrt[3]{(x^3-2)^4}}$
+
+
+
