@@ -1043,3 +1043,346 @@ $= \dfrac{4x^2-12x+3}{(2x-3)^2}$
 
 $f'(x) = \dfrac{4x^2-12x+3}{(2x-3)^2}$
 
+
+
+### Exercise 15
+
+#### Statement
+
+求函數的導函數。
+
+$y = \dfrac{3+x^2}{3-x^2}$
+
+
+
+#### Solution
+
+$y' = \dfrac{(3-x^2)(3+x^2)' - (3+x^2)(3-x^2)'}{(3-x^2)^2}$
+
+$= \dfrac{(3-x^2)(2x)-(3+x^2)(-2x)}{(3-x^2)^2}$
+
+$= \dfrac{6x-2x^3 - (-6x-2x^3)}{(3-x^2)^2}$
+
+
+
+### Exercise 34
+
+#### Statement
+
+求下列各極限。
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x}$
+
+
+
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x} = \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 2x}{\cos 2x}}{x} = \lim_{x\rightarrow 0} \dfrac{\sin 2x}{x\cos 2x}$
+
+分子分母同乘以2，得到
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{2\sin 2x}{2x\cos 2x} = \lim_{x\rightarrow 0} \dfrac{2}{\cos 2x}\dfrac{\sin 2x}{2x} = \dfrac{2}{\cos 0}\cdot 1 = \dfrac{2}{1} = 2$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x} = 2$
+
+
+
+### Exercise 35
+
+#### Statement
+
+求下列各極限。
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin 3x}{\sin 5x}$
+
+
+
+#### Solution
+
+上下同除以$3x$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 3x}{3x}}{\dfrac{\sin 5x}{3x}}$
+
+分母的部份上下同乘以$\dfrac{5}{3}$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 3x}{3x}}{\dfrac{\dfrac{5}{3}\sin 5x}{\dfrac{5}{3} 3x}} = \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 3x}{3x}}{\dfrac{\dfrac{5}{3}\sin 5x}{5x}} = \dfrac{1}{\dfrac{5}{3}} = \dfrac{3}{5}$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin 3x}{\sin 5x} = \dfrac{3}{5}$
+
+
+
+### Exercise 36
+
+#### Statement
+
+求下列各極限。
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x}$
+
+
+
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x} = \lim_{x\rightarrow 0} \dfrac{x\sin 2x}{\sin 3x \sin 4x \cos 2x}$
+
+上下同除以$2x$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x\sin 2x}{2x}}{\dfrac{\sin 3x\sin 4x\cos 2x}{2x}}$
+
+分母上下同乘以$3x$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x\sin 2x}{2x}}{\dfrac{3x\sin 3x\sin 4x\cos 2x}{2x\times 3x}}$
+
+分母上下同乘以$2$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x\sin 2x}{2x}}{\dfrac{6x\sin 3x\sin 4x\cos 2x}{4x\times 3x}}$
+
+上下同除以$x$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 2x}{2x}}{\dfrac{6\sin 3x\sin 4x\cos 2x}{4x\times 3x}} = \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 2x}{2x}}{6\dfrac{\sin 3x}{3x}\dfrac{\sin 4x}{4x}\cos 2x} = \dfrac{1}{6\times 1\times 1\times 1} = \dfrac{1}{6}$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x} = \dfrac{1}{6}$
+
+
+
+### Exercise 37
+
+#### Statement
+
+求下列各極限。
+
+$\displaystyle \lim_{x\rightarrow 0} x\csc(2x)$
+
+
+
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow 0} x\csc(2x) = \lim_{x\rightarrow 0} \dfrac{x}{\sin 2x}$
+
+上下同除以$2x$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x}{2x}}{\dfrac{\sin 2x}{2x}} = \lim_{x\rightarrow 0} \dfrac{x}{2x} = \lim_{x\rightarrow 0} \dfrac{1}{2} = \dfrac{1}{2}$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} x\csc(2x) = \dfrac{1}{2}$
+
+
+
+### Exercise 38
+
+#### Statement
+
+求下列各極限。
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{x^5}$
+
+
+
+#### Solution
+
+上下同乘以$5!$
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{5!\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{5!x^5}$
+
+$= \displaystyle \lim_{x\rightarrow 0} \dfrac{5!\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{(1\times 2\times 3\times 4\times 5)x^5}$
+
+$= \displaystyle \lim_{x\rightarrow 0} \dfrac{5!\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{x\times 2x\times 3x\times 4x\times 5x}$
+
+$= \displaystyle \lim_{x\rightarrow 0} 5! \dfrac{\sin x}{x} \dfrac{\sin 2x}{2x} \dfrac{\sin 3x}{3x} \dfrac{\sin 4x}{4x} \dfrac{\sin 5x}{5x}$
+
+$= 5! \times 1 \times 1\times 1\times 1\times 1 = 120$
+
+
+
+#### Answer
+
+$\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{x^5} = 120$
+
+
+
+### Exercise 39
+
+#### Statement
+
+試證明定理2.6
+
+
+
+#### Solution
+
+證明1. $\dfrac{d}{dx}\sin x = \cos x$
+
+導數定義$\displaystyle  \lim_{h\rightarrow 0} \dfrac{f(x+h)-f(x)}{h}$
+
+令$f(x) = \sin x$，帶入得到
+
+$\displaystyle \lim_{h\rightarrow 0} \dfrac{\sin(x+h)-\sin(x)}{h} = \lim_{h\rightarrow 0} \dfrac{\sin x\cos h+\sin h\cos x-\sin x}{h}$
+
+$= \displaystyle \lim_{h\rightarrow 0} \dfrac{\sin x\cos h - \sin x}{h} + \lim_{h\rightarrow 0} \dfrac{\sin h \cos x}{h}$
+
+$= \displaystyle \lim_{h\rightarrow 0}\sin x(\dfrac{\cos h - 1}{h}) + \lim_{h\rightarrow 0} \cos x \dfrac{\sin h}{h}$
+
+$= \sin x \times 0 + \cos x \times 1 = \cos x$
+
+
+
+證明2. $\dfrac{d}{dx}\cos x = -\sin x$
+
+導數定義$\displaystyle  \lim_{h\rightarrow 0} \dfrac{f(x+h)-f(x)}{h}$
+
+令$f(x) = \cos x$，帶入得到
+
+$\displaystyle \lim_{h\rightarrow 0} \dfrac{\cos(x+h)-\cos(x)}{h}$
+
+$= \displaystyle \lim_{h\rightarrow 0} \dfrac{\cos x\cos h - \sin x \sin h - \cos x}{h}$
+
+$= \displaystyle \lim_{h\rightarrow 0} \dfrac{\cos x \cos h - \cos x}{h} - \lim_{h\rightarrow 0} \dfrac{\sin x \sin h}{h}$
+
+$= \displaystyle \lim_{h\rightarrow 0} \cos x (\dfrac{\cos h - 1}{h}) - \lim_{h\rightarrow 0} \sin x \dfrac{\sin h}{h} = \cos x \times 0 - \sin x\times 1 = -\sin x$
+
+
+
+證明3. $\dfrac{d}{dx} \tan x = \sec^2x$
+
+$\tan x = \dfrac{\sin x}{\cos x}$
+
+$\dfrac{d}{dx} \tan x = \dfrac{d}{dx} \dfrac{\sin x}{\cos x}$
+
+$= \dfrac{\cos x(\sin x)' - \sin x(\cos x)'}{\cos^2 x}$
+
+$= \dfrac{\cos x\cos x - \sin x (-\sin x)}{\cos^2 x}$
+
+$= \dfrac{\cos^2x + \sin^2 x}{\cos^2x} = 1 + \tan^2x = \sec^2x$
+
+
+
+證明4. $\dfrac{d}{dx} \cot x =  -\csc^2x$
+
+$\cot x = \dfrac{\cos x}{\sin x}$
+
+$\dfrac{d}{dx} \cot x = \dfrac{d}{dx} \dfrac{\cos x}{\sin x}$
+
+$= \dfrac{\sin x(\cos x)' - \cos x(\sin x)'}{\sin^2 x}$
+
+$= \dfrac{\sin x(-\sin x) - \cos x(\cos x)}{\sin^2x}$
+
+$= \dfrac{-\sin^2x-\cos^2x}{\sin^2x}$
+
+$= -1-\cot^2x = -\csc^2 x$
+
+
+
+證明5. $\dfrac{d}{dx} \sec x = \tan x \sec x$
+
+$\sec x = \dfrac{1}{\cos x}$
+
+$\dfrac{d}{dx} \sec x = \dfrac{d}{dx} \dfrac{1}{\cos x}$
+
+$= \dfrac{(\cos x)(1)' - (1)(\cos x)'}{\cos^2 x}$
+
+$= \dfrac{0 - (-\sin x)}{\cos^2 x} = \dfrac{\sin x}{\cos^2 x} = \tan x \sec x$
+
+
+
+證明6. $\dfrac{d}{dx}\csc x = -\csc x \cot x$
+
+$\csc x = \dfrac{1}{\sin x}$
+
+$\dfrac{d}{dx}\csc x = \dfrac{d}{dx} \dfrac{1}{\sin x}$
+
+$=\dfrac{(\sin x)(1)' - (1)(\sin x)'}{\sin^2 x}$
+
+$= \dfrac{0 - \cos x}{\sin^2 x} = \dfrac{-\cos x}{\sin^2 x} = -\csc x\cot x$
+
+
+
+#### Answer
+
+見Solution.
+
+
+
+### Exercise 40
+
+#### Statement
+
+已知$f(x) = \dfrac{ax^4+b}{x^2}$且$f$的圖形在點$(1, 2)$的切線方程式為$8x-y=6$，求$a, b$之值。
+
+
+
+#### Solution
+
+$f'(x) = \dfrac{x^2(ax^4+b)' - (ax^4+b)(x^2)'}{x^4}$
+
+$= \dfrac{(x^2)(4ax^3)-(ax^4+b)(2x)}{x^4}$
+
+$= \dfrac{4ax^5-ax^6+2bx}{x^4}$
+
+
+
+考慮在點$(1,2)$的切線方程式為$8x-y=6$，可以得知$m = -\dfrac{8}{-1} = 8$
+
+因此$f'(1) = 8 = 4a-a+2b = 3a+2b$
+
+$f(1) = 2 = a+b$
+
+
+
+$3a+2b = 8$
+
+$a+b=2$
+
+解聯立得到$a = 4, b = -2$
+
+
+
+#### Answer
+
+$a = 4, b = -2$
+
+
+
+### Exercise 41
+
+#### Statement
+
+假設$f(1) = 2$、$f'(1) = -1$、$g(1) = -2$、$g'(1) = 3$且$h(x) = \dfrac{xf(x)}{x+g(x)}$，求$h'(1)$
+
+
+
+#### Solution
+
+$h'(x) = \dfrac{(x+g(x))(xf(x))' - (xf(x))(x+g(x))'}{(x+g(x))^2}$
+
+$= \dfrac{(x+g(x))(f(x)+xf'(x)) - (xf(x))(1+g'(x))}{(x+g(x))^2}$
+
+
+
+$h'(1) = \dfrac{(1+g(1))(f(1)+1f'(1))-(1f(1))(1+g'(1))}{(1+g(1))^2}$
+
+$= \dfrac{(1+(-2))(2+(-1))-(2)(1+3)}{(1+(-2))^2}$
+
+$= \dfrac{(-1)(1)-(2)(4)}{(-1)^2}$
+
+$= \dfrac{-1-8}{1} = -9$
+
+
+
+#### Answer
+
+$h'(1) = -9$
