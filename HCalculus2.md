@@ -770,7 +770,7 @@ $g(x) = \dfrac{1}{10}x^{10}-4x^\frac{3}{2}+3$
 
 $g'(x) = \dfrac{d}{dx}\dfrac{1}{10}x^{10} - \dfrac{d}{dx}4x^\frac{3}{2} + \dfrac{d}{dx}3$
 
-$ = x^9 - 6x^\frac{1}{2}$
+$= x^9 - 6x^\frac{1}{2}$
 
 $= x^9-6\sqrt{x}$
 
