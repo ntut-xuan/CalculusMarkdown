@@ -515,3 +515,118 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 #### Answer
 
 不可微。
+
+
+
+### Exercise 15
+
+#### Statement
+
+假設$f(x) = \left\{\begin{array}\ x^3+1, & x < 2 \\ mx+b, & x \ge 2\end{array}\right.$，且$f$處處可微分，求$m, b$之值
+
+
+
+#### Solution
+
+在複合函數中，每個函數均為多項式，故處處可微。
+
+只需要考慮複合函數的接點是否可微即可。
+
+
+
+$f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$，考慮$\displaystyle \lim_{x\rightarrow 2} \dfrac{f(x)-f(2)}{x-2}$是否存在。
+
+$f(2) = 2m+b$
+
+考慮$\displaystyle \lim_{x\rightarrow 2^-} \dfrac{f(x)-f(2)}{x-2}$，$2^- < 2$，因此$f(x) = x^3+1$
+
+所以得到$\displaystyle \lim_{x\rightarrow 2^-} \dfrac{x^3+1 - (2m+b)}{x-2}$
+
+又$\displaystyle \lim_{x\rightarrow 2^-} \dfrac{x^3+1 - (2m+b)}{x-2}$必須要能夠被$x-2$整除
+
+因此得到$\displaystyle \lim_{x\rightarrow 2^-} x^2+2x+4$，且$9-2m-b = 0 \Rightarrow 2m+b=9$
+
+因此$\displaystyle \lim_{x\rightarrow 2^-} x^2+2x+4 = 2^2+2\times 2 + 4 = 12$
+
+
+
+考慮$\displaystyle \lim_{x\rightarrow 2^+} \dfrac{f(x)-f(2)}{x-2}$，$2^+ > 2$，因此$f(x) = mx+b$
+
+所以$\displaystyle \lim_{x\rightarrow 2^+} \dfrac{mx+b-(2m+b)}{x-2} = \lim_{x\rightarrow 2^+} \dfrac{mx-2m}{x-2} = \lim_{x\rightarrow 2^+} m\dfrac{x-2}{x-2} = \lim_{x\rightarrow 2^+} m = m$
+
+
+
+若$f$在$x=2$可微，則$\displaystyle \lim_{x\rightarrow 2} \dfrac{f(x)-f(2)}{x-2}$存在。
+
+故$\displaystyle \lim_{x\rightarrow 2^-} \dfrac{f(x)-f(2)}{x-2} = \displaystyle \lim_{x\rightarrow 2^+} \dfrac{f(x)-f(2)}{x-2}$，因此$m = 12$
+
+又$2m+b=9$，所以$24+b=9 \Rightarrow b = -15$
+
+
+
+#### Answer
+
+$m = 12, b = -15$
+
+
+
+### Exercise 16
+
+#### Statement
+
+若$f$在$x=1$連續且$\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} = 6$，求$f'(1)$
+
+
+
+#### Answer
+
+$\dfrac{-3}{2}$或$\dfrac{3}{2}$
+
+
+
+### Exercise 17
+
+#### Statement
+
+若$f$在$x=2$連續且$\displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^3-8}{x^2-4} = 6$，求$f'(2)$
+
+
+
+#### Answer
+
+$2$
+
+### Exercise 18
+
+#### Statement
+
+若$f$在$x = 1$連續且$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1-3h)}{h} = 10$，求$f'(1)$
+
+
+
+#### Solution
+
+考慮$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1-3h)}{h} = 10$
+
+改寫成$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1)-(f(1-3h)-f(1))}{h} = 10$
+
+利用極限四則運算，分解成$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1)}{h}-\lim_{h\rightarrow 0}\dfrac{f(1-3h)-f(1)}{h} = 10$
+
+令$t=2h, v= -3h$，則
+
+$\displaystyle \lim_{t\rightarrow 0} \dfrac{f(1+t)-f(1)}{\dfrac{1}{2}t}-\lim_{v\rightarrow 0}\dfrac{f(1+v)-f(1)}{\dfrac{-1}{3}v} = 10$
+
+$\displaystyle \lim_{t\rightarrow 0} 2\dfrac{f(1+t)-f(1)}{t}-\lim_{v\rightarrow 0}-3\dfrac{f(1+v)-f(1)}{v} = 10$
+
+$\displaystyle 2\lim_{t\rightarrow 0} \dfrac{f(1+t)-f(1)}{t}+3\lim_{v\rightarrow 0}\dfrac{f(1+v)-f(1)}{v} = 10$
+
+利用$f'(x) = \displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+h)-f(1)}{h}$，所以
+
+$2f'(1) + 3f'(1) = 10$，$f'(1) = 2$
+
+
+
+#### Answer
+
+$f'(1) = 2$
+
