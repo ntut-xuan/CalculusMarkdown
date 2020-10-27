@@ -578,6 +578,28 @@ $m = 12, b = -15$
 
 
 
+#### Solution
+
+$f'(1) = \displaystyle \lim_{x\rightarrow 1} \dfrac{f(x)-f(1)}{x-1}$
+
+ $\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} = \dfrac{(f(x)-2)(f(x)+2)}{x-1}$
+
+我們可以考慮成
+
+當$f(1) = 2$時，$\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} =  \lim_{x\rightarrow 1} \dfrac{(f(x)-2)}{x-1} \cdot \lim_{x\rightarrow 1} (f(x)+2) = f'(1)\cdot \lim_{x\rightarrow 1}(f(x)+2) = 6$
+
+當$f(1) = -2$時，$\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} =  \lim_{x\rightarrow 1} \dfrac{(f(x)+2)}{x-1} \cdot \lim_{x\rightarrow 1} (f(x)-2) = f'(1) \cdot \lim_{x \rightarrow 1} (f(x)-2) = 6$
+
+又因$\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} = 6$ 極限存在，當$\displaystyle \lim_{x\rightarrow 1} (x-1) = 0$時，$\displaystyle \lim_{x\rightarrow 1} [f(x)]^2-4=[f(1)]^2-4=0$，得到$f(1) = \pm 2$
+
+當$f(1) = 2$時，$f'(1) \cdot \displaystyle  \lim_{x\rightarrow 1} (f(x) + 2) = f'(1) \cdot (f(1)+2) = f'(1) \cdot 4 = 6$，得到$f'(1) = \dfrac{3}{2}$
+
+當$f(1) = -2$時，$f'(1) \cdot \displaystyle  \lim_{x\rightarrow 1} (f(x) - 2) = f'(1) \cdot (f(1)-2) = f'(1) \cdot (-4) = 6$，得到$f'(1) = \dfrac{-3}{2}$
+
+因此$f'(1) = \dfrac{3}{2}$或者$\dfrac{-3}{2}$
+
+
+
 #### Answer
 
 $\dfrac{-3}{2}$或$\dfrac{3}{2}$
@@ -592,9 +614,31 @@ $\dfrac{-3}{2}$或$\dfrac{3}{2}$
 
 
 
+#### Solution
+
+$\displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^3-8}{x^2-4} = \lim_{x\rightarrow 2} \dfrac{(f(x)-2)([f(x)]^2+2x+4)}{(x-2)(x+2)} = \lim_{x\rightarrow 2} \dfrac{f(x)-2}{x-2} \cdot \lim_{x\rightarrow 2} \dfrac{[f(x)]^2+2f(x)+4}{x+2}$
+
+$= f'(2) \cdot \displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^2+2f(x)+4}{x+2} = 6$
+
+
+
+由於$\displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^3-8}{x^2-4}=6$極限存在，因此當$\displaystyle \lim_{x\rightarrow 2} (x^2-4) = 0$，則$\displaystyle \lim_{x\rightarrow 2} [f(x)]^3-8=0$
+
+因此$[f(2)]^3-8 = 0,\ f(2) = 2$
+
+
+
+故$f'(2) \cdot \displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^2+2f(x)+4}{x+2} = f'(2) \cdot \dfrac{[f(2)]^2+2f(2)+4}{4} = f'(2) \cdot \dfrac{12}{4}= 6$
+
+因此$f'(2) = 2$
+
+
+
 #### Answer
 
-$2$
+$f'(2) = 2$
+
+
 
 ### Exercise 18
 
