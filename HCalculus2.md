@@ -2168,3 +2168,100 @@ $\dfrac{dy}{dx} = y' = \dfrac{-x^2}{\sqrt[3]{(x^3-2)^4}}$
 
 
 
+### Exercise 8
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$f(x) = \dfrac{1}{(x^3-3)^2}$
+
+
+
+#### Solution
+
+令$u = x^3-3$，則$f(x) = \dfrac{1}{u^2} = u^{-2}$
+
+因此$f'(x) = \dfrac{d}{dx} u^{-2}$
+
+$= \dfrac{d}{du} u^{-2} \dfrac{du}{dx}$
+
+$= -2u^{-3} \dfrac{d}{dx} u$
+
+還原$u$，得到$f'(x) = -2(x^3-3)^{-3} \dfrac{d}{dx}(x^3-3)$
+
+$= -6x^2(x^3-3)^{-3}  = \dfrac{-6x^2}{(x^3-3)^3}$
+
+
+
+#### Answer
+
+$f'(x) =  \dfrac{-6x^2}{(x^3-3)^3}$
+
+
+
+### Exercise 9
+
+#### Statement
+
+利用連鎖法則求函數的導函數。
+
+$f(x) = \dfrac{1}{1-3x}$
+
+
+
+#### Solution
+
+$f(x) = \dfrac{1}{1-3x} = (1-3x)^{-1}$
+
+令$u = (1-3x)$，則$f(x) = u^{-1}$
+
+
+
+$f'(x) = \dfrac{d}{dx} u^{-1} = \dfrac{d}{du} u^{-1} \dfrac{du}{dx}$
+
+$= -u^{-2} \dfrac{d}{dx} u$
+
+還原$u$得到$f'(x) = -(1-3x)^{-2}\dfrac{d}{dx}(1-3x)$
+
+$= -(1-3x)^{-2} (-3) = 3(1-3x)^{-2} = \dfrac{3}{(1-3x)^2}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{3}{(1-3x)^2}$
+
+
+
+### Exercise 10
+
+#### Statement
+
+$f(x) = \dfrac{3}{(2x-1)^3}$
+
+
+
+#### Solution
+
+$f(x) = \dfrac{3}{(2x-1)^3} = 3(2x-1)^{-3}$
+
+令$u = 2x-1$，則$f(x) = 3u^{-3}$
+
+因此$f'(x) = \dfrac{d}{dx} 3u^{-3} = \dfrac{d}{du} 3u^{-3} \dfrac{du}{dx}$
+
+$= -9u^{-4} \dfrac{d}{dx} u$
+
+還原$u$，得到$f'(x) = -9(2x-1)^{-4} \dfrac{d}{dx}(2x-1)$
+
+$= -18(2x-1)^{-4} = \dfrac{-18}{(2x-1)^4}$
+
+
+
+因此$f'(x) = \dfrac{-18}{(2x-1)^4}$
+
+
+
+#### Answer
+
+$f'(x) = \dfrac{-18}{(2x-1)^4}$
