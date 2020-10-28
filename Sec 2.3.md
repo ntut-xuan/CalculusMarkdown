@@ -1389,7 +1389,45 @@ $y' = \dfrac{2x^2+3}{\sqrt{x^2+3}}$
 
 ### Statement
 
+利用連鎖法則求函數的導函數。
+
 $y = \sin^3(2x)\cos (2x)$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(\sin^3(2x)\cos (2x))$
+
+$= \dfrac{d}{dx}(\sin^3 (2x))\cos 2x + (\sin^3(2x)) \dfrac{d}{dx}(\cos 2x)$
+
+令$u = 2x$，且$t = \sin u$
+
+因此$f'(x) = \dfrac{d}{dx}(t^3) + (\sin^3(2x)) \dfrac{d}{dx}(\cos u)$
+
+$f'(x) = \dfrac{d}{dt}(t^3) \dfrac{dt}{dx} + (\sin^3(2x)) \dfrac{d}{du}(\cos u) \dfrac{du}{dx}$
+
+$= 3t^2 \dfrac{d}{dx} t + (\sin^3(2x))(-\sin u) \dfrac{d}{dx} u$
+
+還原$t$，得到$f'(x) = 3\sin^2 u \dfrac{d}{dx}(\sin u) + (\sin^3(2x))(-\sin u) \dfrac{d}{dx} u$
+
+$= 3\sin^2 u (\dfrac{d}{du}(\sin u)\dfrac{du}{dx}) + (\sin^3(2x))(-\sin u) (\dfrac{d}{du} u \dfrac{du}{dx})$
+
+$= 3\sin^2 u ((\cos u)\dfrac{d}{dx}u) + (\sin^3(2x))(-\sin u) (\dfrac{d}{dx}u)$
+
+還原$u$，得到$f'(x) = 3(\sin^2 2x) ((\cos 2x)\dfrac{d}{dx}(2x)) + (\sin^3(2x))(-\sin 2x) (\dfrac{d}{dx}(2x))$
+
+$= 3(\sin^2 2x) ((\cos 2x)\times 2) + (\sin^3(2x))(-\sin 2x))\times 2$
+
+$= 6\sin^2 2x \cos 2x + 2(\sin^3(2x))(-\sin 2x))$
+
+$= 6\sin^2 2x \cos 2x - 2\sin^4(2x)$
+
+
+
+### Answer
+
+$y' = 6\sin^2 2x \cos 2x - 2\sin^4(2x)$
 
 
 
@@ -1397,7 +1435,43 @@ $y = \sin^3(2x)\cos (2x)$
 
 ### Statement
 
+利用連鎖法則求函數的導函數。
+
 $y = \dfrac{1+\sin 2x}{1-\sin 2x}$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(\dfrac{1+\sin 2x}{1-\sin 2x})$
+
+$= \dfrac{(1-\sin 2x)(1+\sin 2x)' - (1+\sin 2x)(1- \sin 2x)'}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(\dfrac{d}{dx}1+\dfrac{d}{dx}\sin 2x) - (1+\sin 2x)(\dfrac{d}{dx}1- \dfrac{d}{dx}\sin 2x)}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(\dfrac{d}{dx}\sin 2x) - (1+\sin 2x)(-\dfrac{d}{dx}\sin 2x)}{(1-\sin 2x)^2}$
+
+令$u = 2x$，則$y' = \dfrac{(1-\sin 2x)(\dfrac{d}{dx}\sin u) - (1+\sin 2x)(-\dfrac{d}{dx}\sin u)}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(\dfrac{d}{du}\sin u \dfrac{du}{dx}) - (1+\sin 2x)(-\dfrac{d}{du}\sin u\dfrac{du}{dx})}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(\cos u \dfrac{d}{dx} u) - (1+\sin 2x)(-\cos u\dfrac{d}{dx}u)}{(1-\sin 2x)^2}$
+
+還原$u$，得到$y' = \dfrac{(1-\sin 2x)(\cos 2x \dfrac{d}{dx} 2x) - (1+\sin 2x)(-\cos 2x \dfrac{d}{dx} 2x )}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(2\cos 2x) - (1+\sin 2x)(-2\cos 2x)}{(1-\sin 2x)^2}$
+
+$= \dfrac{(1-\sin 2x)(2\cos 2x) + (1+\sin 2x)(2\cos 2x)}{(1-\sin 2x)^2}$
+
+$= \dfrac{2(2\cos 2x)}{(1-\sin 2x)^2}$
+
+$= \dfrac{4\cos 2x}{(1-\sin 2x)^2}$
+
+
+
+### Answer
+
+$y' = \dfrac{4\cos 2x}{(1-\sin 2x)^2}$
 
 
 
@@ -1405,7 +1479,43 @@ $y = \dfrac{1+\sin 2x}{1-\sin 2x}$
 
 ### Statement
 
-$y = \tan(\sin(2x+1)))$
+利用連鎖法則求函數的導函數。
+
+$y = \tan(\sin(2x+1))$
+
+
+
+### Solution
+
+令$u = \sin(2x + 1)$，則$y = \tan u$
+
+因此$y' = \dfrac{d}{dx} \tan u$
+
+$= \dfrac{d}{du} \tan u \dfrac{du}{dx}$
+
+$= \dfrac{d}{du} \tan u \dfrac{d}{dx} u$
+
+$= \sec^2 u \dfrac{d}{dx} u$
+
+還原$u$，得到$\sec^2(\sin(2x+1)) \dfrac{d}{dx}(\sin(2x+1))$
+
+令$t = 2x+1$，則$y' = \sec^2(\sin(2x+1)) \dfrac{d}{dx}(\sin t)$
+
+$= \sec^2(\sin(2x+1))(\dfrac{d}{dt}(\sin t) \dfrac{dt}{dx})$
+
+$= \sec^2(\sin(2x+1))(\cos  t \dfrac{d}{dx} t)$
+
+還原$t$，得到$y' = \sec^2(\sin(2x+1))(\cos(2x+1)\dfrac{d}{dx}(2x+1))$
+
+$= \sec^2(\sin(2x+1))(\cos(2x+1)2x)$
+
+$= 2x\sec^2\sin(2x+1)\cos(2x+1)$
+
+
+
+### Answer
+
+$y' = 2x\sec^2\sin(2x+1)\cos(2x+1)$
 
 
 
@@ -1413,7 +1523,43 @@ $y = \tan(\sin(2x+1)))$
 
 ### Statement
 
+利用連鎖法則求函數的導函數。
+
 $y = \tan^3(x^2)$
+
+
+
+### Answer
+
+令$u = \tan(x^2)$，則$y = u^3$
+
+因此$y' = \dfrac{d}{dx} u^3$
+
+$= \dfrac{d}{du} u^3 \dfrac{du}{dx}$
+
+$= 3u^2 \dfrac{d}{dx} u$
+
+
+
+還原$u$，得到$y' = 3\tan^2(x^2) \dfrac{d}{dx} \tan(x^2)$
+
+令$t = x^2$，則$y' = 3\tan^2(x^2) \dfrac{d}{dx} \tan(t)$
+
+$= 3\tan^2(x^2) \dfrac{d}{dt} \tan(t) \dfrac{dt}{dx}$
+
+$= 3\tan^2(x^2) \sec^2(t)\dfrac{d}{dx} t$
+
+還原$t$，得到$y' = 3\tan^2(x^2) \sec^2(x^2)\dfrac{d}{dx} x^2$
+
+$= 3\tan^2(x^2) \sec^2(x^2)\times 2x$
+
+$= 6x\tan^2(x^2) \sec^2(x^2)$
+
+
+
+### Answer
+
+$y' = 6x\tan^2(x^2) \sec^2(x^2)$
 
 
 
@@ -1421,7 +1567,371 @@ $y = \tan^3(x^2)$
 
 ### Statement
 
+利用連鎖法則求函數的導函數。
+
 $y = (1+\sec^3(2x))^5$
 
 
+
+### Solution
+
+令$u = 1+\sec^3(2x)$，則$y = u^5$
+
+因此$y' = \dfrac{d}{dx} u^5$
+
+$= \dfrac{d}{du} u^5 \dfrac{du}{dx}$
+
+$= 5u^4 \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = 5(1+\sec^3(2x))^4 \dfrac{d}{dx}(1+\sec^3(2x))$
+
+$= 5(1+\sec^3(2x))^4(\dfrac{d}{dx}1+\dfrac{d}{dx}\sec^3(2x))$
+
+$= 5(1+\sec^3(2x))^4(\dfrac{d}{dx}\sec^3(2x))$
+
+令$t = \sec(2x)$，因此$y' = 5(1+\sec^3(2x))^4(\dfrac{d}{dx}t^3)$
+
+$= 5(1+\sec^3(2x))^4(\dfrac{d}{dt}t^3 \dfrac{dt}{dx})$
+
+$= 5(1+\sec^3(2x))^4(3t^2 \dfrac{d}{dx} t)$
+
+還原$t$，得到$y' = 5(1+\sec^3(2x))^4(3\sec^2(2x) \dfrac{d}{dx} \sec(2x))$
+
+令$v = 2x$，則$y' = 5(1+\sec^3(2x))^4(3\sec^2(2x) \dfrac{d}{dx} \sec(v))$
+
+$= 5(1+\sec^3(2x))^4(3\sec^2(2x) \dfrac{d}{dv} \sec(v) \dfrac{dv}{dx})$
+
+$= 5(1+\sec^3(2x))^4(3\sec^2(2x) \tan(v) \sec(v) \dfrac{d}{dx} v)$
+
+還原$v$，得到$y'= 5(1+\sec^3(2x))^4(3\sec^2(2x) \tan(2x) \sec(2x) \dfrac{d}{dx} (2x))$
+
+$= 5(1+\sec^3(2x))^4(6\sec^2(2x) \tan(2x) \sec(2x))$
+
+$= 30(1+\sec^3(2x))^4(\sec^3(2x) \tan(2x))$
+
+
+
+### Answer
+
+$y' = 30(1+\sec^3(2x))^4(\sec^3(2x) \tan(2x))$
+
+
+
+## Exercise 41
+
+### Statement
+
+假設$F(x) = g(f(x))$、$f(-2) = 6$、$f'(-2) = 3$且$g'(6) = 2$，求$F'(-2)$。
+
+
+
+### Solution
+
+$F(x) = g(f(x))$，令$u = f(x)$
+
+因此$F'(x) = \dfrac{d}{dx} g(u)$
+
+$= \dfrac{d}{du} g(u) \dfrac{du}{dx}$
+
+$= g'(u) \dfrac{d}{dx} u$
+
+還原$u$，得到$F'(x) = g'(f(x)) \dfrac{d}{dx} f(x)$
+
+$= g'(f(x)) f'(x)$
+
+因此$F'(-2) = g'(f(-2)) f'(-2) = g'(6) \times 3 = 2\times 3 = 6$
+
+
+
+### Answer
+
+$F'(-2) = 6$
+
+
+
+## Exercise 42
+
+### Statement
+
+假設$F(x) = f(f(x))$、$f(1) = 2$、$f'(1) =3$ 且 $f'(2) = 5$，求$F'(1)$
+
+
+
+### Solution
+
+令$u = f(x)$，則$F(x) = f(u)$
+
+因此$F'(x) = \dfrac{d}{dx} f(u)$
+
+$= \dfrac{d}{du} f(u) \dfrac{du}{dx} = f'(u) \dfrac{d}{dx} u$
+
+還原$u$，得到$F'(x) = f'(f(x)) \dfrac{d}{dx} f(x) = f'(f(x)) f'(x)$
+
+因此$F'(1) = f'(f(1)) f'(1) = f'(2) \times 3 = 5\times 3 = 15$
+
+
+
+### Answer
+
+$F'(1) = 15$
+
+
+
+## Exercise 43
+
+### Statement
+
+假設$y = \dfrac{1}{(4x+1)^6}$、$x = \dfrac{1}{1-3t}$、$t = \sqrt{2s+5}$，求$\dfrac{dy}{ds}|_{x=2}$
+
+
+
+### Solution
+
+$y = \dfrac{1}{(4x+1)^6} = (4x+1)^{-6}$
+
+令$u = 4x+1$，則$\dfrac{dy}{ds} = \dfrac{d}{ds} u^{-6}$
+
+$= \dfrac{d}{du} u^{-6} \dfrac{du}{ds}$
+
+$= -6u^{-7} \dfrac{d}{ds} u$
+
+還原$u$，得到$\dfrac{dy}{ds} = -6(4x+1)^{-7} \dfrac{d}{ds}(4x+1)$
+
+$= -6(4x+1)^{-7} (\dfrac{d}{ds}4x+\dfrac{d}{ds}1)$
+
+$= -6(4x+1)^{-7} (\dfrac{d}{ds}4x)$
+
+$= -6(4x+1)^{-7} (\dfrac{d}{dx}4x\dfrac{dx}{ds})$
+
+$= -6(4x+1)^{-7} (4\dfrac{dx}{ds})$
+
+帶入$x$，得到$\dfrac{dy}{ds} = -6(\dfrac{4}{1-3t}+1)^{-7} (4\dfrac{d}{ds}\dfrac{1}{1-3t})$
+
+$=-24(\dfrac{4}{1-3t}+1)^{-7} (\dfrac{d}{ds}\dfrac{1}{1-3t})$
+
+$=-24(\dfrac{4}{1-3t}+1)^{-7} (\dfrac{d}{dt}\dfrac{1}{1-3t} \dfrac{dt}{ds})$
+
+$=-24(\dfrac{4}{1-3t}+1)^{-7} (\dfrac{-(1-3t)'}{(1-3t)^2} \dfrac{dt}{ds})$
+
+$=-24(\dfrac{4}{1-3t}+1)^{-7} (\dfrac{3}{(1-3t)^2} \dfrac{d}{ds}t)$
+
+帶入$t$，得到$\dfrac{dy}{ds} = -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{d}{ds}\sqrt{2s+5})$
+
+令$v = 2s+5$，則$\dfrac{dy}{ds} = -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{d}{ds}\sqrt{v})$
+
+$= -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{d}{dv}\sqrt{v} \dfrac{dv}{ds})$
+
+$= -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{1}{2\sqrt{v}} \dfrac{d}{ds}v)$
+
+還原$v$，得到$\dfrac{dy}{ds} = = -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{1}{2\sqrt{2s+5}} \dfrac{d}{ds}(2s+5))$
+
+$\dfrac{dy}{ds} = -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{1}{2\sqrt{2s+5}}\times 2)$
+
+$= -24(\dfrac{4}{1-3\sqrt{2s+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2s+5})^2} \dfrac{1}{\sqrt{2s+5}})$
+
+令$s = 2$，則$\dfrac{dy}{ds}|_{x=2} = -24(\dfrac{4}{1-3\sqrt{2\times 2+5}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{2\times 2+5})^2} \dfrac{1}{\sqrt{2\times 2+5}})$
+
+$= -24(\dfrac{4}{1-3\sqrt{9}}+1)^{-7} (\dfrac{3}{(1-3\sqrt{9})^2} \dfrac{1}{\sqrt{9}})$
+
+$= -24(\dfrac{4}{1-9}+1)^{-7} (\dfrac{3}{(1-9)^2} \dfrac{1}{\sqrt{9}})$
+
+$= -24(\dfrac{4}{-8}+1)^{-7} (\dfrac{3}{(-8)^2} \dfrac{1}{3})$
+
+$= -24(\dfrac{1}{2})^{-7}(\dfrac{1}{2^6})$
+
+$= {-24}\times 2 = -48$
+
+
+
+### Answer
+
+$\dfrac{dy}{ds}|_{x=2} = -48$
+
+
+
+## Exercise 44
+
+### Statement
+
+假設$f(x^3) = x^2+1$，求$f'(1)$
+
+
+
+### Solution
+
+令$u = x^3$，則
+
+$\dfrac{d}{dx} f(u) = \dfrac{d}{dx}(x^2+1)$
+
+$\Rightarrow \dfrac{d}{du} f(u) \dfrac{du}{dx} = \dfrac{d}{dx}x^2+\dfrac{d}{dx}1$
+
+$f'(u) \dfrac{d}{dx}u = 2x$
+
+還原$u$，得到$f'(x^3) \dfrac{d}{dx} x^3 = 2x$
+
+$f'(x^3) 3x^2 = 2x$
+
+$f'(x^3) = \dfrac{2x}{3x^2} = \dfrac{2}{3x}$
+
+
+
+因此令$x=1$，則$f'(1) = \dfrac{2}{3}$
+
+
+
+### Answer
+
+$f'(1) = \dfrac{2}{3}$
+
+
+
+## Exercise 45
+
+### Statement
+
+假設$g(1) = 2$、$g'(1) = 3$ 且 $f(x^3) = xg(x^2)$，求$f'(1)$
+
+
+
+### Solution
+
+等號兩邊微分。
+
+$\dfrac{d}{dx} f(x) = \dfrac{d}{dx}(xg(x^2))$
+
+令$v = x^2$，則
+
+$\dfrac{d}{dx}f(x) = \dfrac{d}{dx}(xg(v))$
+
+$\Rightarrow f'(x) = \dfrac{d}{dx}(x) g(v) + x\dfrac{d}{dx}(g(v))$
+
+$\Rightarrow f'(x) = \dfrac{d}{dx}(x) g(v) + x\dfrac{d}{dv}g(v)\dfrac{dv}{dx}$
+
+$\Rightarrow  f'(x) = g(v) + xg'(v)\dfrac{d}{dx}v$
+
+還原$v$，得到$f'(x) = g(x^2) + xg'(x^2)\dfrac{d}{dx}x^2$
+
+$\Rightarrow f'(x) = g(x^2) + xg'(x^2)2x$
+
+$\Rightarrow  f'(x) = g(x^2) + 2x^2g'(x^2)$
+
+將$x$帶入$1$，得到$f'(1) = 2+2g'(1)$
+
+$f'(1) = 2+2\times 3 = 8$
+
+
+
+### Answer
+
+$f'(1) = 8$
+
+
+
+## Exercise 46
+
+### Statement
+
+假設$f(x^3) = f(x) + 2x-1$，求$f'(1)$
+
+
+
+### Solution
+
+令$u=x^3$，等號兩邊微分
+
+$\dfrac{d}{dx} f(u) = \dfrac{d}{dx}(f(x)+2x-1)$
+
+$\Rightarrow \dfrac{d}{du}f(u) \dfrac{du}{dx} = \dfrac{d}{dx}f(x) + \dfrac{d}{dx}(2x) - \dfrac{d}{dx}(1)$
+
+$\Rightarrow f'(u) \dfrac{d}{dx} u = f'(x) + 2$
+
+還原$u$，得到$f'(x^3) \dfrac{d}{dx}(x^3) = f'(x) + 2$
+
+$\Rightarrow f'(x^3) 3x^2 = f'(x) + 2$
+
+將$x$帶入$1$，得到$3f'(1) = f'(1) + 2$
+
+$\Rightarrow 2f'(1) = 2$
+
+$\Rightarrow f'(1) = 1$
+
+
+
+### Answer
+
+$f'(1) = 1$
+
+
+
+## Exercise 47
+
+### Statement
+
+假設$\sqrt{11+f(2x)}+xf(2x) = 3-2x$，求$f'(2)$
+
+
+
+### Solution
+
+令$x =1, y = f(2)$，解$\sqrt{11+y} + y = 3-2$
+
+$\Rightarrow \sqrt{11+y} = 1-y$
+
+$\Rightarrow 11 + y = 1 - 2y + y^2$
+
+$\Rightarrow y^2 -3y - 10 = 0$
+
+得到$y=f(2)=5$或者$y=f(2)=-2$
+
+令$v = 2x, u = 11+f(v)$，改寫式子成$\sqrt{u}+xf(v) = 3 - 2x$
+
+等號兩邊微分
+
+$\dfrac{d}{dx}(\sqrt{u} + xf(v)) = \dfrac{d}{dx}(3-2x)$
+
+$\Rightarrow \dfrac{d}{dx} \sqrt{u} + \dfrac{d}{dx}(xf(v)) = \dfrac{d}{dx} 3 - \dfrac{d}{dx} 2x$
+
+$\Rightarrow \dfrac{d}{du} \sqrt{u} \dfrac{du}{dx} + (\dfrac{d}{dx}(x)f(v) + x\dfrac{d}{dx}(f(v))) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{u}} \dfrac{d}{dx} u + (f(v) + x\dfrac{d}{dv}(f(v)) \dfrac{dv}{dx}) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{u}} \dfrac{d}{dx} u + (f(v) + x f'(v) \dfrac{d}{dx}v) = -2$
+
+**部分**還原$u, v$，得$\dfrac{1}{2\sqrt{11+f(2x)}} \dfrac{d}{dx} (11+f(v)) + (f(2x) + x f'(2x) \dfrac{d}{dx}2x) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{11+f(2x)}}  (\dfrac{d}{dx}11+\dfrac{d}{dx}f(v)) + (f(2x) + x f'(2x) \times 2) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{11+f(2x)}}  (\dfrac{d}{dx}f(v)) + (f(2x) + x f'(2x) \times 2) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{11+f(2x)}}  (\dfrac{d}{dv}f(v)\dfrac{dv}{dx}) + (f(2x) + x f'(2x) \times 2) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{11+f(2x)}}  (f'(v)\dfrac{d}{dx}v) + (f(2x) + x f'(2x) \times 2) = -2$
+
+還原$v$，得到$\dfrac{1}{2\sqrt{11+f(2x)}}  (f'(2x)\dfrac{d}{dx}2x) + (f(2x) + x f'(2x) \times 2) = -2$
+
+$\Rightarrow \dfrac{1}{2\sqrt{11+f(2x)}}  (2f'(2x)) + (f(2x) + x f'(2x) \times 2) = -2$
+
+$\Rightarrow \dfrac{2f'(2x)}{2\sqrt{11+f(2x)}} + (f(2x) + x f'(2x) \times 2) = -2$
+
+令$x = 1$，則$\dfrac{2f'(2)}{2\sqrt{11+f(2)}} + (f(2) + f'(2) \times 2) = -2$
+
+考慮$f(2) = 5$，則$\dfrac{2f'(2)}{2\sqrt{11+5}} + (5 + f'(2) \times 2) = -2$
+
+$\Rightarrow \dfrac{2f'(2)}{2\sqrt{16}} + (5 + 2f'(2)) = -2$
+
+$\Rightarrow \dfrac{f'(2)}{4} + \dfrac{(20+8f'(2))}{4} = -2$
+
+$\Rightarrow \dfrac{f'(2)+(20+8f'(2))}{4} = -2$
+
+$f'(2) = \dfrac{-28}{9}$
+
+考慮$f(2) = -2$，則$\dfrac{2f'(2)}{2\sqrt{11-2}} + (-2 + f'(2) \times 2) = -2$
+
+解出$f'(2) = 0$
+
+
+
+### Answer
+
+$f'(2) = \dfrac{-28}{9}$ 或 $0$
 
