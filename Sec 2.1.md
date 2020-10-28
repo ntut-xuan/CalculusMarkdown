@@ -4,9 +4,9 @@
 
 ## Sec 2.1
 
-### Exercise 1
+## Exercise 1
 
-#### Statement
+### Statement
 
 判斷函數在下列各點是否可微分？
 
@@ -14,7 +14,7 @@ $f(x) = \left\{\begin{array}\ x+2, & x \le 0 \\ 2-3x, & x > 0\end{array}\right.$
 
 
 
-#### Solution
+### Solution
 
 $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
@@ -40,15 +40,15 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
 
 
-#### Answer
+### Answer
 
 不可微。
 
 
 
-### Exercise 2
+## Exercise 2
 
-#### Statement
+### Statement
 
 判斷函數在下列各點是否可微分？
 
@@ -56,7 +56,7 @@ $f(x) = \sqrt[3]{x^2}$，$(0, 0)$
 
 
 
-#### Solution
+### Solution
 
 $f(x) = \sqrt[3]{x^2} = x^\frac{2}{3}$
 
@@ -76,15 +76,15 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
 
 
-#### Answer
+### Answer
 
 不可微。
 
 
 
-### Exercise 3
+## Exercise 3
 
-#### Statement
+### Statement
 
 判斷函數在下列各點是否可微分？
 
@@ -92,7 +92,7 @@ $f(x) = \left\{\begin{array}\ x+1, & x \le 0 \\ x^2+x+1, & x > 0\end{array}\righ
 
 
 
-#### Solution
+### Solution
 
 $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
@@ -118,9 +118,9 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
 
 
-### Exercise 4
+## Exercise 4
 
-#### Statement
+### Statement
 
 判斷函數在下列各點是否可微分？
 
@@ -128,7 +128,7 @@ $f(x) = |2x-4|$，$(2, 0)$
 
 
 
-#### Solution
+### Solution
 
 $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
@@ -158,21 +158,21 @@ $\displaystyle \lim_{x\rightarrow 2^+} \dfrac{-2x+4}{x - 2} = \displaystyle \lim
 
 
 
-#### Answer
+### Answer
 
 不可微。
 
 
 
-### Exercise 5
+## Exercise 5
 
-#### Statement
+### Statement
 
 若$f(x) = \left\{\begin{array}\ x\sin\dfrac{1}{x}, & x \not= 0 \\ 0, & x = 0\end{array}\right.$，求$(0, 0)$是否可微。
 
 
 
-#### Solution
+### Solution
 
 微分定義$f'(a)$可微時$\displaystyle f'(a) = \lim_{x\rightarrow a} \dfrac{f(x) - f(a)}{x-a}$存在。
 
@@ -196,21 +196,21 @@ $\displaystyle \lim_{x\rightarrow 0^-} \dfrac{x\sin\dfrac{1}{x}}{x} = \lim_{x\ri
 
 
 
-#### Answer
+### Answer
 
 $f(x)$在點$(0, 0)$時不可微。
 
 
 
-### Exercise 6
+## Exercise 6
 
-#### Statement
+### Statement
 
 若$f(x) = \left\{\begin{array}\ x^2\sin\dfrac{1}{x}, & x \not= 0 \\ 0, & x = 0\end{array}\right.$，求$(0, 0)$是否可微。
 
 
 
-#### Solution
+### Solution
 
 微分定義$f'(a)$可微時$\displaystyle f'(a) = \lim_{x\rightarrow a} \dfrac{f(x) - f(a)}{x-a}$存在。
 
@@ -250,59 +250,59 @@ $\displaystyle \lim_{x\rightarrow 0^-} \dfrac{x^2\sin\dfrac{1}{x}}{x} = \lim_{x\
 
 
 
-#### Answer
+### Answer
 
 $f(x)$可微。
 
 
 
-### Exercise 7
+## Exercise 7
 
-#### Statement
+### Statement
 
 若$f'(1) = 3$，求$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1-h)-f(1)}{h}$。
 
 
 
-#### Solution
+### Solution
 
 令$t=-h$，因此$\displaystyle \lim_{t\rightarrow 0} \dfrac{f(1+t)-f(1)}{-t} = \displaystyle \lim_{t\rightarrow 0} -\dfrac{f(1+t)-f(1)}{t} = -\displaystyle \lim_{t\rightarrow 0} \dfrac{f(1+t)-f(1)}{t} = -f'(1) = -3$
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1-h)-f(1)}{h} = -3$
 
 
 
-### Exercise 8
+## Exercise 8
 
-#### Statement
+### Statement
 
 若$g'(2) = 1$，求$\displaystyle \lim_{h\rightarrow 0} \dfrac{g(2+3h)-g(2)}{h}$。
 
 
 
-#### Solution
+### Solution
 
 令$t=3h$，則$\displaystyle \lim_{t\rightarrow 0} \dfrac{g(2+t)-g(2)}{\dfrac{1}{3}t} = \displaystyle \lim_{t\rightarrow 0} 3\dfrac{g(2+t)-g(2)}{t} = \displaystyle 3 \lim_{t\rightarrow 0} \dfrac{g(2+t)-g(2)}{t} = 3g'(2) = 3$
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{h\rightarrow 0} \dfrac{g(2+3h)-g(2)}{h} = 3$
 
 
 
-### Exercise 9
+## Exercise 9
 
-#### Statement
+### Statement
 
 若$f'(1)=2$，求$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+h)-f(1-h)}{h}$
 
 
 
-#### Solution
+### Solution
 
 
 
@@ -322,15 +322,15 @@ $\displaystyle \lim_{h\rightarrow 0} \dfrac{g(2+3h)-g(2)}{h} = 3$
 
 
 
-### Exercise 10
+## Exercise 10
 
-#### Statement
+### Statement
 
 已知$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(3+h)-f(3-h)}{h}=6$，求$f'(3)$
 
 
 
-#### Solution
+### Solution
 
 $\displaystyle \lim_{h\rightarrow 0} \dfrac{f(3+h)-f(3-h)}{h}=6$
 
@@ -356,21 +356,21 @@ $f'(3) = 3$
 
 
 
-#### Answer
+### Answer
 
 $f'(3) = 3$
 
 
 
-### Exercise 11
+## Exercise 11
 
-#### Statement
+### Statement
 
 若函數$f$的圖形在$x=2$的切線與$x$軸截距為$3$，與$y$軸截距為$2$，求$f(2)$和$f'(2)$
 
 
 
-#### Solution
+### Solution
 
 利用截距式來造出直線方程式。
 
@@ -384,7 +384,7 @@ $f$在$x=2$微分所得到的$f'(2)$，等於$x=2$時的微分切線斜率，故
 
 
 
-#### Answer
+### Answer
 
 $f(2) = \dfrac{2}{3}$
 
@@ -392,15 +392,15 @@ $f'(2) = -\dfrac{2}{3}$
 
 
 
-### Exercise 12
+## Exercise 12
 
-#### Statement
+### Statement
 
 若$f(1) = 3$且$f$圖形在$x=1$的切點通過點$(0, -2)$，求$f'(1)$
 
 
 
-#### Solution
+### Solution
 
 $f(1) = 3$，可以知道$f$過點$(1, 3)$
 
@@ -420,21 +420,21 @@ $y + 2 = \dfrac{-2-3}{0-1}x \Rightarrow y+2 = 5x$
 
 
 
-#### Answer
+### Answer
 
 $f'(1) =5$
 
 
 
-### Exercise 13
+## Exercise 13
 
-#### Statement
+### Statement
 
 假設$f(x) = \left\{\begin{array}\ x^2, & x \le 1 \\ mx+b, & x > 1\end{array}\right.$且$f$處處可微分，求$m$和$b$之值。
 
 
 
-#### Solution
+### Solution
 
 由於兩個複合函數都是多項式函數，故處處可微分。
 
@@ -470,21 +470,21 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
 
 
-#### Answer
+### Answer
 
 $m = 2,\ b = -1$
 
 
 
-### Exercise 14
+## Exercise 14
 
-#### Statement
+### Statement
 
 假設$f(x) = \left\{\begin{array}\ \dfrac{1}{3-x}, & x < 2 \\ 3-x, & x \ge 2\end{array}\right.$，試問$f$在$x=2$是否可微分？
 
 
 
-#### Solution
+### Solution
 
 
 
@@ -512,21 +512,21 @@ $f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
 
 
-#### Answer
+### Answer
 
 不可微。
 
 
 
-### Exercise 15
+## Exercise 15
 
-#### Statement
+### Statement
 
 假設$f(x) = \left\{\begin{array}\ x^3+1, & x < 2 \\ mx+b, & x \ge 2\end{array}\right.$，且$f$處處可微分，求$m, b$之值
 
 
 
-#### Solution
+### Solution
 
 在複合函數中，每個函數均為多項式，故處處可微。
 
@@ -564,21 +564,21 @@ $f(2) = 2m+b$
 
 
 
-#### Answer
+### Answer
 
 $m = 12, b = -15$
 
 
 
-### Exercise 16
+## Exercise 16
 
-#### Statement
+### Statement
 
 若$f$在$x=1$連續且$\displaystyle \lim_{x\rightarrow 1} \dfrac{[f(x)]^2-4}{x-1} = 6$，求$f'(1)$
 
 
 
-#### Solution
+### Solution
 
 $f'(1) = \displaystyle \lim_{x\rightarrow 1} \dfrac{f(x)-f(1)}{x-1}$
 
@@ -600,21 +600,21 @@ $f'(1) = \displaystyle \lim_{x\rightarrow 1} \dfrac{f(x)-f(1)}{x-1}$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{-3}{2}$或$\dfrac{3}{2}$
 
 
 
-### Exercise 17
+## Exercise 17
 
-#### Statement
+### Statement
 
 若$f$在$x=2$連續且$\displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^3-8}{x^2-4} = 6$，求$f'(2)$
 
 
 
-#### Solution
+### Solution
 
 $\displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^3-8}{x^2-4} = \lim_{x\rightarrow 2} \dfrac{(f(x)-2)([f(x)]^2+2x+4)}{(x-2)(x+2)} = \lim_{x\rightarrow 2} \dfrac{f(x)-2}{x-2} \cdot \lim_{x\rightarrow 2} \dfrac{[f(x)]^2+2f(x)+4}{x+2}$
 
@@ -634,21 +634,21 @@ $= f'(2) \cdot \displaystyle \lim_{x\rightarrow 2} \dfrac{[f(x)]^2+2f(x)+4}{x+2}
 
 
 
-#### Answer
+### Answer
 
 $f'(2) = 2$
 
 
 
-### Exercise 18
+## Exercise 18
 
-#### Statement
+### Statement
 
 若$f$在$x = 1$連續且$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1-3h)}{h} = 10$，求$f'(1)$
 
 
 
-#### Solution
+### Solution
 
 考慮$\displaystyle \lim_{h\rightarrow 0} \dfrac{f(1+2h)-f(1-3h)}{h} = 10$
 
@@ -670,7 +670,7 @@ $2f'(1) + 3f'(1) = 10$，$f'(1) = 2$
 
 
 
-#### Answer
+### Answer
 
 $f'(1) = 2$
 

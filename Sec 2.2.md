@@ -4,9 +4,9 @@
 
 ## Sec 2.2
 
-### Exercise 1
+## Exercise 1
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -14,7 +14,7 @@ $f(x) = 3x^2-2x+5$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{d}{dx} 3x^2 - \dfrac{d}{dx} 2x + \dfrac{d}{dx} 5$
 
@@ -22,16 +22,16 @@ $= 6x - 2$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 6x-2$
 
 
 
 
-### Exercise 2
+## Exercise 2
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -39,7 +39,7 @@ $g(x) = x^{\pi}+\pi x$
 
 
 
-#### Solution
+### Solution
 
 $g'(x) = \dfrac{d}{dx}x^{\pi} + \dfrac{d}{dx} \pi x$
 
@@ -47,15 +47,15 @@ $= \pi x^{\pi-1} + \pi$
 
 
 
-#### Answer
+### Answer
 
 $g'(x) = \pi x^{\pi-1} + \pi$
 
 
 
-### Exercise 3
+## Exercise 3
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -63,7 +63,7 @@ $g(x) = \dfrac{2x^3-x^2+3}{x}$
 
 
 
-#### Solution
+### Solution
 
 $g(x) = \dfrac{2x^3-x^2+3}{x} = 2x^2-x+3x^{-1}$
 
@@ -75,15 +75,15 @@ $= 4x-1-\dfrac{3}{x^2}$
 
 
 
-#### Answer
+### Answer
 
 $g'(x) = 4x-1-\dfrac{3}{x^2}$
 
 
 
-### Exercise 4
+## Exercise 4
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -92,7 +92,7 @@ $g(x) = \dfrac{1}{10}x^{10}-4x^\frac{3}{2}+3$
 
 
 
-#### Solution
+### Solution
 
 $g'(x) = \dfrac{d}{dx}\dfrac{1}{10}x^{10} - \dfrac{d}{dx}4x^\frac{3}{2} + \dfrac{d}{dx}3$
 
@@ -102,15 +102,15 @@ $= x^9-6\sqrt{x}$
 
 
 
-#### Answer
+### Answer
 
 $g'(x) = x^9-6\sqrt{x}$
 
 
 
-### Exercise 5
+## Exercise 5
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -118,7 +118,7 @@ $g(x) = 3x-\cos x+\tan x$
 
 
 
-#### Solution
+### Solution
 
 $g'(x) = \dfrac{d}{dx} 3x - \dfrac{d}{dx}\cos x + \dfrac{d}{dx} \tan x$
 
@@ -128,15 +128,15 @@ $= 3+\sin x + \sec^2x$
 
 
 
-#### Answer
+### Answer
 
 $g'(x) = 3 + \sin x + \sec^2 x$
 
 
 
-### Exercise 6
+## Exercise 6
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -144,7 +144,7 @@ $g(x) = 2 - \dfrac{1}{x^2} - \dfrac{2}{x^5}$
 
 
 
-#### Solution
+### Solution
 
 $g(x) = 2 - \dfrac{1}{x^2} - \dfrac{2}{x^5} = 2 - x^{-2} - 2x^{-5}$
 
@@ -154,15 +154,15 @@ $= 0 - (-2x^{-3}) - (-10x^{-6}) = 2x^{-3} + 10x^{-6}$
 
 
 
-#### Answer
+### Answer
 
 $2x^{-3} + 10x^{-6}$
 
 
 
-### Exercise 7
+## Exercise 7
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -170,7 +170,7 @@ $f(t) = \dfrac{6}{t^3}-\dfrac{2}{t^2}+\dfrac{1}{t}$
 
 
 
-#### Solution
+### Solution
 
 $f(t) = \dfrac{6}{t^3} - \dfrac{2}{t^2} + \dfrac{1}{t} = 6t^{-3}-2t^{-2}+t^{-1}$
 
@@ -178,15 +178,15 @@ $f'(t) = -18t^{-4} + 4t^{-3} - t^{-2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(t) = -18t^{-4} + 4t^{-3} - t^{-2}$
 
 
 
-### Exercise 8
+## Exercise 8
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -194,7 +194,7 @@ $g(x) = x^{2013}-6\sqrt{x}+2014$
 
 
 
-#### Solution
+### Solution
 
 $g'(x) = \dfrac{d}{dx} x^{2013} - \dfrac{d}{dx} 6x^\frac{1}{2} + \dfrac{d}{dx} 2014$
 
@@ -202,15 +202,15 @@ $g'(x) = 2013x^{2012} - 3x^\frac{-1}{2}$
 
 
 
-#### Answer
+### Answer
 
 $g'(x) = 2013x^{2012} - 3x^\frac{-1}{2}$
 
 
 
-### Exercise 9
+## Exercise 9
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -218,7 +218,7 @@ $y = 6\sqrt[3]{x}- \dfrac{2}{\sqrt{x}}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx} 6x^\frac{1}{3} - \dfrac{d}{dx} 2x^\frac{-1}{2}$
 
@@ -228,15 +228,15 @@ $= 2x^\frac{-2}{3} + x^\frac{-3}{2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = 2x^\frac{2}{3} + x^\frac{-3}{2}$
 
 
 
-### Exercise 10
+## Exercise 10
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -245,7 +245,7 @@ $y = (x^2-3)^2$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx}(x^2-3)^2$
 
@@ -263,15 +263,15 @@ $= 4x^3-12x$
 
 
 
-#### Answer
+### Answer
 
 $y' = 4x^3-12$
 
 
 
-### Exercise 11
+## Exercise 11
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -279,7 +279,7 @@ $y = \sec x - \dfrac{1}{x^{100}} + \pi$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx} \sec x - \dfrac{d}{dx} x^{-100} + \dfrac{d}{dx} \pi$
 
@@ -289,15 +289,15 @@ $= \tan x \sec x + 100x^{-101}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \tan x \sec x + 100x^{-101}$
 
 
 
-### Exercise 12
+## Exercise 12
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -305,7 +305,7 @@ $f(x) = x^2\sin x$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{d}{dx}x^2\sin x + x^2\dfrac{d}{dx}\sin x$
 
@@ -313,21 +313,21 @@ $f'(x) = 2x\sin x + x^2\cos x$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 2x \sin x + x^2 \cos x$
 
 
 
-### Exercise 13
+## Exercise 13
 
-#### Statement
+### Statement
 
 $f(x) = \sin x\cos x$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{d}{dx} \sin x \cos x + \sin x \dfrac{d}{dx} \cos x$
 
@@ -337,15 +337,15 @@ $= \cos^2 x - \sin^2 x = \cos 2x$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \cos 2x$
 
 
 
-### Exercise 14
+## Exercise 14
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -353,7 +353,7 @@ $f(x) = \dfrac{2x^2-x}{2x-3}$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{(2x-3)(2x^2-x)' - (2x^2-x)(2x-3)'}{(2x-3)^2}$
 
@@ -365,15 +365,15 @@ $= \dfrac{4x^2-12x+3}{(2x-3)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{4x^2-12x+3}{(2x-3)^2}$
 
 
 
-### Exercise 15
+## Exercise 15
 
-#### Statement
+### Statement
 
 求函數的導函數。
 
@@ -381,7 +381,7 @@ $y = \dfrac{3+x^2}{3-x^2}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{(3-x^2)(3+x^2)' - (3+x^2)(3-x^2)'}{(3-x^2)^2}$
 
@@ -391,9 +391,9 @@ $= \dfrac{6x-2x^3 - (-6x-2x^3)}{(3-x^2)^2}$
 
 
 
-### Exercise 16
+## Exercise 16
 
-#### Statement
+### Statement
 
 求導函數。
 
@@ -401,7 +401,7 @@ $y = \dfrac{3+2\sin x}{3-2\sin x}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{(3-2\sin x)(3+2\sin x)' - (3+2\sin x)(3-2\sin x)'}{(3-2\sin x)^2}$
 
@@ -415,15 +415,15 @@ $= \dfrac{12\cos x}{(3-2\sin x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{12\cos x}{(3-2\sin x)^2}$
 
 
 
-### Exercise 17
+## Exercise 17
 
-#### Statement
+### Statement
 
 求導函數。
 
@@ -431,7 +431,7 @@ $f(x) = \dfrac{\sqrt{x}-1}{\sqrt{x}+1}$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{d}{dx}\dfrac{\sqrt{x}-1}{\sqrt{x}+1}$
 
@@ -447,15 +447,15 @@ $= \dfrac{1}{\sqrt{x}(\sqrt{x}+1)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{1}{\sqrt{x}(\sqrt{x}+1)}$
 
 
 
-### Exercise 18
+## Exercise 18
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -463,7 +463,7 @@ $f(x) = \dfrac{\tan x}{x^3+1}$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{(x^3+1)(\tan x)' - (\tan x)(x^3+1)'}{(x^3+1)^2}$
 
@@ -471,15 +471,15 @@ $= \dfrac{(x^3+1)(\sec^2 x) - (\tan x)(3x^2)}{(x^3+1)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{(x^3+1)(\sec^2 x) - (\tan x)(3x^2)}{(x^3+1)^2}$
 
 
 
-### Exercise 19
+## Exercise 19
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -487,7 +487,7 @@ $f(x) = \dfrac{2x-1}{\cos x}$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{(\cos x)(2x-1)' - (2x-1)(\cos x)'}{\cos^2 x}$
 
@@ -501,15 +501,15 @@ $= 2\sec x+ (2x-1)\tan x\sec x$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 2\sec x+ (2x-1)\tan x\sec x$
 
 
 
-### Exercise 20
+## Exercise 20
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -517,7 +517,7 @@ $f(x) = \dfrac{x\cos x}{x-1}$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{(x-1)(x\cos x)' - (x\cos x)(x-1)'}{(x-1)^2}$
 
@@ -531,15 +531,15 @@ $= \dfrac{-x^2\sin x - \cos x + x\sin x}{(x-1)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{-x^2\sin x - \cos x + x\sin x}{(x-1)^2}$
 
 
 
-### Exercise 21
+## Exercise 21
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -547,7 +547,7 @@ $y' = \dfrac{\sqrt{x}}{1+\sqrt{x}}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{(1+\sqrt{x})(\sqrt{x})' - (\sqrt{x})(1+\sqrt{x})'}{(1+\sqrt{x})^2}$
 
@@ -557,15 +557,15 @@ $= \dfrac{\dfrac{1}{2\sqrt{x}}}{(1+\sqrt{x})^2} = \dfrac{1}{2\sqrt{x}(1+\sqrt{x}
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{1}{2\sqrt{x}(1+\sqrt{x})^2}$
 
 
 
-### Exercise 22
+## Exercise 22
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -573,7 +573,7 @@ $y = \dfrac{x}{x^2+1}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{(x^2+1)(x)' - (x)(x^2+1)'}{(x^2+1)^2}$
 
@@ -585,15 +585,15 @@ $= \dfrac{-x^2+1}{(x^2+1)^2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{-x^2+1}{(x^2+1)^2}$
 
 
 
-### Exercise 23
+## Exercise 23
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -601,7 +601,7 @@ $y = \sqrt{x}(x-1)$
 
 
 
-#### Solution
+### Solution
 
 $y = x^\frac{1}{2}(x-1)$
 
@@ -613,15 +613,15 @@ $y' = \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-1}{2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-1}{2}$
 
 
 
-### Exercise 24
+## Exercise 24
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -629,7 +629,7 @@ $y = \dfrac{x^3-x^2+1}{\sqrt{x}}$
 
 
 
-#### Solution
+### Solution
 
 $y = \dfrac{x^3-x^2+1}{x^\frac{1}{2}}$
 
@@ -643,7 +643,7 @@ $= \dfrac{5}{2}x^\frac{3}{2} - \dfrac{3}{2}x^\frac{1}{2} - \dfrac{1}{2}x^\frac{-
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{5}{2}x^\frac{3}{2} - \dfrac{3}{2}x^\frac{1}{2} + \dfrac{-1}{2}x^\frac{-3}{2}$
 
@@ -651,9 +651,9 @@ $= \dfrac{1}{2} (5x\sqrt{x} - 3\sqrt{x} - \dfrac{1}{x\sqrt{x}})$
 
 
 
-### Exercise 25
+## Exercise 25
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -661,7 +661,7 @@ $y = \dfrac{\sqrt{x}}{1-x}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx} \dfrac{\sqrt{x}}{1-x}$
 
@@ -679,15 +679,15 @@ $= \dfrac{1+x}{2\sqrt{x}(1-x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{1+x}{2\sqrt{x}(1-x)^2}$
 
 
 
-### Exercise 26
+## Exercise 26
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -695,7 +695,7 @@ $y = \sqrt[3]{x}(x-4)$
 
 
 
-#### Solution
+### Solution
 
 $y = x^\frac{1}{3}(x-4)$
 
@@ -705,15 +705,15 @@ $= \dfrac{4}{3}x^\frac{1}{3} - \dfrac{4}{3}x^\frac{-2}{3}$
 
 $= \dfrac{4}{3}(x^\frac{1}{3}-x^\frac{-2}{3})$
 
-#### Answer
+### Answer
 
 $y' = \dfrac{4}{3}(x^\frac{1}{3}-x^\frac{-2}{3})$
 
 
 
-### Exercise 27
+## Exercise 27
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -721,7 +721,7 @@ $y = \dfrac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx}\dfrac{\sqrt[3]{x}-1}{\sqrt[3]{x}+1}$
 
@@ -733,15 +733,15 @@ $= \dfrac{\dfrac{2}{3}x^\frac{-2}{3}}{(\sqrt[3]{x}+1)^2}$
 
 $= \dfrac{2}{3\sqrt[3]{x^2}(\sqrt[3]{x}+1)^2}$
 
-#### Answer
+### Answer
 
 $y' = \dfrac{2}{3\sqrt[3]{x^2}(\sqrt[3]{x}+1)^2}$
 
 
 
-### Exercise 28
+## Exercise 28
 
-#### Statement
+### Statement
 
 求導數。
 
@@ -749,7 +749,7 @@ $y = \dfrac{x+\cos x}{x-\cos x}$
 
 
 
-#### Solution
+### Solution
 
 $y' = \dfrac{d}{dx} \dfrac{x+\cos x}{x-\cos x}$
 
@@ -765,21 +765,21 @@ $= \dfrac{-2x\sin x-2\cos x}{(x-\cos x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $y' = \dfrac{-2x\sin x-2\cos x}{(x-\cos x)^2}$
 
 
 
-### Exercise 29
+## Exercise 29
 
-#### Statement
+### Statement
 
 求$\displaystyle \lim_{x\rightarrow -1} \dfrac{x^{2010}+2x+1}{x+1}$
 
 
 
-#### Solution
+### Solution
 
 利用導數定義，$f'(a) = \displaystyle \lim_{x\rightarrow a} \dfrac{f(x)-f(a)}{x-a}$
 
@@ -797,21 +797,21 @@ $y' = \dfrac{-2x\sin x-2\cos x}{(x-\cos x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(1) = -2008$
 
 
 
-### Exercise 30
+## Exercise 30
 
-#### Statement
+### Statement
 
 假設$f(x) = x\sin x\cos x$，求$f'(x)$
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{d}{dx}(x\sin x\cos x)$
 
@@ -823,22 +823,22 @@ $= (\sin x + x\cos x)(\cos x) + (x\sin x)(-\sin x)$
 
 $= \sin x\cos x + x\cos^2 x - x\sin^2 x$
 
-#### Answer
+### Answer
 
 $f'(x) =  \sin x\cos x + x\cos^2 x - x\sin^2 x$
 
 
 
 
-### Exercise 31
+## Exercise 31
 
-#### Statement
+### Statement
 
 假設$f(x) = \dfrac{x(x-1)(x-2)(x-3)}{(x+1)(x+2)(x+3)}$，求$f'(1)$
 
 
 
-#### Solution
+### Solution
 
 $f(1) = \dfrac{1\times 0\times (-1)\times (-2)}{2\times 3\times 4} = 0$
 
@@ -854,20 +854,20 @@ $= \dfrac{1\times (-1)\times (-2)}{2\times 3\times 4} = \dfrac{1}{12}$
 
 
 
-#### Answer
+### Answer
 
 $f'(1) = \dfrac{1}{12}$
 
 
-### Exercise 32
+## Exercise 32
 
-#### Statement
+### Statement
 
 假設$f(x) = \dfrac{x(x+1)(x+2)(x+3)(x+4)(x+5)}{(x-1)(x-2)(x-3)(x-4)}$，求$f'(-1)$
 
 
 
-#### Solution
+### Solution
 
 $f(-1) = \dfrac{-1\times 0\times 1\times 2\times 3\times 4}{-2\times -3\times -4\times -5} = 0$
 
@@ -883,21 +883,21 @@ $= \dfrac{-1\times 1\times 2\times 3\times 4}{-2\times -3\times -4\times -5} = \
 
 
 
-#### Answer
+### Answer
 
 $f'(-1) = -\dfrac{1}{5}$
 
 
 
-### Exercise 33
+## Exercise 33
 
-#### Statement
+### Statement
 
 假設$f(x) = \dfrac{x}{(x-1)(x-2)(x-3)(x-4)}$，求$f'(0)$
 
 
 
-#### Solution
+### Solution
 
 $f(0) = \dfrac{0}{-1\times -2\times -3\times -4} = 0$
 
@@ -913,22 +913,22 @@ $= \dfrac{1}{-1\times -2\times -3\times -4} = \dfrac{1}{24}$
 
 
 
-#### Answer
+### Answer
 
 $f'(0) = \dfrac{1}{24}$
 
 
 
-### Exercise 34
+## Exercise 34
 
-#### Statement
+### Statement
 
 求下列各極限。
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x}$
 
 
-#### Solution
+### Solution
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x} = \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 2x}{\cos 2x}}{x} = \lim_{x\rightarrow 0} \dfrac{\sin 2x}{x\cos 2x}$
 
@@ -938,15 +938,15 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{2\sin 2x}{2x\cos 2x} = \lim_{x\right
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\tan 2x}{x} = 2$
 
 
 
-### Exercise 35
+## Exercise 35
 
-#### Statement
+### Statement
 
 求下列各極限。
 
@@ -954,7 +954,7 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin 3x}{\sin 5x}$
 
 
 
-#### Solution
+### Solution
 
 上下同除以$3x$
 
@@ -966,15 +966,15 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 3x}{3x}}{\dfrac{\dfrac{5
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin 3x}{\sin 5x} = \dfrac{3}{5}$
 
 
 
-### Exercise 36
+## Exercise 36
 
-#### Statement
+### Statement
 
 求下列各極限。
 
@@ -982,7 +982,7 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x}$
 
 
 
-#### Solution
+### Solution
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x} = \lim_{x\rightarrow 0} \dfrac{x\sin 2x}{\sin 3x \sin 4x \cos 2x}$
 
@@ -1004,15 +1004,15 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{\sin 2x}{2x}}{\dfrac{6\sin 3x
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{x\tan 2x}{\sin 3x \sin 4x} = \dfrac{1}{6}$
 
 
 
-### Exercise 37
+## Exercise 37
 
-#### Statement
+### Statement
 
 求下列各極限。
 
@@ -1020,7 +1020,7 @@ $\displaystyle \lim_{x\rightarrow 0} x\csc(2x)$
 
 
 
-#### Solution
+### Solution
 
 $\displaystyle \lim_{x\rightarrow 0} x\csc(2x) = \lim_{x\rightarrow 0} \dfrac{x}{\sin 2x}$
 
@@ -1030,15 +1030,15 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{\dfrac{x}{2x}}{\dfrac{\sin 2x}{2x}} 
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{x\rightarrow 0} x\csc(2x) = \dfrac{1}{2}$
 
 
 
-### Exercise 38
+## Exercise 38
 
-#### Statement
+### Statement
 
 求下列各極限。
 
@@ -1046,7 +1046,7 @@ $\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin x\sin (2x)\sin (3x)\sin (4x)\si
 
 
 
-#### Solution
+### Solution
 
 上下同乘以$5!$
 
@@ -1062,21 +1062,21 @@ $= 5! \times 1 \times 1\times 1\times 1\times 1 = 120$
 
 
 
-#### Answer
+### Answer
 
 $\displaystyle \lim_{x\rightarrow 0} \dfrac{\sin x\sin (2x)\sin (3x)\sin (4x)\sin (5x)}{x^5} = 120$
 
 
 
-### Exercise 39
+## Exercise 39
 
-#### Statement
+### Statement
 
 試證明定理2.6
 
 
 
-#### Solution
+### Solution
 
 證明1. $\dfrac{d}{dx}\sin x = \cos x$
 
@@ -1164,21 +1164,21 @@ $= \dfrac{0 - \cos x}{\sin^2 x} = \dfrac{-\cos x}{\sin^2 x} = -\csc x\cot x$
 
 
 
-#### Answer
+### Answer
 
 見Solution.
 
 
 
-### Exercise 40
+## Exercise 40
 
-#### Statement
+### Statement
 
 已知$f(x) = \dfrac{ax^4+b}{x^2}$且$f$的圖形在點$(1, 2)$的切線方程式為$8x-y=6$，求$a, b$之值。
 
 
 
-#### Solution
+### Solution
 
 $f'(x) = \dfrac{x^2(ax^4+b)' - (ax^4+b)(x^2)'}{x^4}$
 
@@ -1204,21 +1204,21 @@ $a+b=2$
 
 
 
-#### Answer
+### Answer
 
 $a = 3, b = -1$
 
 
 
-### Exercise 41
+## Exercise 41
 
-#### Statement
+### Statement
 
 假設$f(1) = 2$、$f'(1) = -1$、$g(1) = -2$、$g'(1) = 3$且$h(x) = \dfrac{xf(x)}{x+g(x)}$，求$h'(1)$
 
 
 
-#### Solution
+### Solution
 
 $h'(x) = \dfrac{(x+g(x))(xf(x))' - (xf(x))(x+g(x))'}{(x+g(x))^2}$
 
@@ -1236,7 +1236,7 @@ $= \dfrac{-1-8}{1} = -9$
 
 
 
-#### Answer
+### Answer
 
 $h'(1) = -9$
 

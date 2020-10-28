@@ -4,9 +4,9 @@
 
 ## Sec 2.3
 
-### Exercise 1
+## Exercise 1
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -14,7 +14,7 @@ $y = (2x-1)^5$
 
 
 
-#### Solution
+### Solution
 
 令$u = (2x-1)$，則$y = u^5$
 
@@ -34,15 +34,15 @@ $= 5(2x-1)^4\times (2) = 10(2x-1)^4$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = 10(2x-1)^4$
 
 
 
-### Exercise 2
+## Exercise 2
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -50,7 +50,7 @@ $y = \sqrt{x^2-3}$
 
 
 
-#### Solution
+### Solution
 
 令$u = x^2-3$，則$y = \sqrt{u} = u^\frac{1}{2}$
 
@@ -76,15 +76,15 @@ $= \dfrac{x}{\sqrt{x^2-3}}$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = \dfrac{x}{\sqrt{x^2-3}}$
 
 
 
-### Exercise 3
+## Exercise 3
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -92,7 +92,7 @@ $f(x) = (x^2+3)^6$
 
 
 
-#### Solution
+### Solution
 
 令$u = x^2+3$，則$f(x) = u^6$
 
@@ -104,15 +104,15 @@ $= 6u^5 \dfrac{d}{dx} u$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) =12x(x^2+5)^5$
 
 
 
-### Exercise 4
+## Exercise 4
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -120,7 +120,7 @@ $y = \sin 2x$
 
 
 
-#### Solution
+### Solution
 
 令$u = 2x$，則$\dfrac{d}{dx} y = \dfrac{d}{dx} \sin u$
 
@@ -134,15 +134,15 @@ $= \dfrac{d}{du} \sin u \dfrac{du}{dx} = \cos u \dfrac{d}{dx} u$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = 2\cos 2x$
 
 
 
-### Exercise 5
+## Exercise 5
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -150,7 +150,7 @@ $y = \sqrt{3x-2\cos x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = 3x-2\cos x$，則$y = \sqrt{u}$
 
@@ -172,15 +172,15 @@ $= \dfrac{3+2\sin x}{2\sqrt{3x-2\cos x}} $
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = \dfrac{3+2\sin x}{2\sqrt{3x-2\cos x}} $
 
 
 
-### Exercise 6
+## Exercise 6
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -188,7 +188,7 @@ $y = \tan \sqrt{x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = \sqrt{x}$，則$y = \tan u$
 
@@ -208,15 +208,15 @@ $= \dfrac{\sec^2\sqrt{x}}{2\sqrt{x}}$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = \dfrac{\sec^2\sqrt{x}}{2\sqrt{x}}$
 
 
 
-### Exercise 7
+## Exercise 7
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -224,7 +224,7 @@ $y = \dfrac{1}{\sqrt[3]{x^3-2}}$
 
 
 
-#### Solution
+### Solution
 
 $y = \dfrac{1}{\sqrt[3]{x^3-2}} = (x^3-2)^\frac{-1}{3}$
 
@@ -248,15 +248,15 @@ $= \dfrac{-3x^2}{3\sqrt[3]{(x^3-2)^4}} = \dfrac{-x^2}{\sqrt[3]{(x^3-2)^4}}$
 
 
 
-#### Answer
+### Answer
 
 $\dfrac{dy}{dx} = y' = \dfrac{-x^2}{\sqrt[3]{(x^3-2)^4}}$
 
 
 
-### Exercise 8
+## Exercise 8
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -264,7 +264,7 @@ $f(x) = \dfrac{1}{(x^3-3)^2}$
 
 
 
-#### Solution
+### Solution
 
 令$u = x^3-3$，則$f(x) = \dfrac{1}{u^2} = u^{-2}$
 
@@ -280,15 +280,15 @@ $= -6x^2(x^3-3)^{-3}  = \dfrac{-6x^2}{(x^3-3)^3}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) =  \dfrac{-6x^2}{(x^3-3)^3}$
 
 
 
-### Exercise 9
+## Exercise 9
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -296,7 +296,7 @@ $f(x) = \dfrac{1}{1-3x}$
 
 
 
-#### Solution
+### Solution
 
 $f(x) = \dfrac{1}{1-3x} = (1-3x)^{-1}$
 
@@ -314,15 +314,15 @@ $= -(1-3x)^{-2} (-3) = 3(1-3x)^{-2} = \dfrac{3}{(1-3x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{3}{(1-3x)^2}$
 
 
 
-### Exercise 10
+## Exercise 10
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -330,7 +330,7 @@ $f(x) = \dfrac{3}{(2x-1)^3}$
 
 
 
-#### Solution
+### Solution
 
 $f(x) = \dfrac{3}{(2x-1)^3} = 3(2x-1)^{-3}$
 
@@ -350,15 +350,15 @@ $= -18(2x-1)^{-4} = \dfrac{-18}{(2x-1)^4}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{-18}{(2x-1)^4}$
 
 
 
-### Exercise 11
+## Exercise 11
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -366,7 +366,7 @@ $f(x) = \sqrt{2x^3-4x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = 2x^3-4x$，則$f(x) = \sqrt{u}$
 
@@ -386,15 +386,15 @@ $= \dfrac{3x^2-2}{\sqrt{2x^3-4x}}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{3x^2-2}{\sqrt{2x^3-4x}}$
 
 
 
-### Exercise 12
+## Exercise 12
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -402,7 +402,7 @@ $f(x) = \dfrac{1}{(x^3-2x^2+1)^5}$
 
 
 
-#### Solution
+### Solution
 
 $f(x) = (x^3-2x^2+1)^{-5}$
 
@@ -422,15 +422,15 @@ $= \dfrac{-5(3x^2-4x)}{(x^3-2x^2+1)^6}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{-5(3x^2-4x)}{(x^3-2x^2+1)^6}$
 
 
 
-### Exercise 13
+## Exercise 13
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -438,7 +438,7 @@ $f(x) = (x + \dfrac{1}{2x})^3$
 
 
 
-#### Solution
+### Solution
 
 令$u = x + \dfrac{1}{2x} = x + \dfrac{1}{2}x^{-1}$，則$f(x) = u^3$
 
@@ -456,15 +456,15 @@ $= 3(x+\dfrac{1}{2x})^2(1-\dfrac{1}{2x^2})$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 3(x+\dfrac{1}{2x})^2(1-\dfrac{1}{2x^2})$
 
 
 
-### Exercise 14
+## Exercise 14
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -472,7 +472,7 @@ $f(x) = (\dfrac{x-1}{x+1})^3$
 
 
 
-#### Solution
+### Solution
 
 令$u = \dfrac{x-1}{x+1}$，則$f(x) = u^3$
 
@@ -494,15 +494,15 @@ $= 3\dfrac{(x-1)^2}{(x+1)^2} \dfrac{2}{(x+1)^2}$
 
 $= \dfrac{6(x-1)^2}{(x+1)^4}$
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{6(x-1)^2}{(x+1)^4}$
 
 
 
-### Exercise 15
+## Exercise 15
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -510,7 +510,7 @@ $f(x) = \cos(3x+1)$
 
 
 
-#### Solution
+### Solution
 
 令$u = 3x+1$，則$f(x) = \cos u$
 
@@ -528,15 +528,15 @@ $= -3\sin(3x+1)$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = -3\sin(3x+1)$
 
 
 
-### Exercise 16
+## Exercise 16
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -544,7 +544,7 @@ $f(x) = (\dfrac{2x^2-1}{3x+4})^3$
 
 
 
-#### Solution
+### Solution
 
 令$u = \dfrac{2x^2-1}{3x+4}$，則$f(x) = u^3$
 
@@ -570,15 +570,15 @@ $= \dfrac{3(2x^2-1)^2(6x^2+16x-3)}{(3x+4)^4}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \dfrac{3(2x^2-1)^2(6x^2+16x-3)}{(3x+4)^4}$
 
 
 
-### Exercise 17
+## Exercise 17
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -586,7 +586,7 @@ $f(x) = \cot(3x+2)$
 
 
 
-#### Solution
+### Solution
 
 令$u = 3x+2$，則$f(x) = \cot(u)$
 
@@ -606,15 +606,15 @@ $= -3\csc^2(3x+2)$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = -3\csc^2(3x+2)$
 
 
 
-### Exercise 18
+## Exercise 18
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -622,7 +622,7 @@ $f(x) = \sin^32x$
 
 
 
-#### Answer
+### Answer
 
 令$u = \sin2x$，則$f(x) = u^3$
 
@@ -652,15 +652,15 @@ $= 6\cos 2x(\sin 2x)^2$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 6\cos 2x(\sin 2x)^2$
 
 
 
-### Exercise 19
+## Exercise 19
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -668,7 +668,7 @@ $f(x) = \sin \dfrac{1}{x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = \dfrac{1}{x}$，則$f(x) = \sin u$
 
@@ -686,15 +686,15 @@ $= \cos \dfrac{1}{x}\times \dfrac{-1}{x^2}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = \cos \dfrac{1}{x}\times \dfrac{-1}{x^2}$
 
 
 
-### Exercise 20
+## Exercise 20
 
-#### Statement
+### Statement
 
 利用連鎖法則求函數的導函數。
 
@@ -702,7 +702,7 @@ $f(x) = \sin^3x+\cos 2x$
 
 
 
-#### Solution
+### Solution
 
 令$u = \sin x, t = 2x$
 
@@ -724,21 +724,21 @@ $= 3(\sin x)^2(\cos x) -2\sin 2x$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 3(\sin x)^2(\cos x) -2\sin 2x$
 
 
 
-### Exercise 21
+## Exercise 21
 
-#### Statement
+### Statement
 
 $f(x) = \sqrt{1-\cos 2x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = 1-\cos 2x$，則$f(x) = \sqrt{u}$
 
@@ -770,21 +770,21 @@ $=\dfrac{\sin 2x}{\sqrt{1-\cos 2x}}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) =\dfrac{\sin 2x}{\sqrt{1-\cos 2x}}$
 
 
 
-### Exercise 22
+## Exercise 22
 
-#### Statement
+### Statement
 
 $f(x) = \dfrac{1+\cos 3x}{1-\cos 3x}$
 
 
 
-#### Solution
+### Solution
 
 令$u = 3x$，則$f(x) = \dfrac{1+\cos u}{1-\cos u}$
 
@@ -812,21 +812,21 @@ $= \dfrac{-6\sin 3x}{(1-\cos 3x)^2}$
 
 
 
-#### Answer
+### Answer
 
 $f(x) = \dfrac{-6\sin 3x}{(1-\cos 3x)^2}$
 
 
 
-### Exercise 23
+## Exercise 23
 
-#### Statement
+### Statement
 
 $f(x) = \sin 3x + \tan\sqrt{2x+1}$
 
 
 
-#### Solution
+### Solution
 
 令$u = 3x, t = \sqrt{2x+1}$
 
@@ -858,143 +858,143 @@ $= 3\cos(3x) + \dfrac{\sec^2(\sqrt{2x+1})}{\sqrt{2x+1}}$
 
 
 
-#### Answer
+### Answer
 
 $f'(x) = 3\cos(3x) + \dfrac{\sec^2(\sqrt{2x+1})}{\sqrt{2x+1}}$
 
 
 
-### Exercise 24
+## Exercise 24
 
-#### Statement
+### Statement
 
 $f(x) = \sec(x^2+1)$
 
 
 
-### Exercise 25
+## Exercise 25
 
-#### Statement
+### Statement
 
 $f(x) = (2x+1)^5 \tan 2x$
 
 
 
-### Exercise 26
+## Exercise 26
 
-#### Statement
+### Statement
 
 $f(x) = \csc(x^2)$
 
 
 
-### Exercise 27
+## Exercise 27
 
-#### Statement
+### Statement
 
 $f(x) = (2-\cos^3x)^4$
 
 
 
-### Exercise 28
+## Exercise 28
 
-#### Statement
+### Statement
 
 $f(x) = \tan^2(x^3+1)$
 
 
 
-### Exercise 29
+## Exercise 29
 
-#### Statement
+### Statement
 
 $f(x) = \sqrt{1+4\sin^3 2x}$
 
 
 
-### Exercise 30
+## Exercise 30
 
-#### Statement
+### Statement
 
 $f(x) = \dfrac{x+\sin 2x}{1+\cos 2x}$
 
 
 
-### Exercise 31
+## Exercise 31
 
-#### Statement
+### Statement
 
 $f(x) = x^3\cos 2x$
 
 
 
-### Exercise 32
+## Exercise 32
 
-#### Statement
+### Statement
 
 $y = \sec^3(2x)$
 
 
 
-### Exercise 33
+## Exercise 33
 
-#### Statement
+### Statement
 
 $f(t) = \sin(\cos t)$
 
 
 
-### Exercise 34
+## Exercise 34
 
-#### Statement
+### Statement
 
 $y = \sqrt{x+\sqrt{x}}$
 
 
 
-### Exercise 35
+## Exercise 35
 
-#### Statement
+### Statement
 
 $y = x\sqrt{x^2 +  3}$
 
 
 
-### Exercise 36
+## Exercise 36
 
-#### Statement
+### Statement
 
 $y = \sin^3(2x)\cos (2x)$
 
 
 
-### Exercise 37
+## Exercise 37
 
-#### Statement
+### Statement
 
 $y = \dfrac{1+\sin 2x}{1-\sin 2x}$
 
 
 
-### Exercise 38
+## Exercise 38
 
-#### Statement
+### Statement
 
 $y = \tan(\sin(2x+1)))$
 
 
 
-### Exercise 39
+## Exercise 39
 
-#### Statement
+### Statement
 
 $y = \tan^3(x^2)$
 
 
 
-### Exercise 40
+## Exercise 40
 
-#### Statement
+### Statement
 
 $y = (1+\sec^3(2x))^5$
 
