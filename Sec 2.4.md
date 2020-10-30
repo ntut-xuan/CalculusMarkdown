@@ -335,3 +335,585 @@ $= \dfrac{18}{(1-3x)^3}$
 
 $y'' = \dfrac{18}{(1-3x)^3}$
 
+
+
+## Exercise 10
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \dfrac{1+2x}{1-2x}$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(\dfrac{1+2x}{1-2x})$
+
+
+
+$= \dfrac{(1-2x)(1+2x)' - (1+2x)(1-2x)'}{(1-2x)^2}$
+
+$= \dfrac{(1-2x)(2) - (1+2x)(-2)}{(1-2x)^2}$
+
+$= \dfrac{(1-2x)(2) + (1+2x)(2)}{(1-2x)^2}$
+
+$= \dfrac{(1-2x+1+2x)(2)}{(1-2x)^2}$
+
+$= \dfrac{4}{(1-2x)^2}$
+
+
+
+$y'' = \dfrac{d}{dx}(\dfrac{4}{(1-2x)^2})$
+
+$= \dfrac{(1-2x)^2(4)' - (4)((1-2x)^2)'}{(1-2x)^4}$
+
+$= \dfrac{-4(2(1-2x)\times 2)}{(1-2x)^4}$
+
+$= \dfrac{-16(1-2x)}{(1-2x)^4}$
+
+$= \dfrac{-16}{(1-2x)^3}$
+
+
+
+### Answer
+
+$y'' = \dfrac{-16}{(1-2x)^3}$
+
+
+
+## Exercise 11
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sin 2x$
+
+
+
+### Solution
+
+令$u = 2x$，則$y= \sin u$
+
+因此$y' = \dfrac{d}{dx} \sin u$
+
+$= \dfrac{d}{du} \sin u \dfrac{du}{dx}$
+
+$= \cos u \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = \cos(2x) \dfrac{d}{dx} 2x = 2\cos(2x)$
+
+
+
+$y'' = \dfrac{d}{dx} 2\cos (2x) = \dfrac{d}{dx} 2\cos(u)$
+
+$= \dfrac{d}{du} 2\cos(u) \dfrac{du}{dx}$
+
+$= -2\sin(u) \dfrac{d}{dx} u$
+
+$= -2\sin(2x) \dfrac{d}{dx}2x$
+
+$= -4\sin(2x)$
+
+
+
+### Answer
+
+$y'' = -4\sin(2x)$
+
+
+
+## Exercise 12
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \tan 3x$
+
+
+
+### Solution
+
+令$u = 3x$，則$y = \tan u$
+
+因此$y' = \dfrac{d}{dx} \tan u$
+
+$= \dfrac{d}{du} \tan u \dfrac{du}{dx}$
+
+$= \sec^2 u \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = \sec^2 3x \dfrac{d}{dx} 3x = 3\sec^2 3x$
+
+
+
+$y'' = \dfrac{d}{dx}(3\sec^2 3x)$
+
+$ = \dfrac{d}{dx}(3) (\sec^2 3x) + 3 \dfrac{d}{dx}(\sec^2 3x)$
+
+$ = 3\dfrac{d}{dx}(\sec^2 3x)$
+
+$= 3\dfrac{d}{dx} \dfrac{1}{\cos^2 3x}$
+
+$= 3 \dfrac{(\cos^2 3x)(1)' - (1)(\cos^2 3x)'}{(\cos^2 3x)^2}$
+
+$= 3\dfrac{-\dfrac{d}{dx}(\cos^2 3x)}{(\cos^2 3x)}$
+
+令$u = \cos 3x$，則$\dfrac{d}{dx}(\cos^2 3x) = \dfrac{d}{dx}{u^2}$
+
+$= \dfrac{d}{du} u^2 \dfrac{du}{dx} = 2u\dfrac{d}{dx} u$
+
+還原$u$，得到$2\cos 3x \dfrac{d}{dx}(\cos 3x)$
+
+令$t = 3x$，則$2\cos 3x \dfrac{d}{dx}(\cos 3x) = 2\cos 3x \dfrac{d}{dx}(\cos t)$
+
+$= 2\cos 3x \dfrac{d}{dt}(\cos t) \dfrac{dt}{dx}$
+
+$= 2\ \cos 3x (-\sin t) \dfrac{d}{dx} 3x$
+
+$= -6\cos 3x \sin 3x$
+
+因此$\dfrac{d}{dx}(\cos^2 3x) = -6\cos 3x\sin 3x$
+
+所以$y'' = \dfrac{-3(-6\cos 3x\sin 3x)}{(\cos^2 3x)^2}$
+
+$= \dfrac{18\cos 3x \sin 3x}{(\cos^4 3x)}$
+
+$= 18\sec^2 3x \tan 3x$
+
+
+
+### Answer
+
+$y'' = 18\sec^2 3x \tan 3x$
+
+
+
+## Exercise 13
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sin x \cos x$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(\sin x \cos x)$
+
+$= (\sin x)\dfrac{d}{dx}(\cos x) + \dfrac{d}{dx}(\sin x)(\cos x)$
+
+$= (\sin x)(-\sin x) + (\cos x)(\cos x)$
+
+$= -\sin^2 x + \cos^2 x$
+
+
+
+$y'' = \dfrac{d}{dx}(-\sin^2 x + \cos^2 x)$
+
+令$u = \sin x$, $t = \cos x$
+
+則$y'' = \dfrac{d}{dx}(-u^2 + t^2)$
+
+$= -\dfrac{d}{dx}u^2 + \dfrac{d}{dx} t^2 $
+
+$= -\dfrac{d}{du} u^2 \dfrac{du}{dx} + \dfrac{d}{dt} t^2 \dfrac{dt}{dx}$
+
+$= -2u \dfrac{d}{dx} u + 2t \dfrac{d}{dx} t$
+
+還原$u,\ t$，$y'' = -2(\sin x)\dfrac{d}{dx}(\sin x) + 2(\cos x)\dfrac{d}{dx}(\cos x)$
+
+$= -2\sin x \cos x + 2\cos x \times -\sin x$
+
+$= -4\sin x \cos x$
+
+
+
+### Answer
+
+$y'' = -4\sin x\cos x$
+
+
+
+## Exercise 14
+
+### Statement
+
+求函數的二階導函數。
+
+$y = x \sin 2x$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(x)(\sin 2x) + (x)\dfrac{d}{dx}(\sin 2x)$
+
+$ = (\sin 2x) + (x)(2\cos 2x)$
+
+$= \sin 2x + 2x\cos 2x$
+
+
+
+$y'' = \dfrac{d}{dx}(\sin 2x) + \dfrac{d}{dx}(2x\cos 2x)$
+
+$= (2\cos 2x) + (\dfrac{d}{dx}(2x)\cos 2x) + (2x\dfrac{d}{dx}(\cos 2x))$
+
+$= 2\cos 2x + 2\cos 2x + 2x\times 2\times -\sin2x$
+
+$= 4\cos 2x - 4x\sin 2x$
+
+
+
+### Answer
+
+$y'' = 4\cos 2x - 4x\sin 2x$
+
+
+
+## Exercise 15
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sin^3 x$
+
+
+
+### Solution
+
+令$u = \sin x$，$y = u^3$
+
+$y' = \dfrac{d}{dx}u^3$
+
+$= \dfrac{d}{du} u^3 \dfrac{du}{dx}$
+
+$= 3u^2 \dfrac{d}{dx} u$
+
+
+
+還原$u$，得到$y' = 3\sin^2 x \dfrac{d}{dx} \sin x$
+
+$= 3\sin^2 x\cos x$
+
+
+
+$y'' = \dfrac{d}{dx}(3\sin^2 x\cos x)$
+
+$= \dfrac{d}{dx}(3\sin^2 x)(\cos x) + (3\sin^2 x)\dfrac{d}{dx}(\cos x)$
+
+$= (2\sin x\cos x)(\cos x) + (3\sin^2 x)(-\sin x)$
+
+$= 2\sin x\cos^2 x - 3\sin^3 x$
+
+$= \sin x(2\cos^2 x - 3\sin^2 x)$
+
+
+
+### Answer
+
+$y'' = \sin x(2\cos^2 x - 3\sin^2 x)$
+
+
+
+## Exercise 16
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sec 3x$
+
+
+
+### Solution
+
+$y' = \dfrac{d}{dx}(\sec 3x)$
+
+令$u = 3x$，$y' = \dfrac{d}{dx}\sec u$
+
+$= \dfrac{d}{du} \sec u \dfrac{du}{dx} = 3\tan 3x \sec 3x$
+
+
+
+$y'' = \dfrac{d}{dx}(3\tan 3x\sec 3x)$
+
+$= \dfrac{d}{dx}(3\tan 3x)(\sec 3x) + (3\tan 3x)\dfrac{d}{dx}(\sec 3x)$
+
+$= 3\cdot3\sec^2 3x \cdot \sec 3x + 3\tan 3x \cdot 3\tan 3x \cdot \sec 3x$
+
+$= 9\sec^2(3x) + 9\tan^2 3x\sec 3x$
+
+$= 9(\sec^2 3x + \tan^2 3x \sec 3x)$
+
+
+
+### Answer
+
+$y'' = 9(\sec^2 3x + \tan^2 3x\sec 3x)$
+
+
+
+## Exercise 17
+
+### Statement
+
+求函數的二階導函數。
+
+$f(t) = \sec^3 2t$
+
+
+
+### Solution
+
+令$u = \sec 2t$，則$f(t) = u^3$
+
+所以$f'(t) = \dfrac{d}{dt} u^3 = \dfrac{d}{du}u^3\dfrac{du}{dt} = 3u^2 \dfrac{d}{dt} u$
+
+還原$u$，得到$f'(t) = 3(\sec 2t)^2 \dfrac{d}{dt} (\sec 2t)$
+
+令$v = 2t$，因此$f'(t) = 3(\sec 2t)^2 \dfrac{d}{dt} (\sec v)$
+
+$= 3(\sec 2t)^2 \dfrac{d}{dv} (\sec v) \dfrac{dv}{dt}$
+
+$= 3(\sec 2t)^2 \dfrac{d}{dv} (\sec v) \dfrac{dv}{dt}$
+
+$= 3(\sec 2t)^2 \sec v\tan v \dfrac{d}{dt}v$
+
+還原$v$，得到$f'(t) = 3(\sec 2t)^2 \sec 2t \tan 2t \dfrac{d}{dt} 2t$
+
+$= 6(\sec 2t)^2 \sec 2t \tan 2t$
+
+$= 6(\sec 2t)^3 \tan 2t$
+
+
+
+$f''(t) = \dfrac{d}{dt}(6(\sec 2t)^3 \tan 2t)$
+
+$= \dfrac{d}{dt}(6(\sec 2t)^3)(\tan 2t)(6(\sec 2t)^3)\dfrac{d}{dt}(\tan 2t)$
+
+令$u = \sec 2t$，$v = 2t$
+
+$f''(t) = \dfrac{d}{dt}(6u^3)(\tan 2t)+(6(\sec 2t)^3)\dfrac{d}{dt}(v)$
+
+$= (\dfrac{d}{du}(6u^3) \dfrac{du}{dt})(\tan 2t)+(6(\sec 2t)^3)(\dfrac{d}{dv}(\tan v)\dfrac{dv}{dt})$
+
+$= (18u^2 \dfrac{d}{dt}u)(\tan 2t)+(6(\sec 2t)^3)(\sec^2v\dfrac{d}{dt}v)$
+
+還原$u, v$，$f''(t) = (18\sec^2 2t \dfrac{d}{dt}(\sec 2t))(\tan 2t)+(6(\sec 2t)^3)(\sec^22t\dfrac{d}{dt}(2t))$
+
+$= (18\sec^2 2t \dfrac{d}{dt}(\sec 2t))(\tan 2t)+(6(\sec 2t)^3)(\sec^22t\dfrac{d}{dt}(2t))$
+
+$= (36\sec^2 2t \tan 2t \sec 2t)(\tan 2t)+(6(\sec 2t)^3)(2\sec^22t)$
+
+$= (36\sec^2 2t \tan 2t \sec 2t)(\tan 2t)+(6\sec^3 2t)(2\sec^22t)$
+
+$= (36\sec^3 2t)(\tan^2 2t)+(12\sec^5 2t)$
+
+$=(12\sec^3 2t)(3\tan^2 2t + \sec^2 2t)$
+
+
+
+### Answer
+
+$f''(t) =(12\sec^3 2t)(3\tan^2 2t + \sec^2 2t)$
+
+
+
+## Exercise 18
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sin(x^2+1)$
+
+
+
+### Solution
+
+令$u = x^2+1$，$y = \sin u$
+
+$y' = \dfrac{d}{dx} \sin u = \dfrac{d}{du} \sin u \dfrac{du}{dx} = \cos u \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = \cos (x^2+1) \dfrac{d}{dx} (x^2+1)$
+
+$= (2x)\cos(x^2+1)$
+
+
+
+$y'' = \dfrac{d}{dx}(2x\cos(x^2+1))$
+
+$= \dfrac{d}{dx}(2x)(\cos(x^2+1)) + (2x)\dfrac{d}{dx}(\cos(x^2+1))$
+
+$= 2\cos(x^2+1) + 2x\dfrac{d}{dx}(\cos(x^2+1))$
+
+$= 2\cos(x^2+1) + 2x\dfrac{d}{dx}(\cos(u))$
+
+$= 2\cos(x^2+1) + 2x\dfrac{d}{du}(\cos(u)) \dfrac{du}{dx}$
+
+$= 2\cos(x^2+1) + 2x(-\sin u) \dfrac{d}{dx} u$
+
+還原$u$，得到$f'(x) = 2\cos(x^2+1) + 2x(-\sin (x^2+1)) \dfrac{d}{dx} (x^2+1)$
+
+$= 2\cos(x^2+1) - 4x^2\sin (x^2+1)$
+
+
+
+### Answer
+
+$y'' = 2\cos(x^2+1) - 4x^2\sin (x^2+1)$
+
+
+
+## Exercise 19
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \dfrac{1}{(1-2x)^3}$
+
+
+
+### Solution
+
+$y = \dfrac{1}{(1-2x)^3} = (1-2x)^{-3}$
+
+令$u = 1-2x$，$y = u^{-3}$
+
+$y' = \dfrac{d}{dx} u^{-3}$
+
+$= \dfrac{d}{du} u^{-3} \dfrac{du}{dx}$
+
+$= -3u^{-4} \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = -3(1-2x)^{-4} \dfrac{d}{dx} (1-2x)$
+
+$= -3(1-2x)^{-4}(-2) = 6(1-2x)^{-4}$
+
+
+
+$y'' = \dfrac{d}{dx} 6(1-2x)^{-4} = \dfrac{d}{dx}6u^{-4}$
+
+$= \dfrac{d}{du}6u^{-4} \dfrac{du}{dx}$
+
+$= -24u^{-5} \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = -24(1-2x)^{-5} \dfrac{d}{dx}(1-2x)$
+
+$= 48(1-2x)^{-5} = \dfrac{48}{(1-2x)^5}$
+
+
+
+### Answer
+
+$y'' = \dfrac{48}{(1-2x)^5}$
+
+
+
+## Exercise 20
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \dfrac{1+x^2}{1-x^2}$
+
+
+
+### Solution
+
+$y' = \dfrac{(1-x^2)(1+x^2)' - (1+x^2)(1-x^2)'}{(1-x^2)^2}$
+
+$= \dfrac{(1-x^2)(2x) - (1+x^2)(-2x)}{(1-x^2)^2}$
+
+$= \dfrac{(1-x^2)(2x) + (1+x^2)(2x)}{(1-x^2)^2}$
+
+$= \dfrac{4x}{(1-x^2)^2}$
+
+
+
+$y'' = \dfrac{d}{dx} \dfrac{4x}{(1-x^2)^2}$
+
+$= \dfrac{(1-x^2)^2\dfrac{d}{dx}(4x) - (4x)\dfrac{d}{dx}((1-x^2)^2)}{(1-x^2)^4}$
+
+$= \dfrac{4(1-x^2)^2 - (4x)(-4x(1-x^2))}{(1-x^2)^4}$
+
+$= \dfrac{4(1-x^2)(1-x^2) - (4x)(-4x(1-x^2))}{(1-x^2)^4}$
+
+$= \dfrac{(4-4x^2)(1-x^2) + 16x^2(1-x^2)}{(1-x^2)^4}$
+
+$= \dfrac{(4+12x^2)(1-x^2)}{(1-x^2)^4}$
+
+$= \dfrac{4(1+3x^2)}{(1-x^2)^3}$
+
+
+
+### Answer
+
+$y'' = \dfrac{4(1+3x^2)}{(1-x^2)^3}$
+
+
+
+## Exercise 21
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \tan \sqrt{x}$
+
+
+
+### Solution
+
+$y = \tan \sqrt{x}$，令$u = \sqrt{x}$
+
+則$y' = \dfrac{d}{dx}(\tan u) = \dfrac{d}{du}\tan u \dfrac{du}{dx} = \sec^2 u \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = \sec^2(\sqrt{x}) \dfrac{d}{dx}\sqrt{x} = \dfrac{\sec^2(\sqrt{x})}{2\sqrt{x}}$
+
+
+
+$y'' = \dfrac{d}{dx} \dfrac{\sec^2(\sqrt{x})}{2\sqrt{x}}$
+
+$= \dfrac{(2\sqrt{x})(\sec^2(\sqrt{x}))' - (\sec^2(\sqrt{x}))(2\sqrt{x})'}{(2\sqrt{x})^2}$
+
+考慮$\dfrac{d}{dx}(\sec^2(\sqrt{x}))$，令$u = \sec{\sqrt{x}}$
+
+因此$\dfrac{d}{dx}(\sec^2(\sqrt{x})) = \dfrac{d}{dx} u^2 = 2u \dfrac{d}{dx}u$
+
+還原$u$得到$2\sec\sqrt{x} \dfrac{d}{dx}(\sec\sqrt{x})$
+
+$= 2\sec\sqrt{x}(\tan\sqrt{x}\sec\sqrt{x}\dfrac{1}{2\sqrt{x}}) =2\tan\sqrt{x}\sec^2{\sqrt{x}}\dfrac{1}{2\sqrt{x}}$
+
+$y'' = \dfrac{(2\sqrt{x})(2\tan\sqrt{x}\sec^2{\sqrt{x}}\dfrac{1}{2\sqrt{x}}) - (\sec^2(\sqrt{x}))\dfrac{2}{2\sqrt{x}}}{(2\sqrt{x})^2}$
+
+$= \dfrac{(2\sqrt{x}2\tan\sqrt{x}\sec^2{\sqrt{x}})\dfrac{1}{2\sqrt{x}} - (\sec^2(\sqrt{x}))\dfrac{2}{2\sqrt{x}}}{(2\sqrt{x})^2}$
+
+$= \dfrac{(4\sqrt{x}\tan\sqrt{x}\sec^2{\sqrt{x}} - 2\sec^2\sqrt{x})\dfrac{1}{2\sqrt{x}}}{(2\sqrt{x})^2}$
+
+$= \dfrac{(4\sqrt{x}\tan\sqrt{x}\sec^2{\sqrt{x}} - 2\sec^2\sqrt{x})\dfrac{1}{2\sqrt{x}}}{(2\sqrt{x})^2}$
+
+$= \dfrac{(4\sqrt{x}\tan\sqrt{x}\sec^2{\sqrt{x}} - 2\sec^2\sqrt{x})}{(2\sqrt{x})^3}$
+
+$= \dfrac{2\sec^2{\sqrt{x}}(2\sqrt{x}\tan\sqrt{x} - 1)}{(2\sqrt{x})^3}$
+
+$= \dfrac{2\sec^2{\sqrt{x}}(2\sqrt{x}\tan\sqrt{x} - 1)}{8x\sqrt{x}}$
+
+$= \dfrac{\sec^2{\sqrt{x}}(2\sqrt{x}\tan\sqrt{x} - 1)}{4x\sqrt{x}}$
+
+
+
+### Answer
+
+$y'' = \dfrac{\sec^2{\sqrt{x}}(2\sqrt{x}\tan\sqrt{x} - 1)}{4x\sqrt{x}}$
+
+
+
