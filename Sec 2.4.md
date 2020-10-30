@@ -917,3 +917,315 @@ $y'' = \dfrac{\sec^2{\sqrt{x}}(2\sqrt{x}\tan\sqrt{x} - 1)}{4x\sqrt{x}}$
 
 
 
+## Exercise 22
+
+### Statement
+
+求函數的二階導函數。
+
+$y = (1+x^3)^6$
+
+
+
+### Solution
+
+令$u = 1+x^3$，則$y = u^6$
+
+$y' = \dfrac{d}{dx} u^6 = \dfrac{d}{du} u^6 \dfrac{du}{dx} = 6u^5 \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = 6(1+x^3)^5 \dfrac{d}{dx}(1+x^3)$
+
+$= 6(1+x^3)^5(3x^2)$
+
+$= (18x^2)(1+x^3)^5$
+
+
+
+$y'' = \dfrac{d}{dx}((18x^2)(1+x^3)^5)$
+
+$= \dfrac{d}{dx}(18x^2)(1+x^3)^5 + (18x^2)\dfrac{d}{dx}((1+x^3)^5)$
+
+$= (36x)(1+x^3)^5 + (18x^2)\dfrac{d}{dx}(u^5)$
+
+$= (36x)(1+x^3)^5 + (18x^2)(\dfrac{d}{du}u^5\dfrac{du}{dx})$
+
+$= (36x)(1+x^3)^5 + (18x^2)(\dfrac{d}{du}u^5\dfrac{du}{dx})$
+
+$= (36x)(1+x^3)^5 + (18x^2)(5u^4\dfrac{d}{dx}u)$
+
+$= (36x)(1+x^3)^5 + (18x^2)(5(1+x^3)^4\dfrac{d}{dx}(1+x^3))$
+
+$= (36x)(1+x^3)^5 + (18x^2)(15x^2(1+x^3)^4)$
+
+$= (36x(1+x^3))(1+x^3)^4 + (18x^2)(15x^2(1+x^3)^4)$
+
+$= (36x(1+x^3)+(18x^2)(15x^2))(1+x^3)^4$
+
+$= (36x(1+x^3)+(18x^2)(15x^2))(1+x^3)^4$
+
+$= 18x(2(1+x^3)+x(15x^2))(1+x^3)^4$
+
+$= 18x(2+2x^3+15x^3)(1+x^3)^4$
+
+$= 18x(2+17x^3)(1+x^3)^4$
+
+
+
+### Answer
+
+$y'' = 18x(2+17x^3)(1+x^3)^4$
+
+
+
+## Exercise 23
+
+### Statement
+
+求函數的二階導函數。
+
+$y = \sqrt{x^2+1}$
+
+
+
+### Solution
+
+令$u = x^2+1$，則$y = \sqrt{u}$
+
+$y' = \dfrac{d}{dx}\sqrt{u}$
+
+$= \dfrac{d}{du} \sqrt{u} \dfrac{du}{dx}$
+
+$= \dfrac{1}{2\sqrt{u}} \dfrac{d}{dx} (x^2+1)$
+
+$= \dfrac{1}{2\sqrt{x^2+1}}\times 2x$
+
+$= \dfrac{2x}{2\sqrt{x^2+1}}$
+
+$= \dfrac{x}{\sqrt{x^2+1}}$
+
+
+
+$y'' = \dfrac{d}{dx}(\dfrac{x}{\sqrt{x^2+1}})$
+
+$= \dfrac{(\sqrt{x^2+1})(x)' - (x)(\sqrt{x^2+1})'}{x^2+1}$
+
+$= \dfrac{\sqrt{x^2+1} - (x)(\dfrac{x}{\sqrt{x^2+1}})}{x^2+1}$
+
+$= \dfrac{\sqrt{x^2+1} - (\dfrac{x^2}{\sqrt{x^2+1}})}{x^2+1}$
+
+$= \dfrac{\dfrac{x^2+1}{\sqrt{x^2+1}} - (\dfrac{x^2}{\sqrt{x^2+1}})}{x^2+1}$
+
+$= \dfrac{1}{(\sqrt{x^2+1})x^2+1}$
+
+$= \dfrac{1}{\sqrt{(x^2+1)^3}}$
+
+
+
+### Answer
+
+$y'' = \dfrac{1}{\sqrt{(x^2+1)^3}}$
+
+
+
+## Exercise 24
+
+### Statement
+
+求函數的二階導函數。
+
+$y= (\dfrac{x+3}{x})^4$
+
+
+
+### Solution
+
+令$u = \dfrac{x+3}{x}$，則$y = u^4$
+
+$y' = \dfrac{d}{dx} u^4 = \dfrac{d}{du} u^4 \dfrac{du}{dx}$
+
+$= 4u^3 \dfrac{d}{dx} u$
+
+還原$u$，得到$y' = 4(\dfrac{x+3}{x})^3 \dfrac{d}{dx}(\dfrac{x+3}{x})$
+
+$= 4(\dfrac{x+3}{x})^3 \dfrac{(x)(x+3)' - (x+3)(x)'}{x^2} = 4(\dfrac{x+3}{x})^3 \dfrac{(x) - (x+3)}{x^2}$
+
+$4(\dfrac{x+3}{x})^3 \dfrac{-3}{x^2}$
+
+$= -\dfrac{12}{x^2} (\dfrac{x+3}{x})^3$
+
+
+
+$y'' = \dfrac{d}{dx}(-\dfrac{12}{x^2} (\dfrac{x+3}{x})^3)$
+
+$= \dfrac{d}{dx}(-\dfrac{12}{x^2})(\dfrac{x+3}{x})^3 + (-\dfrac{12}{x^2})\dfrac{d}{dx}(\dfrac{x+3}{x})^3$
+
+$= \dfrac{x^2(-12)' - (-12)(x^2)'}{x^4}(\dfrac{x+3}{x})^3 + (-\dfrac{12}{x^2})(-\dfrac{3}{x^2})3(\dfrac{x+3}{x})^2$ 
+
+$= \dfrac{-(-12)2x}{x^4}(\dfrac{x+3}{x})^3 + (\dfrac{108}{x^4})(\dfrac{x+3}{x})^2$
+
+$= \dfrac{24x}{x^4}(\dfrac{x+3}{x})^3 + (\dfrac{108}{x^4})(\dfrac{x+3}{x})^2$
+
+$= \dfrac{24x(x+3)}{x^5}(\dfrac{x+3}{x})^2 + (\dfrac{108}{x^4})(\dfrac{x+3}{x})^2$
+
+$= \dfrac{24x(x+3)+108x}{x^5}(\dfrac{x+3}{x})^2$
+
+$= \dfrac{12x(2(x+3)+9)}{x^5}(\dfrac{x+3}{x})^2$
+
+$= \dfrac{12x(2x+15)}{x^5}(\dfrac{x+3}{x})^2$
+
+$= \dfrac{12(2x+15)}{x^4}(\dfrac{x+3}{x})^2$
+
+$= \dfrac{12(2x+15)(x+3)^2}{x^6}$
+
+
+
+### Answer
+
+$y'' = \dfrac{12(2x+15)(x+3)^2}{x^6}$
+
+
+
+## Exercise 25
+
+### Statement
+
+假設$f(x) = x\sin(2x)$，求$f'''(\pi)$
+
+
+
+### Solution
+
+$f'(x) = \dfrac{d}{dx}(x\sin (2x)) = \dfrac{d}{dx}(x)\sin 2x + x\dfrac{d}{dx}(\sin 2x)$
+
+$= \sin 2x + 2x\cos 2x$
+
+$f''(x) = \dfrac{d}{dx}(\sin 2x) + \dfrac{d}{dx}(2x\cos 2x)$
+
+$= (\cos 2x) + \dfrac{d}{dx}(2x)\cos 2x + 2x\dfrac{d}{dx}(\cos 2x)$
+
+$= \cos 2x + 2\cos 2x + 2x(-2\sin 2x)$
+
+$= 3\cos 2x -4x\sin 2x$
+
+$f'''(x) = \dfrac{d}{dx}(3\cos 2x - 4x\sin 2x)$
+
+$= \dfrac{d}{dx}(3\cos 2x) - \dfrac{d}{dx}{4x\sin 2x}$
+
+$= (-6\sin 2x) - (\dfrac{d}{dx}(4x)\sin 2x + 4x\dfrac{d}{dx}(\sin 2x))$
+
+$= -6\sin 2x - 4\sin 2x + 4x(2\cos 2x)$
+
+$= -6\sin 2x - 4\sin 2x + 8x\cos 2x$
+
+因此，$f'''(x) = -6\sin 2\pi - 4\sin 2\pi + 8\pi \cos 2\pi = 8\pi$
+
+
+
+### Answer
+
+$f'''(x) = 8\pi$
+
+
+
+## Exercise 26
+
+### Statement
+
+假設$f(x) = \dfrac{1}{1-2x}$，求$\displaystyle \lim_{x\rightarrow 1} \dfrac{f^{(6)}(x)-f^{(6)}(1)}{x-1}$
+
+
+
+### Solution
+
+考慮微分定義，相當於求$f^{(7)}(x)$
+
+$f(x) = \dfrac{1}{1-2x} = (1-2x)^{-1}$
+
+$f'(x) = \dfrac{(1-2x)(1)' - (1)(1-2x)'}{(1-2x)^2} = \dfrac{2}{(1-2x)^2} =2\cdot 1\cdot(1-2x)^{-2}$
+
+$f''(x) = \dfrac{d}{dx}(2(1-2x)^{-2}) = 8(1-2x)^{-3} = 2^2\cdot 1\cdot 2\cdot (1-2x)^{-3}$
+
+$f'''(x) = \dfrac{d}{dx}(-12(1-2x)^{-3}) = 48(1-2x)^{-4} = 2^3\cdot 1\cdot 2\cdot 3\cdot(1-2x)^{-3}$
+
+推得規律，得到$f^{(n)}(x) = 2^n\times n!\times (1-2x)^{-n-1}$
+
+因此$f^{(7)}(x) = 2^7\times 7!\times (1-2x)^{-8}$
+
+故$f^{(7)}(1) = 2^7\times 7!\times (-1)^{-8} = 2^7\times 7!$
+
+
+
+### Answer
+
+$\displaystyle \lim_{x\rightarrow 1} \dfrac{f^{(6)}(x)-f^{(6)}(1)}{x-1} = 2^7\times 7!$
+
+
+
+## Exercise 27
+
+### Statement
+
+假設$g(1) = 2$、$g(3) = 1$、$g'(1) = 3$、$g'(3) = 4$且$f(3x) = xg(x^2)$，求$f'(3)$
+
+
+
+### Solution
+
+$f(3x) = xg(x^2)$
+
+$\dfrac{d}{dx}f(3x) = \dfrac{d}{dx}(xg(x^2))$
+
+$3\times f'(3x) = (\dfrac{d}{dx}(x)g(x^2) + x\dfrac{d}{dx}g(x^2))$
+
+$3f'(3x) = g(x^2) + xg'(x^2)\times 2x)$
+
+$3f'(3x) = g(x^2) + 2x^2g'(x^2)$
+
+欲求$f'(3x)$，因此$x$帶入$1$。
+
+$3f'(3) = g(1) + 2\times g'(1) = 2 + 2\times(3) = 8$
+
+因此$f'(3) = \dfrac{8}{3}$
+
+
+
+### Answer
+
+$f'(3) = \dfrac{8}{3}$
+
+
+
+## Exercise 28
+
+### Statement
+
+假設$f'(x) + (x-1)(f(x))^2 = x$，且$f(1) = 2$，求$f'(1) + f''(1)$
+
+
+
+### Solution
+
+將$x$帶入$1$，可以得到$f'(1) + 0 = 1$，因此$f'(1) = 1$
+
+等號兩邊微分
+
+$\dfrac{d}{dx}(f'(x) + (x-1)(f(x))^2) = \dfrac{d}{dx}(x)$
+
+$\dfrac{d}{dx} f'(x) + \dfrac{d}{dx}(x-1)((f(x))^2) = 1$
+
+$\Rightarrow f''(x) + (\dfrac{d}{dx}(x-1)(f(x))^2 + (x-1)\dfrac{d}{dx}(f(x))^2$
+
+$\Rightarrow f''(x) + (f(x))^2 + (x-1)(2f(x)f'(x)) = 1$
+
+$x$帶入$1$，帶入$f(1)$與$f'(1)$，得到
+
+$f''(1) + 2^2 + 0\cdot(2\times 2\times 1) = 1$，得到$f''(1) = -3$
+
+因此$f'(1) + f''(1) = 1 - 3 = -2$
+
+
+
+### Answer
+
+$f'(1) + f''(1) =  -2$
+
