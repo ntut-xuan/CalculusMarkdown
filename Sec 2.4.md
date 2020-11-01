@@ -1101,23 +1101,23 @@ $= \sin 2x + 2x\cos 2x$
 
 $f''(x) = \dfrac{d}{dx}(\sin 2x) + \dfrac{d}{dx}(2x\cos 2x)$
 
-$= (\cos 2x) + \dfrac{d}{dx}(2x)\cos 2x + 2x\dfrac{d}{dx}(\cos 2x)$
+$= 2(\cos 2x) + \dfrac{d}{dx}(2x)\cos 2x + 2x\dfrac{d}{dx}(\cos 2x)$
 
-$= \cos 2x + 2\cos 2x + 2x(-2\sin 2x)$
+$= 2\cos 2x + 2\cos 2x + 2x(-2\sin 2x)$
 
-$= 3\cos 2x -4x\sin 2x$
+$= 4\cos 2x -4x\sin 2x$
 
-$f'''(x) = \dfrac{d}{dx}(3\cos 2x - 4x\sin 2x)$
+$f'''(x) = \dfrac{d}{dx}(4\cos 2x - 4x\sin 2x)$
 
-$= \dfrac{d}{dx}(3\cos 2x) - \dfrac{d}{dx}{4x\sin 2x}$
+$= \dfrac{d}{dx}(4\cos 2x) - \dfrac{d}{dx}{4x\sin 2x}$
 
-$= (-6\sin 2x) - (\dfrac{d}{dx}(4x)\sin 2x + 4x\dfrac{d}{dx}(\sin 2x))$
+$= (-8\sin 2x) - (\dfrac{d}{dx}(4x)\sin 2x + 4x\dfrac{d}{dx}(\sin 2x))$
 
-$= -6\sin 2x - 4\sin 2x + 4x(2\cos 2x)$
+$= -8\sin 2x - 4\sin 2x + 4x(2\cos 2x)$
 
-$= -6\sin 2x - 4\sin 2x + 8x\cos 2x$
+$= -8\sin 2x - 4\sin 2x + 8x\cos 2x$
 
-因此，$f'''(x) = -6\sin 2\pi - 4\sin 2\pi + 8\pi \cos 2\pi = 8\pi$
+因此，$f'''(x) = -8\sin 2\pi - 4\sin 2\pi + 8\pi \cos 2\pi = 8\pi$
 
 
 
@@ -1299,3 +1299,4 @@ $f(2) + f'(2) = 2+\dfrac{4}{13} = \dfrac{30}{13}$
 
 $f(2) + f'(2) = \dfrac{30}{13}$
 
+​	
