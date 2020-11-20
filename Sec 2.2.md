@@ -2,8 +2,6 @@
 
 ###### tags: `微積分題目紀錄`
 
-## Sec 2.2
-
 ## Exercise 1
 
 ### Statement
@@ -701,7 +699,7 @@ $y = x^\frac{1}{3}(x-4)$
 
 $= x^\frac{4}{3} - 4x^\frac{1}{3}$
 
-$= \dfrac{4}{3}x^\frac{1}{3} - \dfrac{4}{3}x^\frac{-2}{3}$
+$y' = \dfrac{4}{3}x^\frac{1}{3} - \dfrac{4}{3}x^\frac{-2}{3}$
 
 $= \dfrac{4}{3}(x^\frac{1}{3}-x^\frac{-2}{3})$
 
