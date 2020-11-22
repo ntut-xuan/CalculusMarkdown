@@ -712,6 +712,30 @@ See Solution.
 
 
 
+## Exercise 31
+
+### Statement
+
+假設$f(x)=x^2+ax+b$在$x=1$時有相對極小值$3$，求$a、b$之值。
+
+
+
+### Solution
+
+$f'(x) = 2x+a$
+
+考慮在$x=1$時有相對極小值3，則$f'(1) = 0$，也就是$2+a=0$，得$a=-2$。
+
+因為極值發生在$x=1$上，考慮$f(1) = 1-2+b=3$，得到$b=4$。
+
+
+
+### Answer
+
+$(a, b) = (-2, 4)$
+
+
+
 ## Exercise 32
 
 ### Statement
@@ -720,11 +744,71 @@ See Solution.
 
 
 
+## Exercise 33
+
+### Statement
+
+假設$f(x)  = x^3+ax^2+bx+1$在$x=-1$時有相對極大值，在$x=3$時有相對極小值，求$a, b$之值。
+
+
+
+### Solution
+
+$f'(x) = 3x^2+2ax+b$
+
+考慮$x=-1$時有相對極大值，在$x=3$時有相對極小值，因此$f'(-1) = 0, f'(3) = 0$
+
+可得知$f'(x) = 3(x+1)(x-3) = 3x^2-6x-9$
+
+比較係數，得到$2a=-6, a= -3$，且$b=-9$
+
+
+
+### Answer
+
+$(a, b) = (-3, -9)$
+
+
+
 ## Exercise 34
 
 ### Statement
 
 假設函數$f(x) = ax^3+bx^2+cx+d$圖形在點$(0,1)$有相對極小值，在$(1, 2)$有相對極大值，求此函數$f$
+
+
+
+## Exercise 35
+
+### Statement
+
+假設$f(x) = x^3-|1-3x^2|$，$x \in [-2, 3]$。求$f$在$[-2, 3]$上的最大值。
+
+
+
+### Solution
+
+$f'(x) = 3x^2 - \dfrac{18x^3-6x}{|1-3x^2|}$ 
+
+考慮$Critical Number$的部分
+
+考慮$f'(x) = 0$，得到$x \in \{0, 2\}$
+
+考慮$f'(x) = D.N.E.$，得到$x \in \{\pm(\dfrac{\sqrt{3}}{3})\}$
+
+因此$Critical Number \in \{-\dfrac{\sqrt{3}}{3}, 0, \dfrac{\sqrt{3}}{3}, 2\}$
+
+考慮邊界與$CriticalNumber$
+
+一一帶入$f(x)$，得$f(-2) = -19, f(-\dfrac{\sqrt{3}}{3}) = \dfrac{-\sqrt{3}}{9}, f(0) = -1, f(\dfrac{\sqrt{3}}{3}) = \dfrac{\sqrt{3}}{3}, f(2)= -3, f(3) = 1$
+
+可知最大值為$1$。
+
+
+
+### Answer
+
+最大值為$1$。
 
 
 
