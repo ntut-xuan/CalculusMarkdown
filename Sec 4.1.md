@@ -502,7 +502,7 @@ $f'(x) = 3x^2-6x-9$
 
 考慮$f'(x) = 0$，則$x = -1$或者$x = 3$
 
-考慮$f'(x) = D.N.E.$的情況，由於函數定義域為$\mathbb{R}$，因此$x \in \empty$。
+考慮$f'(x) = D.N.E.$的情況，由於函數定義域為$\mathbb{R}$，因此$x \in \varnothing$。
 
 因此$Critical Number \in \{-1, 3\}$
 
@@ -560,7 +560,7 @@ $f'(x) = (1-2x^2)e^{-x^2}$
 
 考慮$f'(x) = 0$，則$x = \pm\dfrac{\sqrt{2}}{2}$
 
-考慮$f'(x) = D.N.E.$的情況，由於函數定義域為$\mathbb{R}$，因此$x \in \empty$。
+考慮$f'(x) = D.N.E.$的情況，由於函數定義域為$\mathbb{R}$，因此$x \in \varnothing$。
 
 因此$Critical Number \in \{\dfrac{\sqrt{2}}{2}, \dfrac{-\sqrt{2}}{2} \}$
 
@@ -842,3 +842,18 @@ $f'(x) = 3x^2 - \dfrac{18x^3-6x}{|1-3x^2|}$
 
 找一最小值$\alpha$，使得對任意$x>0$，恆滿足$(1+\dfrac{1}{x})^{x+\alpha} > e$
 
+### Solution
+
+考慮 $f(x) = (1+\dfrac{1}{x})^{x+\alpha}$ 的最小值
+
+我們先求出 $f'(x)$ ， 至於這個函數要怎麼微分呢？
+
+先將等式兩邊取 $ln$ ， 可得 $ln(f(x)) = (x+\alpha)(1+\dfrac{1}{x})$
+
+兩邊對x做隱微分，$\dfrac{f'}{f(x)} = (1+\frac{1}{x})+ln(x)(x+\alpha)$
+
+再用移項 可得 $f'(x) = \frac{f(x)}{(1+\frac{1}{x})+ln(x)(x+\alpha)}$
+
+因此 我們可以試著找出 $f'(x) = 0$
+
+會發現他
