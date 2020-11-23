@@ -848,9 +848,8 @@ $f'(x) = 3x^2 - \dfrac{18x^3-6x}{|1-3x^2|}$
 
 我們先求出 $f'(x)$ ， 至於這個函數要怎麼微分呢？
 
-先將等式兩邊取 $ln$ ， 可得 $ln(f(x)) = (x+\alpha)(1+\dfrac{1}{x})$
-
-兩邊對x做隱微分，$\dfrac{f'}{f(x)} = (1+\frac{1}{x})+ln(x)(x+\alpha)$
+l
+兩邊對x做隱微分，$\dfrac{f'(x)}{f(x)} = (1+\frac{1}{x})+ln(x)(x+\alpha)$
 
 再用移項 可得 $f'(x) = \frac{f(x)}{(1+\frac{1}{x})+ln(x)(x+\alpha)}$
 
