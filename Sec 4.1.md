@@ -932,15 +932,33 @@ $\beta = 2$
 
 ### Solution
 
-考慮 $f(x) = (1+\dfrac{1}{x})^{x+\alpha}$ 的最小值
+$(1 + \dfrac{1}{x})^{x+\alpha} > e$
 
-我們先求出 $f'(x)$ ， 至於這個函數要怎麼微分呢？
+$(x+\alpha)\ln(1+\dfrac{1}{x}) > 1$
 
-l
-兩邊對x做隱微分，$\dfrac{f'(x)}{f(x)} = (1+\frac{1}{x})+ln(x)(x+\alpha)$
+$(x+\alpha) > \dfrac{1}{\ln(1+\dfrac{1}{x})}$
 
-再用移項 可得 $f'(x) = \frac{f(x)}{(1+\frac{1}{x})+ln(x)(x+\alpha)}$
+$\alpha > \dfrac{1}{\ln(1+\dfrac{1}{x})} - x$
 
-因此 我們可以試著找出 $f'(x) = 0$
+令$f(x) = \dfrac{1}{\ln(1+\dfrac{1}{x})} - x$
 
-會發現他
+則我們確認$\displaystyle \lim_{x\rightarrow \infty} f(x) = \dfrac{1}{\ln(1+\dfrac{1}{x})}-x$
+
+代換成$\displaystyle \lim_{x\rightarrow 0} f(x) = \lim_{x\rightarrow 0}(\dfrac{1}{\ln(1+x)}  - \dfrac{1}{x}) = \lim_{x\rightarrow 0}\dfrac{x-\ln(1+x)}{x\ln(1+x)}$
+
+運用羅畢達法則，得到$\displaystyle \lim_{x\rightarrow 0} \dfrac{1-\dfrac{1}{1+x}}{\ln(1+x) + \dfrac{x}{1+x}} = \lim_{x\rightarrow 0} \dfrac{1+x-1}{(1+x)\ln(1+x)+x} = \lim_{x\rightarrow 0} \dfrac{x}{(1+x)\ln(1+x)+x}$
+
+再次運用羅畢達法則，得到$\displaystyle \lim_{x\rightarrow 0} \dfrac{1}{\ln(1+x)+\dfrac{1+x}{1+x}+1} = \displaystyle \lim_{x\rightarrow 0} \dfrac{1}{\ln(1+x)+2} = \dfrac{1}{\ln(1)+2} = \dfrac{1}{2}$
+
+因此$\displaystyle \lim_{x\rightarrow \infty} f(x) = \dfrac{1}{\ln(1+\dfrac{1}{x})}-x = \dfrac{1}{2}$
+
+接著我們確認$f(x)$在$(0, \infty)$是否為遞增的，則考慮$f'(x)$是否大於0。
+
+因此$f'(x) = \dfrac{1}{x^2\ln(1+\dfrac{1}{x})^2+x\ln(1+\dfrac{1}{x})^2} - 1$
+
+以$1$考慮$f'(1)$，得到$f'(1) = \dfrac{1}{2\ln(2)^2} - 1 > 0 $，故遞增
+
+綜合上述，$f(x)$在$(0, \infty)$遞增，且$f(x)$在趨近於無限時$\displaystyle \lim_{x\rightarrow \infty} f(x) = \dfrac{1}{2}$，因此$\alpha$取$\dfrac{1}{2}$時可滿足$(1+\dfrac{1}{x})^{x+\alpha} > e$
+
+
+
