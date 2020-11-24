@@ -820,11 +820,99 @@ $f'(x) = 3x^2 - \dfrac{18x^3-6x}{|1-3x^2|}$
 
 
 
+## Exercise 37
+
+### Statement
+
+試證如果$\alpha > 1$，則對所有$x > -1$，恆滿足$(1+x)^{a} \le 1+\alpha x$。
+
+
+
+### Solution
+
+考慮$(1+x)^{\alpha} \le 1 + \alpha x$，則$(1+x)^{\alpha} - ax - 1 \le 0$
+
+令$f(x) = (1+x)^{\alpha} - \alpha x - 1$
+
+考慮$\alpha \in {Even}$
+
+考慮$f'(x) = \alpha(1+x)^{\alpha-1} - \alpha$，則若$f'(x) = 0$，可得$x = 0$
+
+因此$CriticalNumber \in \{0\}$
+
+遞增、遞減區間會被$CriticalNumber$所分割
+
+因此考慮$(-\infty, 0), (0, \infty)$
+
+考慮$(-\infty, 0)$，以$-1$考慮$f'(-1)$，則$f'(-1) < 0$，故$(-\infty, 0)$遞減。
+
+考慮$(0, \infty)$，以$1$考慮$f'(1)$，則$f'(1) > 0$，故$(0, \infty)$遞增。
+
+故極值發生在$x = 0$上，帶入$f(x)$得$f(0) = 0$
+
+故區間$(-1, 0)$遞減，$(0, \infty)$遞增，因此最小值為$0$
+
+故對於所有$x \in [-1,\infty]$，$f(x) \ge 0$，證畢。
+
+
+
+### Answer
+
+See Solution.
+
+
+
+
+
 ## Exercise 38
 
 ### Statement
 
 試證如果$0<\alpha<1$，則對所有$x > -1$，恆滿足$\beta > \dfrac{2x-1}{x}$。
+
+
+
+## Exercise 39
+
+### Statement
+
+找一最小值$\beta$，使得對任意$x > 0$，恆滿足$\beta > \dfrac{2x-1}{x}$
+
+
+
+### Solution
+
+考慮$\beta - \dfrac{2x-1}{x} > 0$，令$f(x) = \beta - \dfrac{2x-1}{x}$
+
+則$f'(x) = -\dfrac{2x-(2x-1)}{x^2} = -\dfrac{1}{x^2}$
+
+考慮CriticalNumber
+
+考慮$f'(x) = 0$，則$x \in \varnothing$
+
+考慮$f'(x) = D.N.E.$，則$x \in \{0\}$
+
+因此$CriticalNumber \in \{0\}$
+
+遞增遞減區間會被Critical Number所分割
+
+故考慮區間$(-\infty, 0), (0, \infty)$
+
+考慮$(-\infty, 0)$，以$-1$考慮$f'(-1)$，則$(-\infty, 0)$遞增。
+
+由於要找到一個最小值$\beta$使得$\beta - \dfrac{2x-1}{x}$恆大於0
+
+因此我們可以考慮$\beta$遞增至$x$趨近$\infty$時是否趨近於某個數字。
+
+故考慮$\displaystyle \lim_{x\rightarrow \infty} \dfrac{2x-1}{x} = 2$
+
+因此我們可以取$\beta = 2$，使得對於任意的$x>0$，恆滿足$\beta > \dfrac{2x-1}{x}$。
+
+
+
+### Answer
+
+$\beta = 2$
 
 
 
