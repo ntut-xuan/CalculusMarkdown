@@ -820,6 +820,30 @@ See solution.
 
 
 
+### Solution
+
+考慮$2\sqrt{x}+\dfrac{1}{x}-3 > 0$
+
+令$f(x) = 2\sqrt{x} + \dfrac{1}{x} - 3$，則$f'(x) = \dfrac{1}{\sqrt{x}} - \dfrac{1}{x^2}$
+
+考慮$f'(x) = 0$，則$x \in \{1\}$，因此$1$為CriticalNumber之一。
+
+考慮$f'(x) = D.N.E.$，則$\{x\ |\ x \le 0\}$
+
+故考慮$(1, \infty)$的遞增區間，以$2$考慮$f'(2)$，則$f'(2) > 0$
+
+因此$(1, \infty)$為遞增區間，又考慮$f(1)$，則$f(1) = 0$
+
+故在$(1, \infty)$上的所有$x$之$f(x)$大於$0$，證畢。
+
+
+
+### Answer
+
+See solution.
+
+
+
 ## Exercise 31
 
 ### Statement
@@ -849,6 +873,26 @@ $(a, b) = (-2, 4)$
 ### Statement
 
 假設$f(x)=ax^2+bx+1$在$x=-1$時有相對極大值$2$，求$a$、$b$之值。
+
+
+
+### Solution
+
+考慮$f'(x) = 2ax+b$，則由於$x=-1$時有相對極大值，故$f'(-1) = 0$
+
+因此$-2a+b=0$
+
+考慮$f(x)$在$x=-1$時有相對極大值$2$，因此$f(-1)=a-b+1=2$
+
+因此$a-b=1$
+
+兩式解聯立，$\left\{\begin{array}7 -2a+b=0 \\ a-b=1\end{array}\right.$，得$a = -1$，且$b = -2$
+
+
+
+### Answer
+
+$a = -1,\ b = -2$
 
 
 
@@ -883,6 +927,30 @@ $(a, b) = (-3, -9)$
 ### Statement
 
 假設函數$f(x) = ax^3+bx^2+cx+d$圖形在點$(0,1)$有相對極小值，在$(1, 2)$有相對極大值，求此函數$f$
+
+
+
+### Solution
+
+$f'(x) = 3ax^2+2bx+c$，則$f'(0) = 0, f(1) = 0$，故$f'(x) = x(x-1) = x^2-x$，可知$c=0$
+
+$f(0) = d = 1$，可知$d=1$
+
+考慮$f(1) = a+b+1 = 2$，則$a+b=1$
+
+考慮$f'(1) = 3a+2b = 0$，則$3a+2b=0$
+
+則$a = -2$，且$b = 3$
+
+
+
+故$a = -2, b = 3, c = 0, d = 1$
+
+
+
+### Answer
+
+$a = -2, b = 3, c = 0, d = 1$
 
 
 
@@ -925,6 +993,30 @@ $f'(x) = 3x^2 - \dfrac{18x^3-6x}{|1-3x^2|}$
 ### Statement
 
 假設$f(x) = x^{\frac{1}{x^2}}$，求$f$在$(0, \infty)$上的最大值。
+
+
+
+### Solution
+
+$f(x) = x^{x^{-2}}$，則$f'(x) = x^{\frac{1-3x^2}{x^2}} (-2\ln x + 1)$
+
+考慮在區間$(0, \infty)$內的Critical Number，則得$CriticalNumber \in \{\sqrt{e}\}$
+
+遞增遞減區間由$CriticalNumber$分割，則考慮$(0, \sqrt{e}),(\sqrt{e}, \infty)$
+
+考慮$(0, \sqrt{e})$，以$1$考慮$f'(1)$，則$f'(1) > 0$，故$(0, \sqrt{e})$遞增。
+
+考慮$({\sqrt{e}}, \infty)$，以$e$考慮$f'(e)$，則$f'(e) > 0$，故$(\sqrt{e}, \infty)$遞減。
+
+考慮界於$\sqrt{e}$的兩邊遞增遞減情況，由於兩邊遞增遞減情況不同，得知$\sqrt{e}$為極值發生的地方。
+
+將發生極值的地方帶入$f(x)$，得到$f(e) = e^\frac{1}{2e}$
+
+
+
+### Answer
+
+$f$在$(0, \infty)$的最大值為$e^\frac{1}{2e}$。
 
 
 
@@ -1064,7 +1156,7 @@ $\alpha > \dfrac{1}{\ln(1+\dfrac{1}{x})} - x$
 
 因此$f'(x) = \dfrac{1}{x^2\ln(1+\dfrac{1}{x})^2+x\ln(1+\dfrac{1}{x})^2} - 1$
 
-以$1$考慮$f'(1)$，得到$f'(1) = \dfrac{1}{2\ln(2)^2} - 1 > 0 $，故遞增
+以$1$考慮$f'(1)$，得到$f'(1) = \dfrac{1}{2\ln(2)^2} - 1 > 0$，故遞增
 
 綜合上述，$f(x)$在$(0, \infty)$遞增，且$f(x)$在趨近於無限時$\displaystyle \lim_{x\rightarrow \infty} f(x) = \dfrac{1}{2}$，因此$\alpha$取$\dfrac{1}{2}$時可滿足$(1+\dfrac{1}{x})^{x+\alpha} > e$
 
