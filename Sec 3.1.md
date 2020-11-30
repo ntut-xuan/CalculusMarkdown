@@ -1,4 +1,4 @@
-# 洪輝霖微積分Practice Ch 3.4
+# 洪輝霖微積分Practice Ch 3.1
 
 ###### tags: `微積分題目紀錄`
 
