@@ -36,6 +36,32 @@ See Solution.
 
 
 
+## Exercise 2
+
+### Statement
+
+甲乙兩人賽跑，起跑點同時出發且同時抵達終點，中間的過程互有快慢。試問至少存在某個時刻，兩人具有相同加速度。
+
+
+
+### Solution
+
+假設$f(x) = $甲的位置 - 乙的位置，且$f'(x) =$ 甲的速度 - 乙的速度。
+
+由於甲乙兩人同時出發且同時到達，因此我們可以確定在某兩個時間點$x_1, x_2$，$f(x_1) = f(x_2)$。
+
+因此我們可以使用羅勒定理，存在一個$c$，使得$f'(c) = 0$
+
+也就至少存在某個時刻$c$，使得甲乙兩人加速度相同。
+
+
+
+### Answer
+
+See solution.
+
+
+
 ## Exercise 3
 
 ### Statement
@@ -66,6 +92,50 @@ $f(x) = x^2-x+3$，$x \in [-2, 2]$
 
 
 
+## Exercise 4
+
+### Statement
+
+試求所有滿足均值定理的$c$值，若沒有，請敘述原因。
+
+$f(x) = x^\frac{2}{3}, x \in [-1, 8]$
+
+
+
+### Solution
+
+考慮$x = 0$的連續性與可微性。
+
+先考慮連續性。
+
+$\displaystyle \lim_{x\rightarrow 0^-} x^\frac{2}{3} = \lim_{x\rightarrow 0^+} x^\frac{2}{3} = 0$
+
+根據極限定義，得到$\displaystyle \lim_{x\rightarrow 0} x^\frac{2}{3} = 0$
+
+考慮$f(0) = 0$，則$\displaystyle \lim_{x\rightarrow 0} x^\frac{2}{3} = f(0)$，因此$f$在$x=0$時連續。
+
+
+
+再考慮可微性。
+
+$\displaystyle \lim_{x\rightarrow 0^+} \dfrac{f(x)-f(0)}{x-0} = \lim_{x\rightarrow 0^+} \dfrac{x^\frac{2}{3}}{x} = \lim_{x\rightarrow 0^+} x^{-\frac{1}{3}} = D.N.E.$
+
+故$x=0$時不可微。
+
+
+
+根據$MVT$，若$[a, b]$均連續，$(a, b)$均可微，則存在一點$c$使得$f'(c) = \dfrac{f(b)-f(a)}{b-a}$
+
+但在$(a, b)$時，$x=0$不可微，故不滿足均值定理，因此找不到滿足均值定理的$c$點。
+
+
+
+### Answer
+
+See solution.
+
+
+
 ## Exercise 5
 
 ### Statement
@@ -93,6 +163,36 @@ $f(x) = x^3-x^2+3$，$x \in [-3, 3]$
 ### Answer
 
 $c = \dfrac{1\pm2\sqrt{7}}{3}$時，滿足均值定理。
+
+
+
+## Exercise 6
+
+### Statement
+
+試求所有滿足均值定理的$c$值，若沒有，請敘述原因。
+
+$f(x) = \dfrac{x}{x+2}, x \in [0, 3]$
+
+
+
+### Solution
+
+考慮定義域，得到$x \neq -2$時均有定義，不在區間$[0, 3]$內，故在區間內均連續。
+
+$f'(x) = \dfrac{2}{(x+2)^2}$，在$x \neq -2$時均可微。
+
+因此在區間$[0, 3]$內均連續，在$(0, 3)$內均可微，故滿足均值定理。
+
+考慮$f(0) = 0, f(3) = \dfrac{3}{5}$，則我們考慮$c$，使得$f'(c) = \dfrac{0-\dfrac{3}{5}}{0-3} = \dfrac{1}{5}$
+
+得到$c = \pm\sqrt{10}-2$，其中$-\sqrt{10}-2$ 不合，因為不在區間內。
+
+
+
+### Answer
+
+$c =\sqrt{10}-2$
 
 
 
@@ -174,7 +274,7 @@ See solution.
 
 
 
-## Exercse 11
+## Exercise 10
 
 ### Statement
 
@@ -215,6 +315,36 @@ $f'(x) = \dfrac{\sin x \cos x}{|\sin x|} - \dfrac{x}{|x|}$
 See solution.
 
 
+
+## Exercise 12
+
+### Statement
+
+假設對任意的$x \in \mathbb{R}$，恆有$2 \le f'(x) \le 4$ 且 $f(1) = 5$，求$f(6)$可能的最大值和最小值。
+
+
+
+### Solution
+
+利用均值定理，考慮$f(1)-f(6) = f'(c)(1-6), \quad 2\le c\le 4$
+
+已知$f(1)=5$，則$f(6) = -f'(c)(1-6)+f(1) = 5f'(c)+5$
+
+已知對任意的$x \in \mathbb{R}$，$2 \le f'(x) \le 4$
+
+我們考慮$f'(x)=2$，得到$f(6) = 5\times2+5 = 15$
+
+考慮$f'(x) = 4$，得到$f(6) = 5\times 4 + 5 = 25$
+
+因此最大值為$25$，最小值為$15$。
+
+
+
+### Answer
+
+最大值為$25$，最小值為$15$。
+
+x
 
 ## Exercise 13
 
