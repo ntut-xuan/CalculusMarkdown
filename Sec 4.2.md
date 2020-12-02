@@ -358,9 +358,9 @@ See solution.
 
 $f(x) = x^\frac{1}{5},\ 32\le x\le 33$
 
-根據$MVT$，可以知道$2 \le \sqrt[5]{33} \le 2.0125 \Rightarrow 2 \le \sqrt[5]{33}\le 2 + \dfrac{1}{80}$
+$2 \le \sqrt[5]{33} \le 2.0125 \Rightarrow 2 \le \sqrt[5]{33}\le 2 + \dfrac{1}{80}$
 
-又根據$MVT$，$f(33)-f(32)=f'(t)(33-32),\quad 32\le t\le 33$
+根據$MVT$，$f(33)-f(32)=f'(t)(33-32),\quad 32\le t\le 33$
 
 所以$f(33) = f'(t) + f(32) = f'(t) + 2,\quad 32 \le t \le 33$
 
@@ -405,6 +405,36 @@ See solution.
 ### Answer
 
 $C = (\dfrac{1}{2}, \dfrac{1}{4})$
+
+
+
+## Exercise 16
+
+### Statement
+
+假設$A(-1, 4)$ 和 $B(2, 1)$，求與圖形$y=x^2-2x+1$相切且平行$\overleftrightarrow{AB}$的直線方程式。
+
+
+
+### Solution
+
+考慮$m_{AB} = \dfrac{4-1}{-1-2} = -1$
+
+則我們利用均值定理，考慮是否存在某點$x=c$，使得$-1 \le c \le 2$，且$f'(c) = \dfrac{4-1}{-1-2} = -1$
+
+考慮$y' = 2x-2$，$2c-2=-1$，則$c = \dfrac{1}{2}$
+
+因此我們可以做一條斜率為$-1$，且過點$(\dfrac{1}{2}, \dfrac{1}{4})$的直線。
+
+$y - \dfrac{1}{4} = -x + \dfrac{1}{2} \Rightarrow 4y-1 = -4x+2 \Rightarrow 4x+4y-1 = 0$
+
+故$L: 4x-4y-3=0$
+
+
+
+### Answer
+
+$4x-4y-3=0$
 
 
 
