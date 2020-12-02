@@ -150,11 +150,69 @@ $\displaystyle \lim_{x\rightarrow 1^-} \dfrac{f(x)-f(1)}{x-1} = \lim_{x\rightarr
 
 
 
+### Solution
+
+考慮$\sin x - x < 0 $，則令$f(x) = \sin x - x$
+
+$f'(x) = \cos(x) - 1$
+
+考慮$Critical Point$發生在$x \in 2n\pi, n \in \mathbb{Z}$，又每$2\pi$一個循環 ($\cos 2\pi = \cos 0$)
+
+所以若$(0, 2\pi)$遞減，則$(2\pi, 4\pi)$遞減、($4\pi, 6\pi$)遞減...，可得$(0, \infty)$遞減。
+
+因此考慮$(0, 2\pi)$區間，以$\dfrac{\pi}{2}$考慮$f'(\dfrac{\pi}{2}) < 0$，故遞減。
+
+考慮在點$x=0$上的極值，得到$f(0)=0-0=0$
+
+故對於任意的$x>0$，$f(x)$恆小於$0$，故$\sin x < x$成立。
+
+
+
+### Answer
+
+See solution.
+
+
+
 ## Exercse 11
 
 ### Statement
 
 試證明對任意的$x \in \mathbb{R}$，恆有$|\sin x| \le |x|$
+
+
+
+### Solution
+
+考慮$|\sin x| - |x| \le 0$，令$f(x) = |\sin x| - |x|$
+
+$f'(x) = \dfrac{\sin x \cos x}{|\sin x|} - \dfrac{x}{|x|}$
+
+考慮$f'(x) = 0$，則沒有任何一個$x$能夠滿足，故$x \in \varnothing$
+
+考慮$f'(x) = D.N.E.$，則$x \in n\pi, n\in \mathbb{Z}$
+
+因此$Critical Point$發生在$x \in n\pi, n\in\mathbb{Z}$，又$2\pi$一個循環$(\sin2\pi = \sin 0)$
+
+所以我們考慮兩個區間$(-2\pi, -\pi), (-\pi, 0), (0, \pi), (\pi, 2\pi)$的遞增遞減情況
+
+考慮$(-2\pi, -\pi)$，以$-\dfrac{3\pi}{2}$考慮$f'(-\dfrac{3\pi}{2}) > 0$，故$(-2\pi, -\pi)$遞增。
+
+考慮$(-\pi, 0)$，以$-\dfrac{\pi}{2}$考慮$f'(-\dfrac{\pi}{2})>0$，故$(-\pi, 0)$遞增。
+
+考慮$(0, \pi)$，以$\dfrac{\pi}{2}$考慮$f'(\dfrac{\pi}{2}) < 0$，故$(0, \pi)$遞減。
+
+考慮$(\pi, 2)$，以$\dfrac{3\pi}{2}$考慮$f'(\dfrac{3\pi}{2}) < 0$，故$(\pi, 2\pi)$遞減。
+
+故極值發生在$x=0$上，考慮$f(0) = |0|-|0| = 0$
+
+因此$|\sin x|-|x| \le 0$成立，故對任意的$x \in \mathbb{R}$，恆有$|\sin x| \le |x|$。
+
+
+
+### Answer
+
+See solution.
 
 
 
@@ -166,6 +224,32 @@ $\displaystyle \lim_{x\rightarrow 1^-} \dfrac{f(x)-f(1)}{x-1} = \lim_{x\rightarr
 
 
 
+### Solution
+
+$f(x) = x^\frac{1}{5},\ 32\le x\le 33$
+
+根據$MVT$，可以知道$2 \le \sqrt[5]{33} \le 2.0125 \Rightarrow 2 \le \sqrt[5]{33}\le 2 + \dfrac{1}{80}$
+
+又根據$MVT$，$f(33)-f(32)=f'(t)(33-32),\quad 32\le t\le 33$
+
+所以$f(33) = f'(t) + f(32) = f'(t) + 2,\quad 32 \le t \le 33$
+
+$f'(x) = \dfrac{1}{5}x^\frac{-4}{5} = \dfrac{1}{5\sqrt[5]{x^4}}$，$f''(x) \dfrac{-4}{25}x^\frac{-9}{5}$，可知$f'(x)$在$(0, \infty)$區間遞減，$f(x)$在$(0, \infty)$遞增。
+
+考慮$t = 32$，$f'(32) = \dfrac{1}{5\sqrt[5]{32^4}} = \dfrac{1}{80}$，且在$f'(x)$函數中，若$x>0$則$f'(x) > 0$
+
+所以$0 < f'(33) < f'(32)$，故$f'(t)$在$32 \le t \le 33$的最大值為$\dfrac{1}{80}$
+
+所以可以知道$2 +f'(33) \le f(33) \le 2 + \dfrac{1}{80}$，又$f'(33) > 0$，故$2 < f(33) < 2 + \dfrac{1}{80}$
+
+
+
+### Answer
+
+See solution.
+
+
+
 ## Exercise 15
 
 ### Statement
@@ -174,8 +258,48 @@ $\displaystyle \lim_{x\rightarrow 1^-} \dfrac{f(x)-f(1)}{x-1} = \lim_{x\rightarr
 
 
 
+### Solution
+
+令$m_{AB} = \dfrac{1-4}{-1-2} = -1$
+
+利用均值定理，找出斜率與$m_{AB} = -1$相同的點。
+
+令$f(x) = x^2$，則$f'(x) = 2x$
+
+因此考慮$f'(c) = -1$，也就是$2c = -1$的點，得到$c = -\dfrac{1}{2}$
+
+因此我們可以令$C = (-\dfrac{1}{2}, \dfrac{1}{4})$，使得$\Delta ABC$的面積最大。
+
+
+
+### Answer
+
+$C = (-\dfrac{1}{2}, \dfrac{1}{4})$
+
+
+
 ## Exercise 17
 
 ### Statement
 
 假設$f(x) = x^{\frac{2}{3}}$，試證明找不到$c \in [-1, 1]$，使得$f'(c) = 0$。並解釋為何不滿足洛爾定理。
+
+
+
+### Solution
+
+考慮$x=0$時
+
+$\displaystyle \lim_{x\rightarrow 0^+} x^\frac{2}{3} = \lim_{x\rightarrow 0^-} x^\frac{2}{3} = 0$，利用極限定義得到$\displaystyle \lim_{x\rightarrow 0} x^\frac{2}{3} = 0$
+
+又$f(0) = 0$，所以$\displaystyle \lim_{x\rightarrow 0} x^\frac{2}{3} = f(0)$，利用連續定義得知$f$在$x=0$時連續。
+
+接著考慮可微性
+
+考慮$\displaystyle \lim_{x\rightarrow 0^+} \dfrac{f(x)-f(0)}{x-0} = \lim_{x\rightarrow 0^+} \dfrac{x^\frac{2}{3}}{x} = \lim_{x\rightarrow 0} x^{-\frac{1}{3}} = D.N.E.$
+
+故在$x=0$時不可微。
+
+洛爾定理要求$f(a)=f(b)$，且f在$[a, b]$時連續，且在$(a, b)$可微時能夠找到一個$c$使得$f'(c) = 0$。
+
+但在區間$[-1, 1]$時，$x=0$時不可微，故不滿足洛爾定理。
