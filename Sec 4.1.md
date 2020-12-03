@@ -1019,49 +1019,57 @@ $f(x) = x^{x^{-2}}$，則$f'(x) = x^{\frac{1-3x^2}{x^2}} (-2\ln x + 1)$
 $f$在$(0, \infty)$的最大值為$e^\frac{1}{2e}$。
 
 
-
 ## Exercise 37
 
 ### Statement
 
-試證如果$\alpha > 1$，則對所有$x > -1$，恆滿足$(1+x)^{a} \le 1+\alpha x$。
+試證如果$\alpha > 1$，則對所有$x > -1$，恆滿足$(1+x)^{a} \ge 1+\alpha x$。
 
 
 
 ### Solution
 
-考慮$(1+x)^{\alpha} \le 1 + \alpha x$，則$(1+x)^{\alpha} - ax - 1 \le 0$
+考慮$(1+x)^{\alpha} - \alpha x - 1 \ge 0$，令$f(x) = (1+x)^{\alpha} - \alpha x - 1$
 
-令$f(x) = (1+x)^{\alpha} - \alpha x - 1$
+$f'(x) = \alpha(1+x)^{\alpha -1} - \alpha$
 
-考慮$\alpha \in {Even}$
+考慮$\alpha \in odd$，則$a - 1 \in Even$
 
-考慮$f'(x) = \alpha(1+x)^{\alpha-1} - \alpha$，則若$f'(x) = 0$，可得$x = 0$
+因此$Critical Number \in \{-2, 0\}$
 
-因此$CriticalNumber \in \{0\}$
+遞增遞減區間會被$CriticalNumber$分割，故考慮$(-\infty, -2),(-2, 0),(0, \infty)$
 
-遞增、遞減區間會被$CriticalNumber$所分割
+考慮$(-\infty, -2)$，以$-3$考慮$f'(-3)$，則$f'(-3) > 0$，故$(-\infty, -2)$遞增。
 
-因此考慮$(-\infty, 0), (0, \infty)$
-
-考慮$(-\infty, 0)$，以$-1$考慮$f'(-1)$，則$f'(-1) < 0$，故$(-\infty, 0)$遞減。
+考慮$(-2, 0)$，以$-1$考慮$f'(-1)$，則$f'(-1) < 0$，故$(-2, 0)$遞減。
 
 考慮$(0, \infty)$，以$1$考慮$f'(1)$，則$f'(1) > 0$，故$(0, \infty)$遞增。
 
-故極值發生在$x = 0$上，帶入$f(x)$得$f(0) = 0$
+我們可以知道極值發生在$x=-2$與$x=0$上，故$f(0) = \alpha(1+0)^{\alpha-1} - \alpha = \alpha - \alpha = 0$
 
-故區間$(-1, 0)$遞減，$(0, \infty)$遞增，因此最小值為$0$
+故我們知道$(-2, 0)$均大於0，$(0, \infty)$也均大於$0$，因此區間$[-1, \infty]$均大於0，成立。
 
-故對於所有$x \in [-1,\infty]$，$f(x) \ge 0$，證畢。
+考慮$\alpha \in Even$，則$a - 1 \in Odd$
+
+因此$Critical Number \in \{0\}$
+
+遞增遞減區間會被$CriticalNumber$分割，故考慮$(-\infty, 0), (0, \infty)$
+
+考慮$(-\infty, 0)$，以$-3$考慮$f'(-3)$，則$f'(-3) < 0$，故$(-\infty, 0)$遞減。
+
+考慮$(0, \infty)$，以$1$考慮$f'(1)$，則$f'(1) > 0$，故$(0, \infty)$遞增。
+
+因此極值發生在$x = 0$上，故考慮$f(0)=\alpha(1+0)^{\alpha-1} - \alpha = \alpha - \alpha = 0$
+
+故我們知道$(-\infty, 0)$均大於0，$(0, \infty)$也均大於$0$，因此區間$[-1, \infty]$均大於0，成立。
+
+因此$\alpha \in Even, Odd$均考慮，使得$\alpha \in \mathbb{R}$均被考慮到，證畢。
 
 
 
 ### Answer
 
 See solution.
-
-
-
 
 
 ## Exercise 38
