@@ -180,7 +180,7 @@ $f(x) = 3x^2 + \dfrac{2}{x^2}$
 
 
 
-### Exercise 5
+## Exercise 5
 
 ### Statement
 
