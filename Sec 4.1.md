@@ -1525,6 +1525,12 @@ $\beta = 2$
 
 
 
+### Answer
+
+See solution.
+
+
+
 ## Exercise 41
 
 ### Statment
