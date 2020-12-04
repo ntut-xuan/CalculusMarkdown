@@ -1076,7 +1076,7 @@ See solution.
 
 ### Statement
 
-試證如果$0<\alpha<1$，則對所有$x > -1$，恆滿足$(1+x)^\alpha \ge 1 + \alpha x$。
+試證如果$0<\alpha<1$，則對所有$x > -1$，恆滿足$(1+x)^\alpha \le  1 + \alpha x$。
 
 
 
