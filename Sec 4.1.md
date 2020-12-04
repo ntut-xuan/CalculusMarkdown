@@ -1445,6 +1445,12 @@ $f'(x) = \alpha(1+x)^{\alpha - 1} - \alpha = \alpha((1+x)^{\alpha-1}-1)$
 
 
 
+### Answer
+
+See solution.
+
+
+
 ## Exercise 39
 
 ### Statement
