@@ -632,3 +632,110 @@ $f(x) = x - \dfrac{1}{6}x^2 - \dfrac{1}{3}\ln x + \dfrac{1}{6}$
 
 反曲點：$(1, 1)$
 
+
+
+## Exercise 15
+
+### Statement
+
+試畫出下列函數圖形：
+
+$f(x) = \dfrac{1}{x+2}$
+
+
+
+### Solution
+
+考慮$f(x)$的定義域為$x \neq -2$，因此我們考慮區間$(-\infty, -2), (-2, \infty)$
+
+考慮$f'(x) = -\dfrac{1}{(x+2)^2}$，$f''(x) = \dfrac{2}{(x+2)^3}$
+
+考慮反曲點通常可能發生在臨界數上
+
+故考慮$f''(x) = 0, x < -2\  \cup -2 < x$，$x\in \varnothing$
+
+考慮$f''(x) = D.N.E.,  x < -2\  \cup -2 < x$，$x \in \varnothing $
+
+故沒有臨界數，也就沒有反曲點。
+
+考慮兩個區間$(-\infty, -2), (-2, \infty)$
+
+考慮$(-\infty. -2)$，以$-3$考慮$f''(-3)$，則$f''(-3) < 0$，則$(-\infty, -2)$區間下凹
+
+考慮$(-2, \infty)$，以$0$考慮$f''(0)$，則$f''(x) > 0$，則$(-2, \infty)$區間上凹
+
+考慮函數的垂直漸進線。
+
+$\displaystyle \lim_{x\rightarrow -2^-} f(x) = \lim_{x\rightarrow -2^-} \dfrac{1}{x+2} = -\infty$
+
+$\displaystyle \lim_{x\rightarrow -2^+} f(x) = \lim_{x\rightarrow -2^+} \dfrac{1}{x+2} = \infty$
+
+考慮函數的水平漸進線。
+
+$\displaystyle \lim_{x\rightarrow -\infty} f(x) = \lim_{x\rightarrow -\infty} \dfrac{1}{x+2} = 0$
+
+$\displaystyle \lim_{x\rightarrow \infty} f(x) = \lim_{x\rightarrow \infty} \dfrac{1}{x+2} = 0$
+
+因此我們可以畫一條下凹的線，從$(-\infty, 0)$到$(-2, -\infty)$，再畫一條上凹的線，從$(-2, \infty)$到$(\infty, 0)$。
+
+<img src="C:\Users\Xuan\AppData\Roaming\Typora\typora-user-images\image-20201207174157669.png" alt="image-20201207174157669" style="zoom:67%;" />
+
+
+
+### Answer
+
+See solution.
+
+
+
+## Exercise 16
+
+### Statement
+
+試畫出下列函數圖形：
+
+$f(x) = \dfrac{x-1}{x+1}$
+
+
+
+### Solution
+
+考慮函數的定義域$x \neq -1$，因此考慮兩個區間$(-\infty, -1), (-1, \infty)$。
+
+考慮$f'(x) = \dfrac{2}{(x+1)^2}$，$f''(x) = \dfrac{-4}{(x+1)^3}$
+
+考慮反曲點通常可能發生在臨界數上
+
+故考慮$f''(x) = 0, x \in (-\infty, -1) \cup (-1, \infty)$，則$x \in \varnothing$
+
+考慮$f''(x) = D.N.E., x \in (-\infty, -1) \cup (-1, \infty)$，則$x \in \varnothing$
+
+故沒有反曲點發生
+
+考慮兩個區間的上凹下凹情況
+
+考慮$(-\infty, -1)$，以$-2$考慮$f''(-2)$，則$f''(-2) > 0$，故$(-\infty, -1)$區間上凹。
+
+考慮$(-1, \infty)$，以$0$考慮$f''(0)$，則$f''(0) < 0$，故$(-1, \infty)$區間下凹。
+
+考慮垂直漸進線。
+
+$\displaystyle \lim_{x\rightarrow -1^-} f(x) = \lim_{x\rightarrow -1^-} \dfrac{x-1}{x+1} = \infty$ 
+
+$\displaystyle \lim_{x\rightarrow -1^+} f(x) = \lim_{x\rightarrow -1^+} \dfrac{x-1}{x+1} = -\infty$
+
+因此$x = -1$為函數的垂直漸進線。
+
+考慮水平漸進線。
+
+$\displaystyle \lim_{x\rightarrow \infty} f(x) = \lim_{x\rightarrow \infty} \dfrac{x-1}{x+1} = 1$
+
+$\displaystyle \lim_{x\rightarrow -\infty} f(x) = \lim_{x\rightarrow -\infty} \dfrac{x-1}{x+1} = 1$
+
+描圖，得到
+
+<img src="C:\Users\Xuan\AppData\Roaming\Typora\typora-user-images\image-20201207180340974.png" alt="image-20201207180340974" style="zoom:67%;" />
+
+### Answer
+
+See solution.
