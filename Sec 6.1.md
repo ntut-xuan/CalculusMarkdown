@@ -136,6 +136,220 @@ $\displaystyle \int \dfrac{2x+1}{x^2+2x+2} dx = \ln(|x^2+2x+2|) - \tan^{-1}(x+1)
 
 
 
+## Exercise 5
+
+### Statement
+
+$\displaystyle \int \dfrac{2x+1}{\sqrt{2x-x^2}} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{2x+1}{\sqrt{2x-x^2}} dx = \int \dfrac{2x+2-1}{\sqrt{2x-x^2}}dx = \int \dfrac{2x-2}{\sqrt{2x-x^2}} dx + \int \dfrac{3}{\sqrt{2x-x^2}}dx$
+
+計算$\displaystyle \int \dfrac{2x-2}{\sqrt{2x-x^2}}dx$，利用代換積分法，令$u = 2x-x^2$，則$du = (2-2x)dx$，$dx = \dfrac{du}{2-2x}$
+
+因此$\displaystyle \int \dfrac{2x-2}{\sqrt{2x-x^2}}dx = \int \dfrac{2x-2}{\sqrt{u}}\dfrac{du}{2-2x} = \int\dfrac{-1}{\sqrt{u}} du = -2\sqrt{u} = -2\sqrt{2x-x^2}$
+
+計算$\int \dfrac{3}{\sqrt{2x-x^2}} dx$，$\displaystyle \int \dfrac{3}{\sqrt{2x-x^2}} dx = \int \dfrac{3}{\sqrt{1-1+2x-x^2}} dx = \int\dfrac{3}{\sqrt{1-(x-1)^2}}dx$
+
+利用代換積分法，令$u = x-1$，則$du = dx$
+
+因此$\displaystyle \int\dfrac{3}{\sqrt{1-(x-1)^2}}dx = 3\int\dfrac{1}{\sqrt{1-u^2}}dx = 3\sin^{-1}(u) = 3\sin^{-1}(x-1)$
+
+所以$\displaystyle \int \dfrac{2x+1}{\sqrt{2x-x^2}} dx = -2\sqrt{2x-x^2}+3\sin^{-1}(x-1)$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{2x+1}{\sqrt{2x-x^2}} dx = -2\sqrt{2x-x^2}+3\sin^{-1}(x-1)$
+
+
+
+## Exercise 6
+
+### Statement
+
+$\displaystyle \int \dfrac{2x+1}{x^2+2x+5} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{2x+1}{x^2+2x+5} dx = \int \dfrac{2x+2-1}{x^2+2x+5} dx = \int \dfrac{2x+2}{x^2+2x+5}dx - \int\dfrac{1}{x^2+2x+5}dx$
+
+計算$\displaystyle \int \dfrac{2x+2}{x^2+2x+5} dx$，利用代換積分法
+
+令$u = x^2+2x+5$，則$du = (2x+2)dx$，因此$dx = \dfrac{du}{2x+2}$
+
+$\displaystyle \int \dfrac{2x+2}{x^2+2x+5} dx = \int \dfrac{2x+2}{u}\dfrac{du}{2x+2} = \int\dfrac{1}{u}du = \ln(u) = \ln(x^2+2x+5)$
+
+計算$\displaystyle \int \dfrac{1}{x^2+2x+5} dx$
+
+$\displaystyle \int \dfrac{1}{x^2+2x+5} dx = \int \dfrac{1}{x^2+2x+1+4} dx = \int \dfrac{1}{(x+1)^2+4}dx = \int \dfrac{1}{4((\dfrac{x+1}{2})^2+1)}dx = \dfrac{1}{4}\int \dfrac{1}{(\dfrac{x+1}{2})^2+1}dx$
+
+令$u = \dfrac{x+1}{2}$，則$du = \dfrac{1}{2} dx$，$dx = 2du$
+
+$\displaystyle \dfrac{1}{4} \int \dfrac{1}{(\dfrac{x+1}{2})^2+1} dx = \dfrac{1}{4} \int \dfrac{2}{u^2+1} du = \dfrac{1}{2} \tan^{-1}(u) = \dfrac{1}{2}\tan^{-1}(\dfrac{x+1}{2})$
+
+故$\displaystyle \int \dfrac{2x+1}{x^2+2x+5} dx = \ln(x^2+2x+5) - \dfrac{1}{2}\tan^{-1}(\dfrac{x+1}{2}) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{2x+1}{x^2+2x+5} dx = \ln(x^2+2x+5) - \dfrac{1}{2}\tan^{-1}(\dfrac{x+1}{2}) + C$
+
+
+
+## Exercise 7
+
+### Statement
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{e^{2x}+1} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{e^{2x}+1} dx = \int \dfrac{e^{2x}}{e^{2x}+1}dx + \int \dfrac{e^x}{e^{2x}+1}dx$
+
+計算$\displaystyle \int \dfrac{e^{2x}}{e^{2x}+1} dx$，利用代換積分法，令$u = e^{2x}+1$，則$du = 2e^{2x} dx$，$dx = \dfrac{du}{2e^{2x}}$
+
+$\displaystyle \int \dfrac{e^{2x}}{e^{2x}+1} dx = \int \dfrac{e^{2x}}{u}\dfrac{du}{2e^{2x}} = \dfrac{1}{2}\int \dfrac{1}{u}du = \dfrac{1}{2} \ln(u) = \dfrac{1}{2}\ln(e^{2x}+1)$
+
+計算$\displaystyle \int \dfrac{e^{x}}{e^{2x}+1} dx$，利用代換積分法，令$u = e^{x}$，則$du = e^{x}dx$，因此$dx = \dfrac{du}{e^{x}}$
+
+$\displaystyle \int \dfrac{e^{x}}{e^{2x}+1} dx = \int \dfrac{e^x}{u^2+1}\dfrac{du}{e^x} = \int \dfrac{1}{u^2+1}du = \tan^{-1}(u) = \tan^{-1}(e^x)$
+
+故$\displaystyle \int \dfrac{e^{2x}+e^x}{e^{2x}+1} dx = \dfrac{1}{2}\ln(e^{2x}+1) + \tan^{-1}(e^{x}) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{e^{2x}+1} dx = \dfrac{1}{2}\ln(e^{2x}+1) + \tan^{-1}(e^{x}) +C$
+
+
+
+## Exercise 8
+
+### Statement
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{\sqrt{1-e^{2x}}} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{\sqrt{1-e^{2x}}} dx = \displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{2x}}} dx + \int \dfrac{e^{x}}{\sqrt{1-e^{2x}}} dx$
+
+計算$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{2x}}}dx$，利用代換積分法，令$u = 1-e^{2x}$，則$du = -2e^{2x} dx$，$dx = \dfrac{du}{-2e^{2x}}$
+
+$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{2x}}}dx = \int \dfrac{e^{2x}}{\sqrt{u}} \dfrac{du}{-2e^{2x}} = -\dfrac{1}{2}\int\dfrac{1}{\sqrt{u}} du = -u = -\sqrt{1-e^{2x}}$
+
+計算$\displaystyle \int \dfrac{e^x}{\sqrt{1-e^{2x}}} dx$，利用代換積分法，令$u = e^x$，則$du = e^xdx$，$dx = \dfrac{du}{e^x}$
+
+$\displaystyle \int \dfrac{e^x}{\sqrt{1-e^{2x}}} dx = \int \dfrac{e^x}{\sqrt{1-u^2}} \dfrac{du}{e^x} = \int \dfrac{1}{\sqrt{1-u^2}} du = \sin^{-1}(u) = \sin^{-1}(e^x)$
+
+因此$\displaystyle \int \dfrac{e^{2x}+e^x}{\sqrt{1-e^{2x}}} dx = -\sqrt{1-e^{2x}} +\sin^{-1}(e^x) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{e^{2x}+e^x}{\sqrt{1-e^{2x}}} dx = -\sqrt{1-e^{2x}} +\sin^{-1}(e^x) + C$
+
+
+
+## Exercise 9
+
+### Statement
+
+$\displaystyle \int \dfrac{e^{2x}+e^{4x}}{e^{4x}+1} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{e^{2x}+e^{4x}}{e^{4x}+1} dx = \int \dfrac{e^{2x}}{e^{4x}+1}dx + \int \dfrac{e^{4x}}{e^{4x}+1}dx$
+
+計算$\displaystyle \int \dfrac{e^{2x}}{e^{4x}+1} dx$，利用代換積分法，令$u = e^{2x}$，則$du = 2e^{2x} dx$，因此$dx = \dfrac{du}{2e^{2x}}$
+
+$\displaystyle \int \dfrac{e^{2x}}{e^{4x}+1} dx = \int \dfrac{e^{2x}}{u^2+1} \dfrac{du}{2e^{2x}} = \dfrac{1}{2}\int \dfrac{1}{u^2+1} du = \dfrac{1}{2}\tan^{-1}(u) = \dfrac{1}{2}\tan^{-1}(e^{2x})$
+
+計算$\displaystyle \int \dfrac{e^{4x}}{e^{4x}+1} dx$，利用代換積分法，令$u = e^{4x}+1$，則$du = 4e^{4x}dx$，因此$dx = \dfrac{1}{4e^{4x}}$
+
+$\displaystyle \int \dfrac{e^{4x}}{e^{4x}+1} dx = \int \dfrac{e^{4x}}{u} \dfrac{du}{4e^{4x}} = \dfrac{1}{4}\int \dfrac{1}{u}du= \dfrac{1}{4}\ln(u) = \dfrac{1}{4}\ln(e^{4x}+1)$
+
+所以 $\displaystyle \int \dfrac{e^{2x}+e^{4x}}{e^{4x}+1} dx = \dfrac{1}{2}\tan^{-1}(e^{2x}) + \dfrac{1}{4}\ln(e^{4x}+1) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{e^{2x}+e^{4x}}{e^{4x}+1} dx = \dfrac{1}{2}\tan^{-1}(e^{2x}) + \dfrac{1}{4}\ln(e^{4x}+1) + C$
+
+
+
+## Exercise 10
+
+### Statement
+
+$\displaystyle \int x\ln(x) dx$
+
+
+
+### Solution
+
+利用分部積分來計算
+
+令$u = \ln(x)$，$dv = xdx$，則$du = \dfrac{dx}{x}$，$v = \dfrac{x^2}{2}$
+
+利用$\displaystyle \int udv = uv - \int vdu$
+
+則$\displaystyle \int x\ln(x) dx = \dfrac{x^2\ln(x)}{2} - \displaystyle \int \dfrac{x^2}{2}\dfrac{dx}{x} = \dfrac{x^2\ln(x)}{2} - \dfrac{x^2}{4}$
+
+因此 $\displaystyle \int x\ln(x) dx = \dfrac{x^2\ln(x)}{2} - \dfrac{x^2}{4} + C$
+
+
+
+### Answer
+
+$\displaystyle \int x\ln(x) dx = \dfrac{x^2\ln(x)}{2} - \dfrac{x^2}{4} + C$
+
+
+
+## Exercise 11
+
+### Statement
+
+$\displaystyle \int x^3\ln(x) dx$
+
+
+
+### Solution
+
+利用分部積分來運算
+
+令$u = \ln(x)$，$dv = x^3dx$，則$du = \dfrac{dx}{x}$，$v = \dfrac{x^4}{4} dx$
+
+利用$\displaystyle \int udv = uv - \int vdu$
+
+則$\displaystyle \int x^3\ln(x) dx = \dfrac{x^4\ln(x)}{4}- \int \dfrac{x^4}{4}\dfrac{dx}{x} = \dfrac{x^4\ln(x)}{4} - \int \dfrac{x^3}{4}dx = \dfrac{x^4\ln(x)}{4} - \dfrac{x^4}{16}$
+
+所以$\displaystyle \int x^3\ln(x) dx = \dfrac{x^4\ln(x)}{4} - \dfrac{x^4}{16} + C$
+
+
+
+### Answer
+
+$\displaystyle \int x^3\ln(x) dx = \dfrac{x^4\ln(x)}{4} - \dfrac{x^4}{16} + C$
+
+
+
 ## Exercise 12
 
 ### Statement
