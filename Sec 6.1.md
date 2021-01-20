@@ -400,6 +400,96 @@ $\displaystyle \int^1_0 \ln(1+\sqrt{x}) dx = \dfrac{1}{2}$
 
 
 
+## Exercise 13
+
+### Statement
+
+$\displaystyle \int x\cos(3x) dx$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = x$，$dv = \cos(3x) dx$
+
+因此$du = dx$，$v = \dfrac{\sin(3x)}{3}$
+
+利用分部積分$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int x\cos(3x)dx = \dfrac{x\sin(3x)}{3} - \int\dfrac{\sin{3x}}{3}dx$
+
+計算$\displaystyle \int \dfrac{\sin 3x}{3} dx$，$\displaystyle \int \dfrac{\sin 3x}{3} dx = \dfrac{1}{3}\int\sin 3x dx = -\dfrac{1}{9}\cos(3x)$
+
+因此$\displaystyle \int x\cos(3x)dx = \dfrac{x\sin(3x)}{3} + \dfrac{1}{9}\cos(3x) + C$
+
+
+
+### Answer
+
+$\displaystyle \int x\cos(3x)dx = \dfrac{x\sin(3x)}{3} + \dfrac{1}{9}\cos(3x) + C$
+
+
+
+## Exercise 14
+
+### Statement
+
+$\displaystyle \int xe^{-x} dx$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = x$，$dv = e^{-x}dx$
+
+因此$du = dx$，$v = -e^{-x}$
+
+利用分部積分$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int xe^{-x} = -xe^{-x} - \int -e^{-x}dx$
+
+計算$\displaystyle \int -e^{-x}dx$，$\displaystyle \int-e^{-x} = -\int e^{-x}dx = -(-e^{-x}) = e^{-x}$
+
+因此$\displaystyle \int xe^{-x} = -xe^{-x} - e^{-x} +C$
+
+
+
+### Answer
+
+$\displaystyle \int xe^{-x} = -xe^{-x} - e^{-x} +C$
+
+
+
+## Exercise 15
+
+### Statement
+
+$\displaystyle \int xe^{5x}dx$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = x$，$dv = e^{5x}dx$
+
+則$du = dx$，$v = \dfrac{1}{5}e^{5x}$
+
+利用分部積分$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int xe^{5x}dx = \dfrac{xe^{5x}}{5} - \int \dfrac{1}{5}e^{5x}dx$z
+
+計算$\displaystyle \int \dfrac{1}{5}e^{5x}dx = \dfrac{1}{5}\int e^{5x}dx = \dfrac{1}{5}\times \dfrac{1}{5} e^{5x} = \dfrac{1}{25} e^{5x}$
+
+因此$\displaystyle \int xe^{5x}dx =\dfrac{xe^{5x}}{5} - \dfrac{e^{5x}}{25} + C$
+
+
+
+### Answer
+
+$\displaystyle \int xe^{5x}dx =\dfrac{xe^{5x}}{5} - \dfrac{e^{5x}}{25} + C$
+
+
+
 ## Exercise 16
 
 ### Statement
@@ -431,6 +521,80 @@ $\int \ln(u)du = u\ln(u) - \int u \dfrac{1}{u} du = u\ln(u) - \int 1du = u\ln(u)
 ### Answer
 
 $\displaystyle \int \ln(2x+3) dx = (2x+3)\ln(2x+3)-x+C$
+
+
+
+## Exercise 17
+
+### Statement
+
+$\displaystyle \int \sin^{-1}(2x)dx$
+
+
+
+### Solution
+
+利用代換積分，令$t = 2x$，則$dt = 2dx$，$dx=\dfrac{dt}{2}$
+
+因此$\displaystyle \int \sin^{-1}(2x)dx = \int \dfrac{\sin^{-1}(t)}{2}dt = \dfrac{1}{2}\int\sin^{-1}(t)dt$
+
+計算$\displaystyle \int \sin^{-1}(t)dt$，為分部積分做準備，令$u = \sin^{-1}(t)$，$dv = dt$
+
+因此$du = \dfrac{1}{\sqrt{1-t^2}}dt$，$v = t$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+因此$\displaystyle \int \sin^{-1}(t)dt = t\sin^{-1}(t) - \int \dfrac{t}{\sqrt{1-t^2}}dt$
+
+計算$\displaystyle \int \dfrac{t}{\sqrt{1-t^2}} dt$，利用代換積分法，令$k = 1-t^2$，則$dk = -2tdt$，$dt = \dfrac{dk}{-2t}$
+
+$\displaystyle \int \dfrac{t}{\sqrt{1-t^2}} dt = \int \dfrac{t}{\sqrt{k}}\dfrac{dk}{-2t} = \int \dfrac{1}{-2\sqrt{k}}dk = -\dfrac{1}{2}\int\dfrac{1}{\sqrt{k}}dk = -\sqrt{k} = -\sqrt{1-t^2}$
+
+因此$\displaystyle \int \sin^{-1}(t)dt = t\sin^{-1}(t)+\sqrt{1-t^2}$
+
+因此$\displaystyle \int \sin^{-1}(2x)dx = \dfrac{1}{2}\int \sin^{-1}(t)dt = x\sin^{-1}(2x) + \dfrac{\sqrt{1-4x^2}}{2} + C$
+
+### Answer
+
+$\displaystyle \int \sin^{-1}(2x)dx = x\sin^{-1}(2x) + \dfrac{\sqrt{1-4x^2}}{2} + C$
+
+
+
+## Exercise 18
+
+### Statement
+
+$\displaystyle \int^\pi_0 t\sin(3t)dt$
+
+
+
+### Solution
+
+求定積分前，先計算不定積分
+
+$\displaystyle \int t\sin(3t)dt$
+
+利用代換積分法，令$k = 3t$，因此$dk = 3dt$，$dt = \dfrac{1}{3}dk$
+
+$\displaystyle \int t\sin(3t)dt = \int \dfrac{k}{3}\sin(k)\dfrac{1}{3}dk = \dfrac{1}{9}\int k\sin(k)dk$
+
+計算$\displaystyle \int k\sin(k)dk$，為分部積分做準備，令$u = k$，$dv = \sin(k)dk$
+
+則$du = dk$，$v = -\cos(k)$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+因此$\displaystyle \int k\sin(k)dk = -k\cos(k) - \int -\cos(k)dk= -k\cos(k)+\int\cos(k)dk = -k\cos(k) + \sin(k)$
+
+還原$k$，因此$\displaystyle \int t\sin(3t)dt = \dfrac{1}{9}\int k\sin(k)dk = \dfrac{-3t\cos(3t)+\sin(3t)}{9}$
+
+因此$\displaystyle \int^\pi_0 t\sin(3t)dt = \dfrac{-3t\cos(3t)+\sin(3t)}{9}|^{\pi}_0= \dfrac{-3\pi\cos(3\pi)+\sin(3\pi)}{9} - 0 = \dfrac{\pi}{3}$ 
+
+
+
+### Answer
+
+$\displaystyle \int^\pi_0 t\sin(3t)dt = \dfrac{\pi}{3}$
 
 
 
