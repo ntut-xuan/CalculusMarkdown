@@ -467,19 +467,560 @@ $x \neq 1$
 
 求函數的定義域
 
+$g(t)=\dfrac{t+1}{2t^2-t-1}$
+
+
+
+### Solution
+
+考慮分母不能為$0$，故$2t^2-t-1 \neq 0$
+
+因此$t \neq \dfrac{-1}{2}, t \neq 1$
+
+故定義域為$t \in (-\infty ,-\dfrac{1}{2}) \cup (-\dfrac{1}{2}, 1) \cup (1, \infty)$
+
+
+
+### Answer
+
+$t \in (-\infty ,-\dfrac{1}{2}) \cup (-\dfrac{1}{2}, 1) \cup (1, \infty)$
+
+
+
+## Exercise 18
+
+### Statement
+
+求函數的定義域
+
+$f(x) = \sqrt{9-x^2}$
+
+
+
+### Solution
+
+根號內必須要是非負整數，故我們考慮$9-x^2 \ge 0$，得到$-3 \le x \le 3$
+
+因此$f$的定義域為$x \in [-3, 3]$
+
+
+
+### Answer
+
+$x \in [-3, 3]$
+
+
+
+## Exercise 19
+
+### Statement
+
+求函數的定義域
+
+$f(x) = \sqrt{x^2-2x-3}$
+
+
+
+### Solution
+
+根號內必須要是非負整數，故我們考慮$x^2-2x-3 \ge 0 \Rightarrow (x-3)(x+1)\ge 0 \Rightarrow -1 \le x, x\ge 3$
+
+因此$f$的定義域為$x \in (-\infty, -1] \cup [3, \infty)$
+
+
+
+### Answer
+
+$x \in (-\infty, -1] \cup [3, \infty)$
+
+
+
+## Exercise 20
+
+### Statement
+
+求函數的定義域
+
+$f(x) = \sqrt{x-2} + \sqrt{4-x}$
+
+
+
+### Solution
+
+考慮根號內必須要是非負整數，因此考慮$x - 2 \ge 0$與$4-x \ge 0$
+
+得到$x \ge 2$以及$x \le 4$
+
+對兩者取交集，得到$2 \le x \le 4$
+
+因此$f$的定義域為$x \in [2, 4]$
+
+
+
+### Answer
+
+$x \in [2, 4]$
+
+
+
+## Exercise 21
+
+### Statement
+
+求函數的定義域
+
+$f(x) = \dfrac{\sqrt{x-1}}{x^2-x-6}$
+
+
+
+### Solution
+
+考慮以下兩點並取交集
+
+1. 根號內必須要是非負整數，因此$x - 1 \ge 0$
+2. 分母不能為0，因此$x^2-x-6 \neq 0$
+
+所以我們得到
+
+1. $x \ge 1$
+2. $x \neq 3, x \neq -2$
+
+對兩點取交集，得到$f$的定義域為$x \in [1, 3) \cup (3, \infty)$
+
+
+
+### Answer
+
+$x \in [1, 3) \cup (3, \infty)$
+
+
+
+## Exercise 22
+
+### Statement
+
+畫出下列函數圖形
+
+$g(x) = \sqrt{x-2}$
+
+
+
+### Solution
+
+考慮函數的定義域，根號內必須要是非負整數，因此函數的定義域為$x \ge 2$
+
+接著我們可以開始描點，$g(6) = 2$，$g(11) = 3$，$g(18) = 4$，$g(27) = 5$，$g(38) = 6$....
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+
+
+<img src="https://i.imgur.com/2MW9i06.png" alt="image-20210122002927003" style="zoom:67%;" />
+
+
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 23
+
+### Statment
+
+畫出下列函數圖形
+
 $h(x) = x^2-4x+3$
 
 
 
 ### Solution
 
-函數為多項式函數，因此定義域為$x \in \mathbb{R}$
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$h(-5) = 48, h(-4) = 35, h(-3) = 24, h(-2)=15, h(-1)=8$
+
+$h(0)=3, h(1)=0, h(2)=-1, h(3)=0, h(4)=3, h(5)=8$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+<img src="https://i.imgur.com/65VIlcn.png" alt="image-20210122003414458" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 24
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x)=\dfrac{1}{2}x^2+1$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$f(4) = 9, f(2)=3, f(0)=1, f(-2) = 3, f(-4)=9$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+<img src="https://i.imgur.com/pBOxjfD.png" alt="image-20210122003647449" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 25
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x)=|x|+1$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$f(-2) = 3, f(-1)=2, f(0)=0, f(1)=2, f(2)=3$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+<img src="https://i.imgur.com/QS6Rwhx.png" alt="image-20210122003915924" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 26
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x)=|x^2-1|$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$f(-2)=3, f(-1)=0, f(0)=1, f(1)=0, f(2)=3$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+
+
+![image-20210122010814946](https://i.imgur.com/qml8qN9.png)
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 27
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x)=x^2-2|x|+1$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$f(-2)=1, f(-1)=0, f(0)=1, f(1)=0, f(2)=1$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+
+
+<img src="https://i.imgur.com/pJTUM3s.png" alt="image-20210122004429365" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 28
+
+### Statement
+
+畫出下列函數圖形
+
+$f(t) = \dfrac{|t-2|}{t-2}$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$t \in (-\infty, 2) \cup (2, \infty)$
+
+若$t$小於2，則$f(t)=\dfrac{-(t-2)}{t-2} = -1$
+
+若$t$大於2，則$f(t) = \dfrac{t-2}{t-2} = 1$
+
+因此我們可以畫出圖形
+
+<img src="https://i.imgur.com/vIIFZvm.png" alt="image-20210122004747419" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 29
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x) = \left\{\begin{array}\ -x+1, & x\le 1 \\ x^2-2, & x > 1\end{array}\right.$
+
+
+
+### Solution
+
+這是兩個不同的函數組成的分段函數，因此我們可以分段處理
+
+兩個函數均為多項式，因此定義域均為$x \in \mathbb{R}$
+
+我們可以開始描點並畫出函數
+
+第一個函數 $f(-3) = 4, f(-2)=3,f(-1) = 2, f(0) = 1, f(1) = 0$
+
+第二個函數$f(1.0000001) \approx -1, f(2)=2, f(3)=7$
+
+因此我們可以畫出圖形
+
+
+
+<img src="https://i.imgur.com/7lGtNDu.png" alt="image-20210122010047530" style="zoom:67%;" />	
 
 
 
 ### Answer
 
-$x \in \mathbb{R}$
+請見Solution
 
 
 
+## Exercise 30
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x) = \left\{\begin{array}\ -x-1, & x < -1 \\ 0, & -1 \le x\le1 \\ x+2, & x > 1\end{array}\right.$
+
+
+
+### Solution
+
+這是三個不同的函數組成的分段函數，因此我們可以分段處理
+
+第一與第三個函數為多項式、第二個函數為常數函數，因此定義域為$x \in \mathbb{R}$
+
+我們可以開始描點並畫出函數
+
+第一個函數 $f(-3) = 2, f(-2)=1,f(-1) = 0, f(0) = 0, f(1) = 0$
+
+第二個函數$f(1.0000001) \approx 3, f(2)=4, f(3)=5$
+
+因此我們可以畫出圖形
+
+
+
+<img src="https://i.imgur.com/aY5q9Mc.png" alt="image-20210122010427834" style="zoom:67%;" />
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 31
+
+### Statement
+
+畫出下列函數圖形
+
+$f(x) = ||x^2-1|-2|$
+
+
+
+### Solution
+
+考慮函數的定義域，定義域為$x \in \mathbb{R}$
+
+接著我們可以開始描點
+
+$f(-2)=1, f(-1)=0, f(0)=1, f(1)=0, f(2)=1$
+
+將描點的所有點連接起來，即可得到大略的函數圖形。
+
+
+
+![image-20210122011023752](https://i.imgur.com/6vpAHZc.png)
+
+### Answer
+
+請見Solution
+
+
+
+## Exercise 32
+
+### Statement
+
+假設$f(x)=\sqrt{x+2}$、$g(x)=2x+1$、$h(x)=x^2-1$，求
+
+1. $(g \circ f)(x)$
+2. $(f\circ h)(x)$
+3. $(g \circ h)(2)$
+4. $g(g(1))$
+
+
+
+### Solution 32.1
+
+$(g\circ f)(x) = g(f(x))=2f(x)+1=2\sqrt{x+2}+1$
+
+
+
+### Solution 32.2
+
+$(f \circ h)(x) = \sqrt{h(x)+2} = \sqrt{x^2-1+2} = \sqrt{x^2+1}$
+
+
+
+### Solution 32.3
+
+$(g \circ h)(2) = 2h(2)+1 = 2(3)+1 = 7$
+
+
+
+### Solution 32.4
+
+$g(g(1)) = g(3) = 7$
+
+
+
+### Answer
+
+1. $(g\circ f)(x) =2\sqrt{x+2}+1$
+2. $(f \circ h)(x) = \sqrt{x^2+1}$
+3. $(g \circ h)(2) = 7$
+4. $g(g(1)) = 7$
+
+
+
+## Exercise 33
+
+### Statement
+
+假設$f(x-1)=2x+3$，求
+
+1. $f(0)$
+2. $f(x)$
+
+
+
+### Solution 33.1
+
+我們可以令$x = 1$，這樣就能使得$f(x-1) = f(0)$
+
+因此$f(0)=2+3 = 5$
+
+
+
+### Solution 33.2
+
+我們可以令$x-1$變成$x$，也就是把$x$放入$x+1$
+
+因此$f(x) = 2(x+1)+3 = 2x+2+3 =2x+5$
+
+
+
+### Answer
+
+1. $5$
+2. $2x+5$
+
+
+
+## Exercise 34
+
+### Statement
+
+假設$f(x) = x-1$且$g(x)=2x+3$，求一函數$h(x)$使得$g(x) = f(h(x))$
+
+
+
+### Solution
+
+$f(h(x)) = h(x)-1$
+
+我們要使得$f(h(x)) = g(x)$，也就是令$h(x)-1 = 2x+3$
+
+因此$h(x) = 2x+4$
+
+
+
+### Answer
+
+$h(x) = 2x+4$
+
+
+
+## Exercise 35
+
+### Statement
+
+假設$f(x) = \dfrac{2}{x+\dfrac{2}{x+\dfrac{2}{x+\dfrac{2}{x+...}}}}$，求$f(1)$
+
+
+
+### Solution
+
+令$f(x) = \dfrac{2}{x+f(x)}$，因此$f(1) = \dfrac{2}{1+f(1)} \Rightarrow (f(1))^2+f(1)-2=0$
+
+令$u = f(1)$，則$u^2+u-2=0$，因此$u = -2$或$u = 1$
+
+但$f(x)$是分式，且必定大於0，因此$u=-2$的情況不存在，故$f(1) = 1$
+
+
+
+### Answer
+
+$f(1) = 1$
