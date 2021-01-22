@@ -192,6 +192,184 @@ $\displaystyle \int \dfrac{\sin^3 x}{\cos^2 x}dx = \sec x + \cos  x + C$
 
 
 
+## Exercise 8
+
+### Statement
+
+$\displaystyle \int \sin^2 x \cot^3 x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sin^2 x \cot^3 x dx = \int \sin^2 x \dfrac{\cos^3 x}{\sin^3 x} dx = \int \dfrac{\cos^3 x}{\sin x} dx = \int \dfrac{\cos^2 x}{\sin x}\cos x dx = \int \dfrac{1-\sin^2 x}{\sin x} \cos xdx$
+
+令$u = \sin x$，則$du = \cos x dx$，因此$dx = \dfrac{du}{\cos x}$
+
+$\displaystyle \int \dfrac{1-\sin^2 x}{\sin x} \cos xdx = \int \dfrac{1-u^2}{u}\cos x\dfrac{du}{\cos x} = \int \dfrac{1-u^2}{u}du = \int \dfrac{1}{u}du - \int u du = \ln(|u|)-\dfrac{u^2}{2}$
+
+還原$u$，因此$\displaystyle \int \sin^2 x \cot^3 x dx = \ln(|\sin x|) - \dfrac{\sin^2 x}{2} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sin^2 x \cot^3 x dx = \ln(|\sin x|) - \dfrac{\sin^2 x}{2} + C$
+
+
+
+## Exercise 9
+
+### Statement
+
+$\displaystyle \int \sec^2 x \tan^4 x dx$
+
+
+
+### Solution
+
+令$u = \tan x$，則$du = \sec^2 x dx$，因此$dx = \dfrac{du}{\sec^2 x}$
+
+$\displaystyle \int \sec^2 x\tan^4 x dx = \int \sec^2 x u^4\dfrac{du}{\sec^2 x} = \int u^4du = \dfrac{u^5}{5}$
+
+還原$u$，得到$\displaystyle \int \sec^2 x \tan^4 x dx = \dfrac{\tan^5 x}{5} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sec^2 x \tan^4 x dx = \dfrac{\tan^5 x}{5} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sec x \tan^3 x dx = -\dfrac{1}{3\cos^3 x}+\dfrac{1}{\cos x} + C$
+
+
+
+## Exercise 10
+
+### Statement
+
+$\displaystyle \int \tan^2 x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \tan^2 x dx = \int (\sec^2 x - 1)dx = \int \sec^2x dx - \int 1dx = \tan x-x$
+
+因此$\displaystyle \int \tan^2 x dx = \tan x - x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \tan^2 x dx = \tan x - x + C$
+
+
+
+## Exercise 11
+
+### Statement
+
+$\displaystyle \int \cot^2 x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \cot^2 x dx = \int \dfrac{\cos^2 x}{\sin^2 x} dx = \int \dfrac{1-\sin^2 x}{\sin^2 x} dx = \int \dfrac{1}{\sin^2 x}dx - \int1 dx = -\cot x - x$
+
+因此$\displaystyle \int \cot^2 x dx = -\cot x - x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \cot^2 x dx = -\cot x - x + C$
+
+
+
+## Exercise 12
+
+### Statement
+
+$\displaystyle \int \sec x \tan^3 x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sec x \tan^3 x dx = \int \dfrac{1}{\cos x}\dfrac{\sin^3 x}{\cos^3 x} dx = \int \dfrac{\sin^3 x}{\cos^4 x} dx = \int \dfrac{\sin^2 x}{\cos^4 x}\sin xdx = \int \dfrac{1-\cos^2 x}{\cos^4 x}\sin x dx$
+
+令$u = \cos x$，則$du = -\sin x dx$，因此$dx = \dfrac{du}{-\sin x}$
+
+$\displaystyle \int \dfrac{1-\cos^2 x}{\cos^4 x}\sin x dx = -\int \dfrac{1-u^2}{u^4}du = -(\int \dfrac{1}{u^4}du - \int \dfrac{1}{u^2}du) = \dfrac{1}{3u^3}-\dfrac{1}{u} = \dfrac{1}{3\cos^3 x}-\dfrac{1}{\cos x}$
+
+因此$\displaystyle \int \sec x \tan^3 x dx = \dfrac{1}{3\cos^3 x} - \dfrac{1}{\cos x} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sec x \tan^3 x dx = \dfrac{1}{3\cos^3 x} - \dfrac{1}{\cos x} + C$
+
+
+
+## Exercise 13
+
+### Statement
+
+$\displaystyle \int \sec^4x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sec^4x dx = \int \sec^2x \sec^2 x dx = \int (1+\tan^2x)(\sec^2x)dx$
+
+令$u = \tan x$，則$du = \sec^2 x dx$，因此$dx = \dfrac{du}{\sec^2 x}$
+
+$\displaystyle \int (1+\tan^2x)(\sec^2x)dx = \int(1+u^2)\sec^2x\dfrac{du}{\sec^2 x} = \int (1+u^2)du = u+\dfrac{u^3}{3}$
+
+因此$\displaystyle \int \sec^4x dx = \tan x + \dfrac{\tan^3 x}{3} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sec^4x dx = \tan x + \dfrac{\tan^3 x}{3} + C$
+
+
+
+## Exercise 14
+
+### Statement
+
+$\displaystyle \int \dfrac{\tan^3 x}{\cos^2 x}dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{\tan^3 x}{\cos^2 x}dx = \int \tan^3 x \sec^2 xdx$
+
+令$u = \tan x$，則$du = \sec^2x dx$，因此$dx = \dfrac{du}{\sec^2 x}$
+
+$\displaystyle \int \tan^3x\sec^2 xdx = \int u^3\sec^2 x\dfrac{du}{\sec^2 x} = \int u^3du = \dfrac{u^4}{4}$
+
+還原$u$，得到$\displaystyle \int \dfrac{\tan^3 x}{\cos^2 x}dx = \dfrac{\tan^4 x}{4} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{\tan^3 x}{\cos^2 x}dx = \dfrac{\tan^4 x}{4} + C$
+
+
+
 ## Exercise 19
 
 ### Statement
