@@ -370,33 +370,175 @@ $\displaystyle \int \dfrac{\tan^3 x}{\cos^2 x}dx = \dfrac{\tan^4 x}{4} + C$
 
 
 
-## Exercise 19
+## Exercise 15
 
 ### Statement
 
-$\int \dfrac{1}{x^2\sqrt{4-x^2}} dx$
+$\displaystyle \int \dfrac{1}{\sin^3 x\tan^3 x} dx$
 
 
 
 ### Solution
 
-令$x = 2\sin u$，$u = \sin^{-1}(\dfrac{x}{2})$，則$dx = 2\cos u du$
+$\displaystyle \int \dfrac{1}{\sin^3 x\tan^3 x} dx = \int \dfrac{1}{\sin^3 x\dfrac{\sin^3 x}{\cos^3 x}} dx = \int \dfrac{\cos^3 x}{\sin^6 x} dx = \int \dfrac{\cos^2 x}{\sin^6 x}\cos x dx = \int \dfrac{1-\sin^2 x}{\sin^6 x} \cos x dx$
 
-因此$\int \dfrac{1}{x^2\sqrt{4-x^2}} dx = \int \dfrac{2\cos u}{4\sin^2u \sqrt{4-4\sin^2u}} du = \int \dfrac{2\cos u}{8\sin^2u\cos u}du = \dfrac{1}{4}\int\dfrac{1}{\sin^2u} du$
+令$u = \sin x$，則$du = \cos x dx$，因此$dx = \dfrac{du}{\cos x}$
 
-計算$\int \dfrac{1}{\sin^2 u} du = \int \dfrac{\sec^2 u}{\tan^2 u}du$，
+$\displaystyle \int \dfrac{1-\sin^2 x}{\sin^6 x} \cos x dx = \int \dfrac{1-u^2}{u^6}\cos x\dfrac{du}{\cos x} = \int \dfrac{1-u^2}{u^6}du$
 
-令$t = \tan u$，則 $dt = \sec^2u\ du,\ du = \dfrac{1}{\sec^2 u}dt$
+$\displaystyle \int \dfrac{1-u^2}{u^6}du = \int \dfrac{1}{u^6}du-\int \dfrac{1}{u^4}du = -\dfrac{1}{5u^5}+\dfrac{1}{3u^3}$
 
-$\int \dfrac{\sec^2 u}{\tan^2 u} du = \int \dfrac{1}{t^2} dt = -t^{-1}+C = -\cot u + C$
-
-又$u = \sin^{-1}(\dfrac{x}{2})$，則$-\cot(\sin^{-1}(\dfrac{x}{2})) du = -\dfrac{\sqrt{1-(\dfrac{x}{2})^2}}{\dfrac{x}{2}} = -\dfrac{\sqrt{4-x^2}}{x}$
-
-因此$\int \dfrac{1}{x^2\sqrt{4-x^2}} dx = \dfrac{1}{4}\int \dfrac{1}{\sin^2 u} du = \dfrac{-\sqrt{4-x^2}}{4x} + C$
+還原$u$，得到$\displaystyle \int \dfrac{1}{\sin^3 x\tan^3 x} dx = -\dfrac{1}{5\sin^5x}+\dfrac{1}{3\sin^3x}+C$
 
 
 
 ### Answer
 
-$\int \dfrac{1}{x^2\sqrt{4-x^2}} dx = \dfrac{-\sqrt{4-x^2}}{4x} + C$
+$\displaystyle \int \dfrac{1}{\sin^3 x\tan^3 x} dx = -\dfrac{1}{5\sin^5x}+\dfrac{1}{3\sin^3 x}+C$
 
+
+
+## Exercise 16
+
+### Statement
+
+$\displaystyle \int \sin 3x\cos 2x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sin 3x\cos 2x dx = \int(\dfrac{1}{2}\sin x +\dfrac{1}{2}\sin5x)dx = \dfrac{1}{2}\int\sin xdx+\dfrac{1}{2}\int \sin 5xdx = -\dfrac{1}{2}\cos x - \dfrac{1}{10}\cos 5x$
+
+因此$\displaystyle \int \sin 3x\cos 2x dx = -\dfrac{1}{2}\cos x - \dfrac{1}{10}\cos 5x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sin 3x\cos 2x dx = -\dfrac{1}{2}\cos x - \dfrac{1}{10}\cos 5x + C$
+
+
+
+## Exercise 17
+
+### Statement
+
+$\displaystyle \int^\frac{\pi}{6}_0 \cos x \cos 3x dx$
+
+
+
+### Solution
+
+先計算$\displaystyle \int \cos x \cos 3x dx$
+
+$\displaystyle \int \cos x \cos 3x dx = \int \dfrac{1}{2}(\cos -2x + \cos 4x)dx = \dfrac{1}{2}\int \cos -2x dx + \dfrac{1}{2}\int \cos 4x dx = -\dfrac{1}{4}\sin -2x + \dfrac{1}{8}\sin 4x$
+
+因此$\displaystyle \int \cos x \cos 3x dx = -\dfrac{1}{4}\sin(-2x)+\dfrac{1}{8}\sin 4x$
+
+因此$\displaystyle \int^\frac{\pi}{6}_0 \cos x \cos 3x dx = (-\dfrac{1}{4}\sin(-2x)+\dfrac{1}{8}\sin 4x)|^\frac{\pi}{6}_0 = \dfrac{3\sqrt{3}}{16}$
+
+
+
+### Answer
+
+$\displaystyle \int^\frac{\pi}{6}_0 \cos x \cos 3x dx = \dfrac{3\sqrt{3}}{16}$
+
+
+
+## Exercise 18
+
+### Statement
+
+$\displaystyle \int \sin 5x \sin 2x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sin 5x \sin 2x dx = \int \dfrac{1}{2}(\cos3x-\cos7x)dx = \dfrac{1}{2}\int \cos 3x - \int \cos 7x dx = \dfrac{1}{6}\sin 3x - \dfrac{1}{14}\sin 7x$
+
+因此$\displaystyle \int \sin 5x \sin 2x dx = \dfrac{1}{6}\sin 3x - \dfrac{1}{14}\sin 7x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sin 5x \sin 2x dx = \dfrac{1}{6}\sin 3x - \dfrac{1}{14}\sin 7x + C$
+
+
+
+## Exercise 19
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{x^2\sqrt{4-x^2}} dx$
+
+
+
+### Solution
+
+令$x = 2\sin u$，則$dx  = 2\cos u du$，且$u = \arcsin(\dfrac{x}{2})$
+
+$\displaystyle \int \dfrac{1}{x^2\sqrt{4-x^2}} dx = \int \dfrac{1}{4\sin^2 u \sqrt{4-4\sin^2u}} 2\cos u du = \int \dfrac{1}{4\sin^2u2\cos u}2\cos udu = \int\dfrac{1}{4\sin^2u}du$
+
+$\displaystyle \int\dfrac{1}{4\sin^2u}du = \int 4\csc^2 udu = 4\int\csc^2udu = -4\cot u = -4\cot(\arcsin(\dfrac{x}{2})) = -\dfrac{\sqrt{4-x^2}}{4x}$
+
+因此$\displaystyle \int \dfrac{1}{x^2\sqrt{4-x^2}} dx = -\dfrac{\sqrt{4-x^2}}{4x} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{x^2\sqrt{4-x^2}} dx = -\dfrac{\sqrt{4-x^2}}{4x} + C$
+
+
+
+## Exercise 20
+
+### Statement
+
+$\displaystyle \int^\frac{1}{2}_0 x^3\sqrt{9-4x^2}dx$
+
+
+
+### Solution
+
+令$t = 9-4x^2$，則$dt = -8xdx$，因此$dx = \dfrac{dt}{-8x}$，上界$8$，下界$9$
+
+因此$\displaystyle \int^\frac{1}{2}_0 x^3\sqrt{9-4x^2}dx = \int^8_9x^3\sqrt{t}\dfrac{dt}{-8x} = \dfrac{1}{32}\int^8_9(t\sqrt{t}-9\sqrt{t})dt$
+
+$\displaystyle = \dfrac{1}{32}(\dfrac{2t^\frac{5}{2}}{5}-6t^\frac{3}{2})|^9_8 = ( \dfrac{256\sqrt{2}}{5}-96\sqrt{2} - (\dfrac{486}{5}-162))\times \dfrac{1}{32} = \dfrac{324-224\sqrt{2}}{160} = \dfrac{81-56\sqrt{2}}{40}$
+
+
+
+### Answer
+
+$\dfrac{81-56\sqrt{2}}{40}$
+
+
+
+## Exercise 21
+
+
+### Statement
+
+$\displaystyle \int \dfrac{x^3}{\sqrt{(4-x^2)^3}}dx$
+
+
+
+### Solution
+
+令$u = 4-x^2$，則$du = -2xdx$，因此$dx = -\dfrac{du}{2x}$
+
+$\displaystyle \int \dfrac{x^3}{\sqrt{(4-x^2)^3}}dx = \int \dfrac{x^3}{\sqrt{u^3}}\dfrac{-du}{2x} = -\dfrac{1}{2}\int \dfrac{x^2}{\sqrt{u^3}}du = \dfrac{1}{2}\int \dfrac{u-4}{\sqrt{u^3}}du = \dfrac{1}{2}\int \dfrac{u}{\sqrt{u^3}}du - \dfrac{1}{2}\int \dfrac{4}{\sqrt{u^3}}du$
+
+$= \displaystyle \dfrac{1}{2}\int u^\frac{-1}{2}du - 2\int u^\frac{-3}{2}du  = \sqrt{u}+\dfrac{4}{\sqrt{u}} = 2\sqrt{4-x^2}+\dfrac{4}{\sqrt{4-x^2}}$
+
+因此$\displaystyle \int \dfrac{x^3}{\sqrt{(4-x^2)^3}}dx = \sqrt{4-x^2} + \dfrac{4}{\sqrt{4-x^2}} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{x^3}{\sqrt{(4-x^2)^3}}dx = \sqrt{4-x^2} + \dfrac{4}{\sqrt{4-x^2}} + C$
