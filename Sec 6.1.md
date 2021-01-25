@@ -598,6 +598,282 @@ $\displaystyle \int^\pi_0 t\sin(3t)dt = \dfrac{\pi}{3}$
 
 
 
+## Exercise 19
+
+### Statement
+
+$\displaystyle \int e^{2\theta} \sin3\theta d\theta$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = \sin3\theta$，且$dv = e^{2\theta} d\theta$
+
+因此$du = 3\cos3\theta$，且$v = \dfrac{e^{2\theta}}{2}$
+
+利用分部積分，$\displaystyle \int e^{2\theta} \sin 3\theta d\theta = \dfrac{e^{2\theta}\sin3\theta}{2} - \int \dfrac{3e^{2\theta}\cos3\theta}{2} = \dfrac{e^{2\theta}\sin3\theta}{2} - \dfrac{3}{2}\int e^{2\theta}\cos3\theta d\theta$
+
+計算$\displaystyle \dfrac{3}{2}\int e^{2\theta}\cos3\theta d\theta$，為分部積分做準備，令$u = \cos3\theta$，且$dv = e^{2\theta}d\theta$
+
+因此$du = -3\sin3\theta$，且$v = \dfrac{e^{2\theta}}{2}$
+
+利用分部積分，$\displaystyle \dfrac{3}{2}\int e^{2\theta}\cos3\theta d\theta = \dfrac{3e^{2\theta}\cos(3\theta)}{4} - \dfrac{3}{2}\int \dfrac{-3e^{2\theta}\sin3\theta}{2}d\theta = \dfrac{3e^{2\theta}\cos(3\theta)}{4} + \dfrac{9}{4}\int e^{2\theta}\sin3\theta d\theta$
+
+因此$\displaystyle \int e^{2\theta} \sin 3\theta d\theta = \dfrac{e^{2\theta}\sin3\theta}{2} -(\dfrac{3e^{2\theta}\cos(3\theta)}{4} + \dfrac{9}{4}\int e^{2\theta}\sin3\theta d\theta)$
+
+$\displaystyle = \dfrac{e^{2\theta}\sin3\theta}{2} - \dfrac{3e^{2\theta}\cos3\theta}{4} - \dfrac{9}{4}\int e^{2\theta}\sin3\theta d\theta$
+
+$\displaystyle = \dfrac{2e^{2\theta}\sin 3\theta - 3e^{2\theta}\cos 3\theta}{4} - \dfrac{9}{4}\int e^{2\theta}\sin3\theta d\theta$
+
+移項，得到$\displaystyle \dfrac{13}{4} \int e^{2\theta}\sin3\theta d\theta = \dfrac{2e^{2\theta}\sin3\theta-3e^{2\theta}\cos3\theta}{4}$
+
+因此$\displaystyle \int e^{2\theta}3\sin \theta d\theta = \dfrac{2e^{2\theta}\sin3\theta - 3e^{2\theta}\cos 3\theta}{13} + C$
+
+
+
+### Answer
+
+$\displaystyle \int e^{2\theta}3\sin \theta d\theta = \dfrac{2e^{2\theta}\sin3\theta - 3e^{2\theta}\cos 3\theta}{13} + C$
+
+
+
+## Exercise 20
+
+### Statement
+
+$\displaystyle \int \tan^{-1}(4t)dt$
+
+
+
+### Solution
+
+利用代換積分法，令$x =4t$，則$dx = 4dt$，因此$dt = \dfrac{dx}{4}$
+
+因此$\displaystyle \int \tan^{-1}(4t)dt = \int \tan^{-1}(x)\dfrac{dx}{4} = \dfrac{1}{4}\int \tan^{-1}(x)dx$
+
+計算$\displaystyle \int \tan^{-1}(x)dx$，為分部積分做準備，令$u = \tan^{-1}(x)$，且$dv = dx$
+
+因此$du = \dfrac{1}{1+x^2}dx$，$v = x$
+
+利用代換積分，$\displaystyle \int \tan^{-1}(x)dx = x\tan^{-1}(x)-\int\dfrac{x}{1+x^2}dx$
+
+計算$\displaystyle \int \dfrac{x}{1+x^2}dx$，利用代換積分，令$k = 1+x^2$，則$dk = 2xdx$，$dx = \dfrac{dk}{2x}$
+
+因此$\displaystyle \int \dfrac{x}{1+x^2}dx = \int \dfrac{x}{k}\dfrac{dk}{2x} = \dfrac{1}{2}\int\dfrac{1}{k}dk = \dfrac{1}{2}\ln(|k|)$
+
+還原$k$，得到$\displaystyle \int \dfrac{x}{1+x^2}dx = \dfrac{1}{2}\ln(|1+x^2|)$
+
+因此$\displaystyle \int \tan^{-1}(x)dx = x\tan^{-1}(x)-\dfrac{1}{2}\ln(|1+x^2|)$
+
+因此$\displaystyle \int \tan^{-1}(4t)dt = \dfrac{1}{4}\int \tan^{-1}(x)dx = \dfrac{1}{4}x\tan^{-1}(x) - \dfrac{1}{8}\ln(|1+x^2|)$
+
+還原$t$，得到$\displaystyle \int \tan^{-1}(4t)dt = t\tan^{-1}(4t) - \dfrac{1}{8}\ln(|1+16t^2|)$
+
+
+
+### Answer
+
+$\displaystyle \int \tan^{-1}(4t)dt = t\tan^{-1}(4t) - \dfrac{1}{8}\ln(|1+16t^2|)$
+
+
+
+## Exercise 21
+
+### Statement
+
+$\displaystyle \int (\ln x)^2 dx$
+
+
+
+### Solution
+
+$\displaystyle \int (\ln x)^2 dx = \int \ln(x) \ln(x)dx$
+
+為分部積分做準備，令$u = \ln(x)$，$dv = \ln(x)dx$
+
+因此$du = \dfrac{dx}{x}$，$v = x\ln x-x$
+
+利用分部積分法，$\displaystyle \int udv = uv - \int vdu$
+
+因此$\displaystyle \int (\ln x)^2 dx = (\ln x)(x\ln x - x) - \int (x\ln x - x)\dfrac{dx}{x} = x\ln^2 x-x\ln x - \int (\ln x - 1) dx$
+
+計算$\displaystyle \int \ln(x)-1 dx$，$\displaystyle \int \ln(x)-1 dx = \int \ln(x)dx - \int 1dx = x\ln x - x - x = x\ln x - 2x$
+
+因此$\displaystyle \int (\ln x)^2 dx = x\ln^2 x-x\ln x - x\ln x - 2x = x\ln^2x-2x\ln x + 2x + C$
+
+
+
+### Answer
+
+$\displaystyle \int (\ln x)^2 dx = x\ln^2 x - 2x\ln x + 2x + C$
+
+
+
+## Exercise 22
+
+### Statement
+
+$\displaystyle \int^2_1 \dfrac{\ln x}{x^2} dx$
+
+
+
+### Solution
+
+先計算$\displaystyle \int \dfrac{\ln(x)}{x^2}dx$，為代換積分法做準備，令$u = \ln(x)$，$dv = x^{-2}dx$
+
+因此$du = \dfrac{dx}{x}$，$v = -x^{-1}$
+
+利用代換積分法，$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int \dfrac{\ln(x)}{x^2}dx = -\dfrac{\ln(x)}{x} - \int -x^{-1}\dfrac{dx}{x} =  -\dfrac{\ln(x)}{x} - \int -x^{-2}dx = -\dfrac{\ln(x)}{x}-x^{-1}$
+
+因此$\displaystyle \int \dfrac{\ln(x)}{x^2}dx = -\dfrac{\ln(x)}{x}-\dfrac{1}{x} = -\dfrac{\ln(x)+1}{x}$
+
+因此$\displaystyle \int^2_1 \dfrac{\ln x}{x^2} dx = -\dfrac{\ln(x)+1}{x}|^2_1 = -\dfrac{\ln(2)+1}{2}+1 = \dfrac{-\ln(2)+1}{2}$
+
+
+
+### Answer
+
+$\displaystyle \int^2_1 \dfrac{\ln x}{x^2} dx = \dfrac{-\ln(2)+1}{2}$
+
+
+
+## Exercise 23
+
+### Statement
+
+$\displaystyle \int^1_0 \dfrac{x}{e^{3x}} dx$
+
+
+
+### Solution
+
+先計算$\displaystyle \int \dfrac{x}{e^{3x}} dx$，為分部積分做準備，令$u = x$，$dv = e^{-3x}dx$
+
+因此$du = dx$，$v = -\dfrac{e^{-3x}}{3}$
+
+
+
+利用分部積分，$\displaystyle \int udv  = uv - \int vdu$
+
+因此$\displaystyle \int \dfrac{x}{e^{3x}} dx = -\dfrac{xe^{-3x}}{3} - \int -\dfrac{e^{-3x}}{3}dx = \dfrac{xe^{-3x}}{3} + \dfrac{1}{3}\int e^{-3x}dx$
+
+計算$\displaystyle \int e^{-3x}dx$，$\displaystyle \int e^{-3x}dx = -\dfrac{e^{-3x}}{3}$
+
+因此$\displaystyle \int \dfrac{x}{e^{3x}} dx = -\dfrac{xe^{-3x}}{3}-\dfrac{e^{-3x}}{9} = \dfrac{-3xe^{-3x}-e^{-3x}}{9} = \dfrac{-(3x+1)e^{-3x}}{9}$
+
+計算$\displaystyle \int^1_0 \dfrac{x}{e^{3x}} dx$，$\displaystyle \int^1_0 \dfrac{x}{e^{3x}} dx = \dfrac{-4e^{-3}}{9} + \dfrac{1}{9} = \dfrac{-4e^{-3}+1}{9}$
+
+
+
+### Answer
+
+$\displaystyle \int^1_0 \dfrac{x}{e^{3x}} dx = \dfrac{-4e^{-3}+1}{9}$
+
+
+
+## Exercise 24
+
+### Statement
+
+$\displaystyle \int \cos x \ln(\sin x)dx$
+
+
+
+### Solution
+
+利用代換積分法，令$u = \sin x$，則$du = \cos x dx$，因此$dx = \dfrac{du}{\cos x}$
+
+$\displaystyle \int \cos x \ln(\sin x)dx = \int \cos x \ln(u)\dfrac{du}{\cos x} = \int \ln u du = u\ln(u)-u$
+
+還原$u$，得到$\displaystyle \int \cos x \ln(\sin x)dx = \sin x\ln(\sin x) - \sin x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \cos x \ln(\sin x)dx = \sin x\ln(\sin x) - \sin x + C$
+
+
+
+## Exercise 25
+
+### Statement
+
+$\displaystyle \int \cos(\ln(x)) dx$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = \cos(\ln(x))$，$dv = dx$
+
+則$du = \dfrac{-\sin(\ln(x))}{x}dx$，$v = x$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int \cos(\ln(x)) dx = x\cos(\ln(x)) - \int x\dfrac{-\sin(\ln(x))}{x}dx = x\cos(\ln(x))+\int \sin(\ln(x))dx$
+
+計算$\displaystyle \int \sin(\ln(x))dx$，令$u = \sin(\ln(x))$，$dv = dx$
+
+則$du = \dfrac{\cos(\ln(x))}{x}dx$，$v = x$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int \sin(\ln(x)) dx = x\sin(\ln(x)) - \int x\dfrac{\cos(\ln(x))}{x}dx = x\sin(\ln(x)) - \int \cos(\ln(x))dx$
+
+因此$\displaystyle \int \cos(\ln(x)) dx = x\cos(\ln(x)) + x\sin(\ln(x)) - \int \cos(\ln(x))dx$ 
+
+$\Leftrightarrow \displaystyle 2\int \cos(\ln(x)) dx = x\cos(\ln(x)) + x\sin(\ln(x))$
+
+$\Leftrightarrow\displaystyle \int \cos(\ln(x)) dx = \dfrac{x\cos(\ln(x)) + x\sin(\ln(x))}{2}$
+
+因此$\displaystyle \int \cos(\ln(x)) dx = \dfrac{x[\cos(\ln x) + \sin(\ln x)]}{2} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \cos(\ln(x)) dx = \dfrac{x[\cos(\ln x) + \sin(\ln x)]}{2} + C$
+
+
+
+## Exercise 26
+
+### Statement
+
+$\displaystyle \int \sin{\sqrt{x}} dx$
+
+
+
+### Solution
+
+令$u = \sqrt{x}$，因此$du = \dfrac{1}{2\sqrt{x}}dx$，$dx = 2\sqrt{x}du$
+
+$\displaystyle \int \sin{\sqrt{x}} dx = \int 2u\sin udu = 2\int u\sin udu$
+
+計算$\displaystyle \int u\sin udu$，為分部積分做準備，令$t = u$，$dv = \sin u du$
+
+因此$dt = du$，$v = -\cos u$
+
+利用分部積分，$\displaystyle \int tdv = tv - \int v dt$
+
+$\displaystyle \int u\sin udu = -u\cos u -\int -\cos udu  = -u\cos u + \sin u$
+
+因此$\displaystyle 2\int u\sin udu = -2u\cos u + 2\sin u$
+
+因此$\displaystyle \int \sin{\sqrt{x}} dx = -2u\cos u + 2\sin u = -2\sqrt{x}\cos\sqrt{x}+2\sin \sqrt{x} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sin{\sqrt{x}} dx = -2\sqrt{x}\cos\sqrt{x}+2\sin \sqrt{x} + C$
+
+
+
 ## Exercise 28
 
 ### Statement
