@@ -874,6 +874,38 @@ $\displaystyle \int \sin{\sqrt{x}} dx = -2\sqrt{x}\cos\sqrt{x}+2\sin \sqrt{x} + 
 
 
 
+## Exercise 27
+
+### Statement
+
+$\displaystyle \int e^{\sqrt{x}} dx$
+
+
+
+### Solution
+
+令$u = \sqrt{x}$，則$du = \dfrac{dx}{2\sqrt{x}}$，因此$dx = 2\sqrt{x}du$
+
+$\displaystyle \int e^{\sqrt{x}} dx = \int 2ue^{u}du = 2\int ue^{u}du$
+
+計算$\displaystyle \int ue^u du$，為分部積分做準備，令$t = u$，$dv = e^{u}du$，因此$dt = du$，$v = e^{u}$
+
+利用分部積分，$\displaystyle \int tdv = tv - \int vdt$
+
+$\displaystyle \int ue^udu = ue^u - \int e^u du = ue^u - e^u$
+
+因此$2\displaystyle \int ue^u du = 2ue^u - 2e^u$
+
+因此$\displaystyle \int e^\sqrt{x}dx = 2\int ue^udu = 2ue^u - 2e^u = 2\sqrt{x}e^\sqrt{x} - 2e^\sqrt{x}$
+
+
+
+### Answer
+
+$\displaystyle \int e^\sqrt{x}dx = 2\sqrt{x}e^\sqrt{x} - 2e^\sqrt{x}$
+
+
+
 ## Exercise 28
 
 ### Statement
@@ -913,3 +945,118 @@ $\int xe^{x^2}dx = \int xe^{x^{2}} \dfrac{dc}{2xe^{x^2}} = \int \dfrac{1}{2}dc =
 ### Answer
 
 $\displaystyle \int x^5e^{x^2} dx = \dfrac{x^4e^{x^2}}{2}-x^2e^{x^2}-e^{x^2} + C$
+
+
+
+## Exercise 29
+
+### Statement
+
+$\displaystyle \int \cos^2 x dx$
+
+
+
+### Solution
+
+$\because \cos 2x = \cos^2 x - \sin^2 x = \cos^2x - (1 - \cos^2 x) = 2\cos^2x - 1$
+
+$\therefore \cos^2 x = \dfrac{1+\cos 2x}{2}$
+
+$\therefore \displaystyle \int \cos^2 x dx = \int \dfrac{1+\cos2x}{2}dx = \int \dfrac{1}{2}dx + \int \dfrac{\cos2x}{2}dx = \dfrac{x}{2} + \dfrac{\sin 2x}{4}$
+
+$\therefore \displaystyle \int \cos^2 x dx = \dfrac{x}{2}+\dfrac{\sin 2x}{4} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \cos^2 x dx = \dfrac{x}{2}+\dfrac{\sin 2x}{4} + C$
+
+
+
+## Exercise 30
+
+### Statement
+
+$\displaystyle \int \sin^3 x dx$
+
+
+
+### Solution
+
+$\displaystyle \int \sin^3 x dx = \int \sin^2x\sin x dx = \int (1-\cos^2x)\sin x dx$
+
+令$u = \cos x$，因此$du = -\sin x dx$，$dx = -\dfrac{du}{\sin x}$
+
+$\displaystyle \int (1-\cos^2x)\sin x dx = \int (1-u^2)(-du) = -u+\dfrac{u^3}{3}$
+
+因此$\displaystyle \int \sin^3 x dx = -u+\dfrac{u^3}{3} = -\cos x + \dfrac{\cos^3 x}{3} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \sin^3 x dx = -\cos x + \dfrac{\cos^3 x}{3} + C$
+
+
+
+## Exercise 31
+
+### Statement
+
+$\displaystyle \int \tan^{-1}\dfrac{2}{x}dx$
+
+
+
+### Solution
+
+為分部積分做準備，令$u = \tan^{-1}\dfrac{2}{x}$，$dv = dx$
+
+則$du = \dfrac{\dfrac{2}{x^2}}{\dfrac{4}{x^2}+1}dx = \dfrac{-2}{4+x^2}dx$，$v = x$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+$\displaystyle \int \tan^{-1}\dfrac{2}{x}dx = \displaystyle x\tan^{-1}\dfrac{2}{x} + \int \dfrac{2x}{4+x^2}dx$
+
+計算$\displaystyle \int \dfrac{2x}{4+x^2}dx$，利用代換積分法，令$t = 4+x^2$，因此$dt = 2xdx$，$dx = \dfrac{dt}{2x}$
+
+$\displaystyle \int \dfrac{2x}{4+x^2}dx = \int \dfrac{2x}{t}\dfrac{dt}{2x} = \int\dfrac{1}{t}dt = \ln(t) = \ln(4+x^2)$
+
+因此$\displaystyle \int \tan^{-1}\dfrac{2}{x}dx = \displaystyle x\tan^{-1}\dfrac{2}{x} + \ln(4+x^2) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \tan^{-1}\dfrac{2}{x}dx = \displaystyle x\tan^{-1}\dfrac{2}{x} + \ln(4+x^2) + C$
+
+
+
+## Exercise 32
+
+### Statement
+
+假設$f(1) = 3$、$f(2) = 6$、$f'(1) = -2$、$f'(2) = 1$且$f''$為連續函數，求$\displaystyle \int^2_1 xf''(x)dx$
+
+
+
+### Solution
+
+計算$\displaystyle \int xf''(x)dx$，為分部積分做準備，令$u = x$，$dv = f''(x)dx$
+
+則$du = dx$，$v = f'(x)$
+
+利用分部積分，$\displaystyle \int udv = uv - \int vdu$
+
+因此$\displaystyle \int xf''(x)dx = xf'(x) - \int f'(x)dx = xf'(x) - f(x)$
+
+
+
+因此$\displaystyle \int^2_1 xf''(x)dx = (xf'(x)-f(x))|^2_1 = (2f'(2)-f(2)) - (f'(1)-f(1)) = (2-6)-(-2-3) = -4+5 = 1$
+
+
+
+### Answer
+
+$\displaystyle \int^2_1 xf''(x)dx = 1$
+
