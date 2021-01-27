@@ -542,3 +542,62 @@ $= \displaystyle \dfrac{1}{2}\int u^\frac{-1}{2}du - 2\int u^\frac{-3}{2}du  = \
 ### Answer
 
 $\displaystyle \int \dfrac{x^3}{\sqrt{(4-x^2)^3}}dx = \sqrt{4-x^2} + \dfrac{4}{\sqrt{4-x^2}} + C$
+
+
+
+## Exercise 22
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{\sqrt{x^2-4}}dx$
+
+
+
+### Solution
+
+令$x = 2\sec u$，則$dx = 2\tan u \sec u du$，$u = \sec^{-1}(\dfrac{x}{2})$
+
+$\displaystyle \int \dfrac{1}{\sqrt{x^2-4}}dx = \int \dfrac{2\tan u \sec u}{\sqrt{4\sec^2 u - 4}}du = \int \dfrac{2\tan u\sec u}{2\tan u}du = \int \sec u du$
+
+計算$\displaystyle \int \sec u du$，$\displaystyle \int \sec u du = \int \dfrac{(\sec u)(\sec u + \tan u)}{(\sec u + \tan u)}du = \int \dfrac{\sec^2 u + \sec u \tan u}{\sec u + \tan u} du$
+
+令$t = \sec u + \tan u$，則$dt = (\tan u \sec u + \sec^2 u)du$，因此$du = \dfrac{dt}{\tan u \sec u + \sec^2 u}$
+
+因此$\displaystyle \int \dfrac{\sec^2 u + \sec u \tan u}{\sec u + \tan u} du = \int \dfrac{\sec^2 u + \tan u \sec u}{t} \dfrac{dt}{\tan u \sec u + \sec^2 u} = \int \dfrac{1}{t}dt = \ln(|t|) = \ln(|\sec u + \tan u|)$
+
+故$\displaystyle \int \sec u du = \ln(|\sec u + \tan u|) = \ln(|\dfrac{x}{2} + \dfrac{\sqrt{x^2-4}}{2}|) = \ln(|x+\sqrt{x^2-4}|) - \ln(2)$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{x^2-4}}dx = \ln(|x+\sqrt{x^2-4}|) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{\sqrt{x^2-4}}dx = \ln(|x+\sqrt{x^2-4}|) + C$
+
+
+
+## Exercise 23
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{x^3\sqrt{x^2-1}}dx$
+
+
+
+### Solution
+
+令$x = \sec u$，則$dx = \sec u \tan u du$，$u = \sec^{-1}x$
+
+因此$\displaystyle \int \dfrac{1}{x^3\sqrt{x^2-1}}dx = \int \dfrac{\sec u \tan u}{\sec^3 u \sqrt{\sec^2 u - 1}} du = \int \dfrac{\sec u \tan u}{\sec^3 u\tan u} = \int \cos^2 udu = \dfrac{\sin 2u}{4}+\dfrac{u}{2} = \dfrac{\sqrt{x^2-1}}{2x^2} + \dfrac{1}{2}\sec^{-1}x + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{x^3\sqrt{x^2-1}}dx = \dfrac{\sqrt{x^2-1}}{2x^2} + \dfrac{1}{2}\sec^{-1}x + C$
+
+
+
+
+
