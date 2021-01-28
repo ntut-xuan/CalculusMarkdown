@@ -689,3 +689,263 @@ $\displaystyle \dfrac{1}{4}\int \dfrac{\cos u}{\sin^2 u}du = \dfrac{1}{4}\int \d
 
 $\displaystyle \int \dfrac{1}{x^2\sqrt{x^2+4}}dx = -\dfrac{\sqrt{x^2+4}}{4x}+C$
 
+
+
+## Exercise 27
+
+### Statement
+
+$\displaystyle \int x\sqrt{1-x^4}dx$
+
+
+
+### Solution
+
+$\displaystyle \int x\sqrt{1-x^4}dx = \int x\sqrt{(1-x^2)(1+x^2)}dx$
+
+令$u = x^2$，則$du = 2xdx$，因此$dx = \dfrac{du}{2x}$
+
+因此$\displaystyle \int x\sqrt{(1-x^2)(1+x^2)}dx = \int x\sqrt{(1-u)(1+u)}\dfrac{du}{2x} = \dfrac{1}{2}\int\sqrt{1-u^2}du$
+
+令$u = \sin t$，因此$du = \cos t dt$，$t = \arcsin(u)$
+
+$\displaystyle \dfrac{1}{2}\int \sqrt{1-\sin^2t}\cos tdt = \dfrac{1}{2}\int \cos^2tdt = \dfrac{t}{4} + \dfrac{\sin2t}{8}$
+
+還原$t$，因此$\displaystyle \dfrac{1}{2}\int\sqrt{1-u^2}du = \dfrac{\arcsin(u)}{4}+\dfrac{u\sqrt{1-u^2}}{4}$
+
+因此$\displaystyle \int x\sqrt{1-x^4}dx = \dfrac{\arcsin(x^2)+x^2\sqrt{1-x^4}}{4}$
+
+
+
+### Answer
+
+$\displaystyle \int x\sqrt{1-x^4}dx = \dfrac{\arcsin(x^2)+x^2\sqrt{1-x^4}}{4}$
+
+
+
+## Exercise 28
+
+### Statement
+
+$\displaystyle \int \dfrac{x}{\sqrt{3-2x-x^2}} dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{x}{\sqrt{3-2x-x^2}} dx = \int \dfrac{x}{\sqrt{-x^2-2x-1+1+3}}dx = \int \dfrac{x}{\sqrt{-(x+1)^2+4}}$
+
+令$u = x+1$，則$du = dx$
+
+因此$\displaystyle \int \dfrac{x}{\sqrt{3-2x-x^2}} dx = \int \dfrac{u-1}{\sqrt{4-u^2}}du = \int \dfrac{u}{\sqrt{4-u^2}}du - \int \dfrac{1}{\sqrt{4-u^2}}du$
+
+計算$\displaystyle \int \dfrac{u}{\sqrt{4-u^2}}du$，令$t = 4-u^2$，則$dt = -2udu$，因此$du = \dfrac{dt}{-2u}$
+
+因此$\displaystyle \int \dfrac{u}{\sqrt{4-u^2}}du = \int \dfrac{u}{\sqrt{t}}\dfrac{dt}{-2u} = -\dfrac{1}{2}\int \dfrac{1}{\sqrt{t}}dt = -\sqrt{t}$
+
+還原$t$，因此$\displaystyle \int \dfrac{u}{\sqrt{4-u^2}}du = -\sqrt{4-u^2}$
+
+計算$\displaystyle \int \dfrac{1}{\sqrt{4-u^2}}du$，令$u = 2\sin k$，則$du = 2\cos kdk$，$k = \arcsin(\dfrac{u}{2})$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{4-u^2}}du = \int \dfrac{2\cos k}{\sqrt{4-4\sin^2k}}dk = \int 1dk = k$
+
+還原$k$，因此$\displaystyle \int \dfrac{1}{\sqrt{4-u^2}}du = \arcsin(\dfrac{u}{2})$
+
+因此$\displaystyle \int \dfrac{u}{\sqrt{4-u^2}}du - \int \dfrac{1}{\sqrt{4-u^2}}du = -\sqrt{4-u^2}-\arcsin(\dfrac{u}{2})$
+
+還原$u$，因此$\displaystyle \int \dfrac{x}{\sqrt{3-2x-x^2}} dx = -\sqrt{4-(x+1)^2}- \arcsin(\dfrac{x+1}{2}) = -\sqrt{3-x^2-2x}-\arcsin(\dfrac{x+1}{2}) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{x}{\sqrt{3-2x-x^2}} dx = -\sqrt{3-x^2-2x}-\arcsin(\dfrac{x+1}{2}) + C$
+
+
+
+## Exercise 29
+
+### Statement
+
+$\displaystyle \int \dfrac{dx}{(x^2+2x+5)^2}$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{dx}{(x^2+2x+5)^2} = \int \dfrac{1}{(x^2+2x+5)^2}dx = \int \dfrac{1}{(x^2+2x+1+4)^2}dx = \int \dfrac{1}{((x+1)^2+4)^2}dx$
+
+令$u = x+1$，則$du = dx$
+
+$\displaystyle \int \dfrac{1}{((x+1)^2+4)^2}dx = \int \dfrac{1}{(u^2+4)^2}du$
+
+令$u = 2\tan t$，則$du = 2\sec^2 tdt$，$t = \arctan(\dfrac{u}{2})$
+
+$\displaystyle \int \dfrac{1}{(u^2+4)^2}du = \int \dfrac{2\sec^2t}{(4\tan^2t+4)^2}dt = \int \dfrac{2\sec^2t}{16\sec^4t}dt = \int \dfrac{\cos^2 t}{8}dt = \dfrac{t}{16}+\dfrac{\sin2t}{32}$
+
+還原$t$，因此$\displaystyle \int \dfrac{1}{(u^2+4)^2}du = \dfrac{1}{16}\arctan(\dfrac{u}{2}) + \dfrac{u}{8(u^2+4)}$
+
+還原$u$，因此$\displaystyle \int \dfrac{dx}{(x^2+2x+5)^2} = \dfrac{1}{16}\arctan(\dfrac{x+1}{2}) + \dfrac{x+1}{8(x^2+2x+5)} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{dx}{(x^2+2x+5)^2} = \dfrac{1}{16}\arctan(\dfrac{x+1}{2}) + \dfrac{x+1}{8(x^2+2x+5)} + C$
+
+
+
+## Exercise 30
+
+### Statement
+
+$\displaystyle \int^\frac{2}{3}_0 \dfrac{x^3}{\sqrt{(1+9x^2)^3}}dx$
+
+
+
+### Solution
+
+令$u = 1+9x^2$，則$du = 18xdx$，$dx = \dfrac{du}{18x}$
+
+$\displaystyle \int^\frac{2}{3}_0 \dfrac{x^3}{\sqrt{(1+9x^2)^3}}dx = \int^5_1 \dfrac{u-1}{162\sqrt{u^3}}du = \dfrac{1}{162}\int^5_1\dfrac{u-1}{\sqrt{u^3}}du$
+
+$\displaystyle \dfrac{1}{162}\int^5_1\dfrac{u-1}{\sqrt{u^3}}du = \dfrac{1}{162}\int^5_1\dfrac{u}{\sqrt{u^3}}du - \dfrac{1}{162}\int^5_1\dfrac{1}{\sqrt{u^3}} = \dfrac{\sqrt{u}}{81}|^5_1 + \dfrac{1}{81\sqrt{u}}|^5_1 = \dfrac{\sqrt{5}}{81}-\dfrac{1}{81}+\dfrac{1}{81\sqrt{5}}-\dfrac{1}{81} = \dfrac{2\sqrt{5}}{135}-\dfrac{2}{81}$
+
+
+
+### Answer
+
+$\displaystyle \int^\frac{2}{3}_0 \dfrac{x^3}{\sqrt{(1+9x^2)^3}}dx = \dfrac{2\sqrt{5}}{135}-\dfrac{2}{81}$
+
+
+
+## Exercise 31
+
+### Statement
+
+$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}dx = \int \dfrac{e^{2x}}{\sqrt{1-(e^{2x})^2}}dx$
+
+令$u = e^{2x}$，則$du = 2e^{2x}dx$，因此$dx = \dfrac{du}{2e^{2x}}$
+
+$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-u^2}}\dfrac{du}{2e^{2x}} = \dfrac{1}{2}\int\dfrac{1}{\sqrt{1-u^2}}du = \dfrac{1}{2}\arcsin(u)$
+
+還原$u$，得到$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}dx = \dfrac{\arcsin(e^{2x})}{2} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{e^{2x}}{\sqrt{1-e^{4x}}}dx = \dfrac{\arcsin(e^{2x})}{2} + C$
+
+
+
+## Exercise 32
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{e^{2x}\sqrt{1-e^{4x}}}dx$
+
+
+
+### Solution
+
+令$u = e^{2x}$，則$du = 2e^{2x}dx$，因此$dx = \dfrac{du}{2e^{2x}}$
+
+因此$\displaystyle \int \dfrac{1}{e^{2x}\sqrt{1-e^{4x}}}dx = \int \dfrac{1}{u\sqrt{1-u^2}}\dfrac{du}{2u} = \dfrac{1}{2}\int \dfrac{1}{u^2\sqrt{1-u^2}}du$
+
+令$u = \sin t$，則$du = \cos tdt$，$t = \arcsin(u)$
+
+因此$\displaystyle \dfrac{1}{2}\int \dfrac{1}{u^2\sqrt{1-u^2}}du = \dfrac{1}{2}\int\dfrac{\cos t}{\sin^2 t\sqrt{1-\sin^2t}}dt = \dfrac{1}{2}\int \dfrac{1}{\sin^2t}dt = \dfrac{-\cot t}{2}$
+
+還原$t$，得到$\displaystyle \dfrac{1}{2}\int \dfrac{1}{u^2\sqrt{1-u^2}}du = \dfrac{-\cot t}{2} = \dfrac{-\cot(\arcsin(u))}{2} = \dfrac{-\sqrt{1-u^2}}{2u}$
+
+還原$u$，得到$\displaystyle \int \dfrac{1}{e^{2x}\sqrt{1-e^{4x}}}dx = \dfrac{-\sqrt{1-e^{4x}}}{2e^{2x}} + C$
+
+
+
+### Answer	
+
+$\displaystyle \int \dfrac{1}{e^{2x}\sqrt{1-e^{4x}}}dx = \dfrac{-\sqrt{1-e^{4x}}}{2e^{2x}} + C$
+
+
+
+## Exercise 33
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{\sqrt{1+e^{2x}}}dx$
+
+
+
+### Solution
+
+令$u = e^x$，則$du = e^x dx$，因此$dx = \dfrac{du}{e^x}$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{1+e^{2x}}}dx = \int \dfrac{1}{\sqrt{1+u^2}}\dfrac{du}{u} = \int \dfrac{1}{u\sqrt{1+u^2}}du$
+
+令$u = \tan t$，則$du = \sec^2 tdt$，$t = \arctan(u)$
+
+因此$\displaystyle \int \dfrac{1}{u\sqrt{1+u^2}}du = \int \dfrac{\sec^2 t}{\tan t\sqrt{1+\tan t}}dt = \int \dfrac{\sec t}{\tan t} dt = \int \dfrac{1}{\sin t}dt$ 
+
+計算$\displaystyle \int \dfrac{1}{\sin t}dt$，$\displaystyle \int \dfrac{1}{\sin t}dt = \int \dfrac{1}{2\sin(\dfrac{t}{2})\cos(\dfrac{t}{2})}dt$
+
+分子分母同乘$\sec^2 (\dfrac{t}{2})$，則$\displaystyle \int \dfrac{1}{2\sin(\dfrac{t}{2})\cos(\dfrac{t}{2})}dt = \int \dfrac{\sec^2(\dfrac{t}{2})}{2\tan(\dfrac{t}{2})}dt = \dfrac{1}{2}\int \dfrac{\sec^2(\dfrac{t}{2})}{\tan(\dfrac{t}{2})}dt$
+
+令$k = \tan(\dfrac{t}{2})$，則$dk = \dfrac{1}{2}\sec^2(\dfrac{t}{2})dt$，因此$dt = \dfrac{2}{\sec^2(\dfrac{t}{2})}dk$
+
+$\displaystyle \dfrac{1}{2}\int \dfrac{\sec^2(\dfrac{t}{2})}{\tan(\dfrac{t}{2})}dt = \dfrac{1}{2}\int \dfrac{\sec^2(\dfrac{t}{2})}{k}\dfrac{2}{\sec^2(\dfrac{t}{2})}dk = \int\dfrac{1}{k}dk = \ln(|k|)$
+
+還原$k$，得到$\displaystyle \int \dfrac{1}{\sin t}dt = \ln(|\tan(\dfrac{t}{2})|)$
+
+還原$t$，得到$\displaystyle \int \dfrac{1}{u\sqrt{1+u^2}}du = \ln(|\tan(\dfrac{t}{2})|) = \ln(|\dfrac{1-\dfrac{1}{\sqrt{u^2+1}}}{\dfrac{u}{\sqrt{u^2+1}}}|) = \ln(|\dfrac{\sqrt{u^2+1}-1}{u}|)$
+
+還原$u$，得到$\displaystyle \int \dfrac{1}{\sqrt{1+e^{2x}}}dx = \ln(|\dfrac{\sqrt{e^{2x}+1}-1}{e^{2x}}|)$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{1+e^{2x}}}dx = \ln(|\dfrac{\sqrt{e^{2x}+1}-1}{e^{2x}}|) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{\sqrt{1+e^{2x}}}dx = \ln(|\dfrac{\sqrt{e^{2x}+1}-1}{e^{2x}}|) + C$
+
+
+
+## Exercise 34
+
+### Statement
+
+$\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx$
+
+
+
+### Solution
+
+令$x = u^2$，則$dx = 2udu$，$u = \sqrt{x}$
+
+因此$\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx = \int \dfrac{2u^2}{\sqrt{1-u^2}}du$
+
+令$u = \sin t$，則$du = \cos t dt$，$t = \arcsin(u)$
+
+因此$\displaystyle \int \dfrac{2u^2}{\sqrt{1-u^2}}du = \int \dfrac{2\sin^2 t}{\sqrt{1-\sin^2 t}}\cos tdt = \int 2\sin ^2tdt = t-\cos(2t)$
+
+還原$t$，得到$\displaystyle \int \dfrac{2u^2}{\sqrt{1-u^2}}du = \arcsin(u)-u\sqrt{1-u^2}$
+
+還原$u$，得到$\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx = \arcsin(\sqrt{x})-\sqrt{x}\sqrt{1-x}$
+
+因此$\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx = \arcsin(\sqrt{x})-\sqrt{x}\sqrt{1-x} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx = \arcsin(\sqrt{x})-\sqrt{x}\sqrt{1-x} + C$
+
+
+
