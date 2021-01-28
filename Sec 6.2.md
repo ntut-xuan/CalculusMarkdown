@@ -599,5 +599,93 @@ $\displaystyle \int \dfrac{1}{x^3\sqrt{x^2-1}}dx = \dfrac{\sqrt{x^2-1}}{2x^2} + 
 
 
 
+## Exercise 24
 
+### Statement
+
+$\displaystyle \int \dfrac{\sqrt{x^2-4}}{x^3}dx$
+
+
+
+### Solution
+
+令$x = 2\sec u$，則$dx = 2\sec u \tan u du$，$u = \sec^{-1}(\dfrac{x}{2})$
+
+$\displaystyle \int \dfrac{\sqrt{x^2-4}}{x^3}dx = \int \dfrac{\sqrt{4\sec^2 u-4}}{8\sec^3 u}2\sec u\tan udu = \int \dfrac{4\sec u\tan^2 u}{8\sec^3 u}du = \dfrac{1}{2}\int \dfrac{\tan^2 u}{\sec^2 u}du = \dfrac{1}{2}\int \sin^2 u du$
+
+$\displaystyle \dfrac{1}{2}\int \sin^2 u du = \dfrac{1}{2}\int (1-\cos^2 u)du = \dfrac{1}{2}\int1du - \dfrac{1}{2}\int \cos^2udu = \dfrac{u}{4}-\dfrac{\sin 2u}{8} = \dfrac{1}{4}\sec^{-1}(\dfrac{x}{2}) - \dfrac{\sqrt{x^2-4}}{2x^2}$
+
+故$\displaystyle \int \dfrac{\sqrt{x^2-4}}{x^3}dx = \dfrac{1}{4}\sec^{-1}(\dfrac{x}{2}) - \dfrac{\sqrt{x^2-4}}{2x^2} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{\sqrt{x^2-4}}{x^3}dx = \dfrac{1}{4}\sec^{-1}(\dfrac{x}{2}) - \dfrac{\sqrt{x^2-4}}{2x^2} + C$
+
+
+
+## Exercise 25
+
+### Statement
+
+$\displaystyle \int \dfrac{x^2}{\sqrt{2x-x^2}}dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{x^2}{\sqrt{2x-x^2}}dx = \int \dfrac{x^2}{\sqrt{2x-x^2-1+1}}dx = \int \dfrac{x^2}{\sqrt{-(x-1)^2+1}}dx$
+
+令$u = x-1$，則$du = dx$
+
+因此$\displaystyle \int \dfrac{x^2}{\sqrt{-(x-1)^2+1}}dx = \int \dfrac{(u+1)^2}{\sqrt{1-u^2}}du = \int \dfrac{u^2+2u+1}{\sqrt{1-u^2}}du = \int \dfrac{u^2}{\sqrt{1-u^2}}du+\int \dfrac{2u}{\sqrt{1-u^2}}du+\int \dfrac{1}{\sqrt{1-u^2}}du$
+
+計算$\displaystyle \int \dfrac{u^2}{\sqrt{1-u^2}}du$，令$u = \sin t$，則$du = \cos t dt$，$t = \arcsin(u)$
+
+$\displaystyle \int \dfrac{u^2}{\sqrt{1-u^2}}du = \int \dfrac{\sin^2 t}{\cos t}\cot t dt = \int \sin^2 t dt = \dfrac{t}{2}-\dfrac{\sin2t}{4} = \dfrac{1}{2}\arcsin(u)-\dfrac{u\sqrt{1-u^2}}{2}$
+
+計算$\displaystyle \int \dfrac{2u}{\sqrt{1-u^2}}du$，令$k = 1-u^2$，則$dk = -2udu$，$du=\dfrac{dk}{-2u}$
+
+因此$\displaystyle \int \dfrac{2u}{\sqrt{1-u^2}}du = \int \dfrac{2u}{\sqrt{k}}\dfrac{dk}{-2u}  = -\int \dfrac{1}{\sqrt{k}}dk = -2\sqrt{k} = -2\sqrt{1-u^2}$
+
+計算$\displaystyle \int \dfrac{1}{\sqrt{1-u^2}}du$，$\displaystyle \int \dfrac{1}{\sqrt{1-u^2}}du = \arcsin(u)$
+
+故$\displaystyle \int \dfrac{u^2}{\sqrt{1-u^2}}du+\int \dfrac{2u}{\sqrt{1-u^2}}du+\int \dfrac{1}{\sqrt{1-u^2}}du = \dfrac{3}{2}\arcsin(u)-\dfrac{(u+4)\sqrt{1-u^2}}{2}$
+
+還原$u$，得到$\displaystyle \int \dfrac{x^2}{\sqrt{2x-x^2}}dx = \dfrac{3}{2}\arcsin(x-1)-\dfrac{(x-3)\sqrt{1-u^2}}{2} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{x^2}{\sqrt{2x-x^2}}dx = \dfrac{3}{2}\arcsin(x-1)-\dfrac{(x-3)\sqrt{1-u^2}}{2} + C$
+
+
+
+## Exercise 26
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{x^2\sqrt{x^2+4}}dx$
+
+
+
+### Solution
+
+令$x = 2\tan u$，則$dx = 2\sec^2 u du$，$u = \arctan(\dfrac{x}{2})$
+
+因此$\displaystyle \int \dfrac{1}{x^2\sqrt{x^2+4}}dx = \int \dfrac{2\sec^2 u}{4\tan^2u\sqrt{4\tan^2 u + 4}}du = \int \dfrac{2\sec^2 u}{8\tan^2u\sec u} = \dfrac{1}{4}\int \dfrac{\sec u}{\tan^2 u }du = \dfrac{1}{4}\int \dfrac{\cos u}{\sin^2 u}du$
+
+$\displaystyle \dfrac{1}{4}\int \dfrac{\cos u}{\sin^2 u}du$，利用代換積分法，令$t = \sin u$，則$dt = \cos u du$，因此$du = \dfrac{dt}{\cos u}$
+
+$\displaystyle \dfrac{1}{4}\int \dfrac{\cos u}{\sin^2 u}du = \dfrac{1}{4}\int \dfrac{\cos u}{t^2}\dfrac{dt}{\cos u} = \dfrac{1}{4}\int \dfrac{1}{t^2}dt = -\dfrac{1}{4t} = -\dfrac{1}{4\sin(u)}$
+
+還原$u$，因此$\displaystyle \int \dfrac{1}{x^2\sqrt{x^2+4}}dx = -\dfrac{1}{4\sin(u)} = -\dfrac{1}{4\sin(\arctan(\dfrac{x}{2}))} = -\dfrac{\sqrt{x^2+4}}{4x} + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{x^2\sqrt{x^2+4}}dx = -\dfrac{\sqrt{x^2+4}}{4x}+C$
 
