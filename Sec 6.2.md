@@ -949,3 +949,103 @@ $\displaystyle \int \dfrac{\sqrt{x}}{\sqrt{1-x}}dx = \arcsin(\sqrt{x})-\sqrt{x}\
 
 
 
+## Exercise 35
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{\sqrt{x}(1+x)}dx$
+
+
+
+### Solution
+
+令$u = \sqrt{x}$，則$du = \dfrac{1}{2\sqrt{x}}dx$，因此$dx = 2\sqrt{x}du$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{x}(1+x)}dx = 2\int \dfrac{1}{1+u^2}du$
+
+令$u = \tan t$，則$du = \sec^2 t dt$，$t = \arctan(u)$
+
+因此$\displaystyle 2\int \dfrac{\sec^2t}{1+\tan^2 t} dt = 2\int 1t = 2t$
+
+還原$t$，得到$\displaystyle 2\int \dfrac{1}{1+u^2}du = 2\arctan(u)$
+
+還原$u$，得到$\displaystyle \int \dfrac{1}{\sqrt{x}(1+x)}dx = 2\arctan(\sqrt{x})$
+
+因此$\displaystyle \int \dfrac{1}{\sqrt{x}(1+x)}dx = 2\arctan(\sqrt{x}) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{\sqrt{x}(1+x)}dx = 2\arctan(\sqrt{x}) + C$
+
+
+
+## Exercise 36
+
+### Statement
+
+$\displaystyle \int^1_0 \sqrt{4x-x^2}dx$
+
+
+
+### Solution
+
+$\displaystyle \int^1_0 \sqrt{4x-x^2}dx = \int^1_0 \sqrt{x}{\sqrt{4-x}}dx$
+
+令$u =\sqrt{x}$，則$du = \dfrac{dx}{2\sqrt{x}}$，因此$dx = 2\sqrt{x}du$，$x = 1\Rightarrow u = 1$，$x = 0\Rightarrow u = 0$
+
+$\displaystyle \int^1_0 \sqrt{x}{\sqrt{4-x}}dx =\int^1_0 2u^2\sqrt{4-u^2}du$
+
+令$u = 2\sin t$，則$du = 2\cos t dt$，$t = \arcsin(\dfrac{u}{2})$，$u = 1 \Rightarrow t = \dfrac{\pi}{6}$，$u = 0 \Rightarrow t = 0$
+
+$\displaystyle \int^1_0 2u^2\sqrt{4-u^2}du = \int^\frac{\pi}{6}_0 8\sin^2 t \sqrt{4-4\sin^2t}2\cos tdt = \int^\frac{\pi}{6}_0 32\sin^2t\cos^2tdt = 32\int^\frac{\pi}{6}_0 \dfrac{\sin^2(2t)}{4}dt$
+
+$\displaystyle 32\int^\frac{\pi}{6}_0 \dfrac{\sin^2(2t)}{4}dt = 32 \int^\frac{\pi}{6}_0 \dfrac{(\dfrac{1-\cos 4t}{2})}{4}dt = 32 \int^\frac{\pi}{6}_0 \dfrac{1}{8}dt - 32 \int^\frac{\pi}{6}_0 \dfrac{\cos 4t}{8}dt = 4t|^\frac{\pi}{6}_0 + \sin 4t|^\frac{\pi}{6}_0 = \dfrac{2\pi}{3}-\dfrac{\sqrt{3}}{2}$
+
+
+
+### Answer
+
+$\displaystyle \int^1_0 \sqrt{4x-x^2}dx = \dfrac{2\pi}{3}-\dfrac{\sqrt{3}}{2}$
+
+
+
+## Exercise 37
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{1+e^{2x}}dx$
+
+
+
+### Solution
+
+令$u = e^x$，則$du = e^xdx$，因此$dx = \dfrac{du}{e^x}$
+
+因此$\displaystyle \int \dfrac{1}{1+e^{2x}}dx = \int \dfrac{1}{u(1+u^2)}du$
+
+令$u = \tan t$，則$du = \sec^2 dt$，$t = \arctan(u)$
+
+因此$\displaystyle \int \dfrac{1}{u(1+u^2)}du = \int \dfrac{\sec^2 t}{\tan t(1+\tan^2t)}dt = \int \dfrac{1}{\tan t}dt = \int \dfrac{\cos t}{\sin t}dt$
+
+令$k = \sin t$，則$dk = \cos t dt$，因此$dt = \dfrac{dk}{\cos t}$
+
+因此$\displaystyle \int \dfrac{\cos t}{\sin t}dt = \int \dfrac{\cos t}{k}\dfrac{dk}{\cos t} = \ln(|k|)$
+
+還原$k$，得到$\displaystyle \int \dfrac{\cos t}{\sin t}dt = \ln(|\sin t|)$
+
+還原$t$，得到$\displaystyle \int \dfrac{1}{u(1+u^2)}du = \ln(|\sin(\arctan(u))|) = \ln(|\dfrac{u}{\sqrt{1+u^2}}|)$
+
+還原$u$，得到$\displaystyle \int \dfrac{1}{1+e^{2x}}dx = \ln(|\dfrac{e^x}{\sqrt{1+e^{2x}}}|)$
+
+因此$\displaystyle \int \dfrac{1}{1+e^{2x}}dx = \ln(|\dfrac{e^x}{\sqrt{1+e^{2x}}}|) + C$
+
+
+
+### Answer
+
+$\displaystyle \int \dfrac{1}{1+e^{2x}}dx = \ln(|\dfrac{e^x}{\sqrt{1+e^{2x}}}|) + C$
+
+
+
