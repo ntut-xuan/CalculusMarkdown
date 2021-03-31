@@ -1,5 +1,9 @@
 # 洪輝霖微積分Practice Ch 7-2
 
+###### tags: `微積分題目紀錄`
+
+
+
 ## Problem 24
 
 ### Statement
@@ -259,4 +263,8 @@ $y=e^{-x}$、$x=0$、$x=1$、$y=0$、旋轉軸$y$軸
 ### Answer
 
 $V = -4\pi e^{-x} + 2\pi$
+
+
+
+## Problem 31
 

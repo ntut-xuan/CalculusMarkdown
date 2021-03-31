@@ -739,3 +739,51 @@ $\displaystyle \lim_{x\rightarrow -\infty} f(x) = \lim_{x\rightarrow -\infty} \d
 ### Answer
 
 See solution.
+
+
+
+## Exercise 23
+
+### Statement
+
+試畫出函數圖形。
+
+$f(x) = xe^{-\frac{3}{2}x^2}$
+
+
+
+### Solution
+
+$f'(x) = e^{-\frac{3}{2}x^2} + x \cdot (-3x) \cdot e^{-\frac{3}{2}x^2} = (1-3x^2)e^{-\frac{3}{2}x^2}$
+
+$f''(x) = (-6x)e^{-\frac{3}{2}x^2} + (1-3x^2) \cdot(-3x) \cdot e^{-\frac{3}{2}x^2} = (9x^3-9x)e^{-\frac{3}{2}x^2}$
+
+考慮$f''(x)$的$CriticalNumber$
+
+考慮$f''(x) = 0$，則$x \in \{-1, 0, 1\}$
+
+考慮$f''(x) = D.N.E.$，則$x \in \varnothing$
+
+因此$CriticalNumber \in \{-1, 0, 1\}$
+
+考慮上凹下凹區間會由$CriticalNumber$所分割，因此我們考慮$(-\infty, -1),(-1, 0),(0, 1),(1, \infty)$
+
+考慮$(-\infty, -1)$，以$-2$考慮$f''(-2)$，則$f''(-2) < 0$，故$(-\infty, -1)$區間下凹。
+
+考慮$(-1, 0)$，以$\dfrac{-1}{2}$考慮$f''(\dfrac{-1}{2})$，則$f''(\dfrac{-1}{2}) > 0$，故$(-1, 0)$區間上凹。
+
+考慮$(0, 1)$，以$\dfrac{1}{2}$考慮$f''(\dfrac{1}{2}$)，則$f''(\dfrac{1}{2}) < 0$，故$(0, 1)$區間下凹。
+
+考慮$(1, \infty)$，以$2$考慮$f''(2)$，則$f''(2) > 0$，故$(1, \infty)$區間上凹。
+
+考慮$\displaystyle \lim_{x\rightarrow \infty} f(x) = \lim_{x\rightarrow \infty} xe^{-\frac{3}{2}x^2} = \lim_{x\rightarrow \infty} \dfrac{x}{e^{\frac{3}{2}x^2}} = \dfrac{\infty}{\infty}$
+
+故我們使用羅畢達，$\displaystyle \lim_{x\rightarrow \infty} \dfrac{x}{e^{\frac{3}{2}x^2}} = \lim_{x\rightarrow \infty} \dfrac{1}{3e^{\frac{3}{2}x^2}} = 0$
+
+考慮$\displaystyle \lim_{x\rightarrow -\infty} f(x) = \lim_{x\rightarrow -\infty} xe^{-\frac{3}{2}x^2} = \lim_{x\rightarrow \infty} \dfrac{x}{e^{\frac{3}{2}x^2}} = \dfrac{-\infty}{-\infty}$
+
+故我們使用羅畢達，$\displaystyle \lim_{x\rightarrow \infty} \dfrac{x}{e^{\frac{3}{2}x^2}} = \lim_{x\rightarrow \infty} \dfrac{1}{3e^{\frac{3}{2}x^2}} = 0$
+
+故畫出圖形
+
+<img src="https://i.imgur.com/EfRDprn.png" alt="image-20201214180019081" style="zoom:67%;" />
