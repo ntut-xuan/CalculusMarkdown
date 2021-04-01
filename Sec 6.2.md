@@ -1049,3 +1049,53 @@ $\displaystyle \int \dfrac{1}{1+e^{2x}}dx = \ln(|\dfrac{e^x}{\sqrt{1+e^{2x}}}|) 
 
 
 
+## Problem 38
+
+### Statement
+
+$\displaystyle \int \dfrac{1}{1-2x^2+x^4}dx$
+
+
+
+### Solution
+
+$\displaystyle \int \dfrac{1}{1-2x^2+x^4}dx = \int \dfrac{1}{x^4-2x^2+1}dx = \int \dfrac{1}{(x^2-1)^2}dx$
+
+令$x = \sec u$，則$dx = \tan u \sec u du$，$u = \sec^{-1}(x)$
+
+$\displaystyle \int \dfrac{1}{(x^2-1)^2}dx = \int \dfrac{\tan u\sec u}{(\sec^2u-1)^2}du$
+
+$\displaystyle  = \int \dfrac{\sec u}{\tan^3 u}du = \int \dfrac{\cos^2 u}{\sin ^3u}du = \int \dfrac{1-\sin^2u}{\sin^3u}du = \int \dfrac{1}{\sin^3u}du - \int \dfrac{1}{\sin u}du = \int \csc^3(u)du - \int \csc(u)du$
+
+
+
+計算$\displaystyle \int \csc^3(u)du$
+
+$\displaystyle \int \csc^3(u)du = \int \csc^2(u)\csc(u)du$
+
+令$t = \csc u$，$dv = \csc^2(u)du$
+
+因此$dt = -\csc u \cot udu$，$v = -\cot u$
+
+因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc u \cot^2du \\ \displaystyle = -\csc u \cot u - \int \csc u (\csc^2u-1)du \\\displaystyle = -\csc u \cot u - \int \csc^3u-\int \csc u du$
+
+已知$\displaystyle \int \csc u = -\ln(|\csc(u)+\cot(u)|)$
+
+因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc^3u + \ln(|\csc(u)+\cot(u)|) \\\Rightarrow \displaystyle 2\int \csc^3(u)du = -\csc u \cot u + \ln(|\csc(u)+\cot(u)|)\\\Rightarrow \displaystyle \int \csc^3(u)du = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2}$
+
+
+
+所以$\displaystyle \int \csc^3(u)du - \int \csc(u)du = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2} - (-\ln(|\csc(u)+\cot(u)|)) \\\displaystyle = \dfrac{-\csc u \cot u + 3\ln(|\csc(u)+\cot(u)|)}{2}$ 
+
+還原$u$，得到$\displaystyle \int \dfrac{1}{1-2x^2+x^4}dx = \dfrac{-\csc u \cot u + 3\ln(|\csc(u)+\cot(u)|)}{2}$
+
+$= -\dfrac{x}{2x^2-2} + \dfrac{3}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
+
+
+
+### Answer
+
+$-\dfrac{x}{2x^2-2} + \dfrac{3}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
+
+
+
