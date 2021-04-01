@@ -16,7 +16,7 @@
 
 $y = \dfrac{1}{x^2+4}$每點均恆正，考慮$\displaystyle \int^\infty_{-\infty} \dfrac{1}{x^2+4}dx$
 
-$\displaystyle \int^\infty_{-\infty} \dfrac{1}{x^2+4}dx = \lim_{a\rightarrow \infty}\lim_{b\rightarrow -\infty} \int^a_b \dfrac{1}{x^2+4}dx = \lim_{a\rightarrow \infty}\lim_{b\rightarrow -\infty}\dfrac{1}{2}\tan^{-1}(\dfrac{x}{2})\bigg|^a_b = \dfrac{1}{2}(\dfrac{\pi}{4} - \dfrac{-\pi}{4}) = \dfrac{\pi}{2}$ 
+$\displaystyle \int^\infty_{-\infty} \dfrac{1}{x^2+4}dx = \lim_{a\rightarrow \infty}\lim_{b\rightarrow -\infty} \int^a_b \dfrac{1}{x^2+4}dx = \lim_{a\rightarrow \infty}\lim_{b\rightarrow -\infty}\dfrac{1}{2}\tan^{-1}(\dfrac{x}{2})\bigg|^a_b = \dfrac{1}{2}(\dfrac{\pi}{2} - \dfrac{-\pi}{2}) = \dfrac{\pi}{2}$ 
 
 
 
