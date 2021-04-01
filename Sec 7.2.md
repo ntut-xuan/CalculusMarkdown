@@ -266,5 +266,39 @@ $V = -4\pi e^{-x} + 2\pi$
 
 
 
-## Problem 31
+## Problem 36
+
+### Statement
+
+$y = x^2 + 1,\ y = 2,\text{ rotating by }y = 1$
+
+
+
+### Solution
+
+先畫圖
+
+![image-20210401124809828](https://i.imgur.com/yN0ui0I.png)
+
+對稱軸為$y=-1$，我們考慮從$y=1$積到$y=2$。
+
+所求體積
+
+圓柱殼半徑：$d(y) = (y+1)$
+
+圓柱殼高度：$h(y) = 2\sqrt{y-1}$
+
+則我們可以知道，當$x=a$時，圓柱殼$A(a) = 2\pi d(a) h(a)$
+
+我們可以寫出$\displaystyle \int^2_1 2\pi(y+1)(2\sqrt{y-1})dy$
+
+令$u = \sqrt{y-1}$，則$du = \dfrac{dy}{2\sqrt{y-1}}$。因此$dy = 2\sqrt{y-1}du = 2udu$
+
+因此$\displaystyle \int^2_1 2\pi(y+1)(2\sqrt{y-1})dy = 4\pi\int^1_0(u^2+2)(u)(2u)du = 8\pi\int^1_0(u^4+2u^2)du = 8\pi (\dfrac{u^5}{5}+\dfrac{2u^3}{3})\bigg|^1_0 = \dfrac{104}{15}\pi$
+
+
+
+### Answer
+
+$\dfrac{104}{15}\pi$
 
