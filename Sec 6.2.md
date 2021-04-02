@@ -1077,25 +1077,25 @@ $\displaystyle \int \csc^3(u)du = \int \csc^2(u)\csc(u)du$
 
 因此$dt = -\csc u \cot udu$，$v = -\cot u$
 
-因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc u \cot^2du \\ \displaystyle = -\csc u \cot u - \int \csc u (\csc^2u-1)du \\\displaystyle = -\csc u \cot u - \int \csc^3u-\int \csc u du$
+因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc u \cot^2du \\ \displaystyle = -\csc u \cot u - \int \csc u (\csc^2u-1)du \\\displaystyle = -\csc u \cot u - \int \csc^3u + \int \csc u du$
 
 已知$\displaystyle \int \csc u = -\ln(|\csc(u)+\cot(u)|)$
 
-因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc^3u + \ln(|\csc(u)+\cot(u)|) \\\Rightarrow \displaystyle 2\int \csc^3(u)du = -\csc u \cot u + \ln(|\csc(u)+\cot(u)|)\\\Rightarrow \displaystyle \int \csc^3(u)du = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2}$
+因此$\displaystyle \int \csc^3(u)du = -\csc u \cot u - \int \csc^3u - \ln(|\csc(u)+\cot(u)|) \\\Rightarrow \displaystyle 2\int \csc^3(u)du = -\csc u \cot u - \ln(|\csc(u)+\cot(u)|)\\\Rightarrow \displaystyle \int \csc^3(u)du = \dfrac{-\csc u \cot u - \ln(|\csc(u)+\cot(u)|)}{2}$
 
 
 
-所以$\displaystyle \int \csc^3(u)du - \int \csc(u)du = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2} - (-\ln(|\csc(u)+\cot(u)|)) \\\displaystyle = \dfrac{-\csc u \cot u + 3\ln(|\csc(u)+\cot(u)|)}{2}$ 
+所以$\displaystyle \int \csc^3(u)du - \int \csc(u)du = \dfrac{-\csc u \cot u - \ln(|\csc(u)+\cot(u)|)}{2} - (-\ln(|\csc(u)+\cot(u)|)) \\\displaystyle = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2}$ 
 
-還原$u$，得到$\displaystyle \int \dfrac{1}{1-2x^2+x^4}dx = \dfrac{-\csc u \cot u + 3\ln(|\csc(u)+\cot(u)|)}{2}$
+還原$u$，得到$\displaystyle \int \dfrac{1}{1-2x^2+x^4}dx = \dfrac{-\csc u \cot u + \ln(|\csc(u)+\cot(u)|)}{2}$
 
-$= -\dfrac{x}{2x^2-2} + \dfrac{3}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
+$= -\dfrac{x}{2x^2-2} + \dfrac{1}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
 
 
 
 ### Answer
 
-$-\dfrac{x}{2x^2-2} + \dfrac{3}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
+$-\dfrac{x}{2x^2-2} + \dfrac{1}{2} \ln(|\dfrac{x+1}{\sqrt{x^2-1}}|) + C$
 
 
 
