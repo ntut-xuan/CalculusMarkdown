@@ -278,7 +278,7 @@ $y = x^2 + 1,\ y = 2,\text{ rotating by }y = 1$
 
 先畫圖
 
-![image-20210401124809828](https://i.imgur.com/yN0ui0I.png)
+![		](https://i.imgur.com/yN0ui0I.png)
 
 對稱軸為$y=-1$，我們考慮從$y=1$積到$y=2$。
 

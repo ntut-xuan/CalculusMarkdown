@@ -306,3 +306,57 @@ $\dfrac{dy}{dx}|_{t = -\sqrt{3}} = -\dfrac{6}{2\sqrt{3}} = -\sqrt{3}$，故斜�
 2. $(1, -2)$和$(1, 2)$
 3. $(0, 0)$
 
+
+
+## Problem 16
+
+### Statement
+
+已知擺線的參數式為$x = 3(\theta - \sin \theta)$，$y = 3(1 - \cos \theta)$，求擺線一個擺幅底下和$x$軸所包圍的區域面積。
+
+
+
+### Solution
+
+求一個函數的面積：$\displaystyle \int^a_b y dx$
+
+所求$dx = 3(1 - \cos(\theta))d\theta$，擺線一個擺幅即為從$0$至$2\pi$
+
+故積分$\displaystyle \int^{2\pi}_{0} 3(1-\cos\theta)3(1 - \cos\theta)d\theta = 9\int^{2\pi}_0 1-2\cos(\theta)+\cos^2(\theta)d\theta$
+
+$= \displaystyle 9(\theta - 2\sin(\theta) + \dfrac{2\theta+\sin(2\theta)}{4})\bigg|^{2\pi}_0 = 27\pi$
+
+
+
+### Answer
+
+$27\pi$
+
+
+
+## Problem 17
+
+### Statement
+
+已知橢圓的參數式為$x = 2\cos(\theta)$，$y = 3\sin(\theta)$，求橢圓面積。
+
+
+
+### Solution
+
+令$y = 0$，則$\theta = 0, \theta =  \pi$，也就是$x = 2, x = -2$
+
+因此我們考慮從$0$積到$\pi$，$dx = -2\sin(\theta)d\theta$
+
+可得$\displaystyle \int^\pi_0 3\sin(\theta) (-2\sin\theta) d\theta = -6\int^\pi_0 \sin^2\theta d\theta = -3\pi = 3\pi$ (x軸下面積)。
+
+由於橢圓對稱於$x$軸，故我們將下面積乘以2，得到橢圓面積$6\pi$
+
+
+
+### Answer
+
+$6\pi$
+
+
+
