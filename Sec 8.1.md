@@ -308,6 +308,92 @@ $\dfrac{dy}{dx}|_{t = -\sqrt{3}} = -\dfrac{6}{2\sqrt{3}} = -\sqrt{3}$，故斜�
 
 
 
+## Problem 13
+
+### Statement
+
+已知曲線$C$的參數式為$x=t^3-3t$，$y=3t^2-9$，求曲線$C$在哪些點有水平切線和垂直切線？
+
+
+
+### Solution
+
+先求$\dfrac{dy}{dx}$，得到$\dfrac{dy}{dx} = \dfrac{6t}{3t^2-3}$
+
+求水平切線時，先令$\dfrac{dy}{dx} = 0$，因此得到$t = 0$，水平切線發生在$(x, y) = (0, -9)$
+
+求垂直切線時，先令$\dfrac{dy}{dx}=D.N.E.$，因此得到$3t^2-3=0$，得到$t = \pm 1$
+
+故垂直切線發生在$(x, y) = (-2,-6)$與$(x, y) = (2, -6)$
+
+
+
+### Answer
+
+水平切線發生在$(x, y) = (0, -9)$
+
+垂直切線發生在$(x, y) = (2, -6)$與$(x, y) = (-2, -6)$
+
+
+
+## Problem 14
+
+### Statement
+
+已知曲線$C$的參數式為$x=2-t^2$，$y=t^3-12t$，求曲線$C$在哪些點有水平切線和垂直切線？
+
+
+
+### Solution
+
+先求$\dfrac{dy}{dx}$，得到$\dfrac{dy}{dx} = \dfrac{3t^2-12}{2-2t}$
+
+求水平切線時，令$\dfrac{dy}{dx} = 0$，故$3t^2-12 = 0$，得到$t = \pm 2$
+
+故水平切線發生在$(x, y) = (-2, 16)$與$(x, y) = (-2, -16)$
+
+求垂直切線時，令$\dfrac{dy}{dx} = D.N.E.$，因此$2-2t=  0$，得到$t = 1$
+
+故垂直切線發生在$(x, y) = (1, -11)$
+
+
+
+### Answer
+
+水平切線發生在$(x, y) = (-2, 16)$與$(x, y) = (-2, -16)$
+
+垂直切線發生在$(x, y) = (1, -11)$
+
+
+
+## Problem 15
+
+### Statement
+
+已知曲線$C$的參數式為$x=\cos t$，$y=\sin t \cos t$，求曲線在點$(0, 0)$的切線方程式。
+
+
+
+### Solution
+
+求$\dfrac{dy}{dx}$，得到$\dfrac{dy}{dx} = \dfrac{\cos2t}{-\sin t} = -\dfrac{\cos2t}{\sin t}$
+
+發生在點$(0, 0)$，因此$t = \dfrac{\pi}{2}, t = \dfrac{3\pi}{2}$
+
+
+
+帶入$\dfrac{dy}{dx}$得到$-\dfrac{\cos(\pi)}{\sin \dfrac{\pi}{2}} = 1, \dfrac{-\cos(3\pi)}{\sin(\dfrac{3\pi}{2})} = -1$
+
+故有兩條切線$x+y=0$，$x-y=0$。
+
+
+
+### Answer
+
+$x+y=0$，$x-y=0$
+
+
+
 ## Problem 16
 
 ### Statement
@@ -357,6 +443,4 @@ $27\pi$
 ### Answer
 
 $6\pi$
-
-
 
