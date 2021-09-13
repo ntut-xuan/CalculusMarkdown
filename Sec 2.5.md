@@ -784,53 +784,35 @@ $x^2+2y^2=3$
 
 
 
-### Answer
+### Solution
 
-先求$\dfrac{dy}{dx}$
+$\dfrac{d}{dx}(x^2+2y^2)=\dfrac{d}{dx}(3)$
 
-$\dfrac{d}{dx}(x^2+2y^2) = \dfrac{d}{dx}(3)$
+$\Rightarrow 2x + 4y\dfrac{dy}{dx} = 0$
 
-$\dfrac{d}{dx}(x^2) + \dfrac{d}{dx}(2y^2) = 0$
+$\Rightarrow \dfrac{-2x}{4y} = \dfrac{-x}{2y}$
 
-$2x + \dfrac{d}{dy}(2y^2)\dfrac{dy}{dx} = 0$
+因此$\dfrac{d}{dx}(\dfrac{d}{dx}) = \dfrac{d^2y}{dx^2} = \dfrac{d}{dx}(\dfrac{-x}{2y})$
 
-$2x + 4y\dfrac{dy}{dx} = 0$
+$=\dfrac{(-x)'(2y)-(-x)(2y)'}{4y^2}=\dfrac{(-x)'(2y)-(-x)(2y)'}{4y^2}$
 
-$\dfrac{dy}{dx} = \dfrac{-2x}{4y} = -\dfrac{x}{2y}$
+$= \dfrac{-2y + 2x\dfrac{dy}{dx}}{4y^2}$
 
+$= \dfrac{-2y+2x\dfrac{-x}{2y}}{4y^2} (\because \dfrac{dy}{dx} = \dfrac{-x}{2y})$
 
+$=\dfrac{-2y+2x\dfrac{-x}{2y}}{4y^2}$
 
-再求$\dfrac{d^2x}{dx^2}$
+$=\dfrac{-4y^2-2x^2}{8y^2}$
 
-$\dfrac{d^2x}{dx^2} = \dfrac{d}{dx}(-\dfrac{x}{2y})$
+$= \dfrac{-6}{8y^2} (\because x^2+2y^2=3)$
 
-$= -\dfrac{2y\dfrac{d}{dx}(x) - x\dfrac{d}{dx}(2y)}{(2y)^2}$
-
-$= -\dfrac{2y - x\dfrac{d}{dx}(2y)}{4y^2}$
-
-$= -\dfrac{2y-x\dfrac{d}{dy}(2y)\dfrac{dy}{dx}}{4y^2}$
-
-$= -\dfrac{2y-2\dfrac{dy}{dx}}{4y^2}$
-
-帶入$\dfrac{dy}{dx}$，得到$\dfrac{d^2x}{dx^2} = - \dfrac{2y-2\dfrac{-x}{2y}}{4y^2}$
-
-$= -\dfrac{2y-\dfrac{-x}{y}}{4y^2}$
-
-$= \dfrac{2y+\dfrac{x}{y}}{4y^2}$
-
-$= \dfrac{\dfrac{2y^2}{y}+\dfrac{x}{y}}{4y^2}$
-
-$= \dfrac{2y^2+x}{4y^3}$
-
-題目給定$2y^2+x=3$，因此
-
-$\dfrac{d^2x}{dx^2} = \dfrac{3}{4y^3}$
+$=\dfrac{-3}{4y^2}$
 
 
 
 ### Answer
 
-$\dfrac{d^2x}{dx^2} = \dfrac{3}{4y^3}$
+$\dfrac{dy^2}{dx^2} = \dfrac{-3}{4y^2}$
 
 
 
@@ -939,3 +921,90 @@ $= \dfrac{2x(y^3-x^3)}{y^5}$
 ### Answer
 
 $\dfrac{d^2y}{dx^2} = \dfrac{-16x}{y^5}$
+
+
+
+## Exercise 22
+
+### Statement
+
+求$\dfrac{d^2y}{dx^2}$
+
+$\sin(xy) = x$
+
+
+
+### Solution
+
+$\dfrac{d}{dx}(\sin(xy)) = \dfrac{d}{dx}(x)$
+
+$\Rightarrow \cos(xy)\cdot(y+x\cdot \dfrac{dy}{dx}) = 1$
+
+$\Rightarrow y\cos(xy)+x\cos(xy) \dfrac{dy}{dx} = 1$
+
+$\dfrac{dy}{dx} = \dfrac{1-y\cos(xy)}{x\cos(xy)} = \dfrac{\sec(xy)-y}{x}$
+
+$\dfrac{d}{dx}(\dfrac{dy}{dx}) = \dfrac{d^2y}{dx^2} = \dfrac{(\sec(xy)-y)'\cdot x - (\sec(xy)-y)(x)'}{x^2}$
+
+$= \dfrac{x(\tan(xy)\sec(xy)\cdot(y+x\dfrac{dy}{dx})-\dfrac{dy}{dx})-\sec(xy)+y}{x^2}$
+
+$= \dfrac{x\tan(xy)\sec^2(xy)-\sec(xy)+y-\sec(xy)+y}{x^2}$
+
+$=\dfrac{x\tan(xy)\sec^2(xy)-2\sec(xy)+2y}{x^2}$
+
+
+
+### Answer
+
+$\dfrac{d^2y}{dx^2} =\dfrac{x\tan(xy)\sec^2(xy)-2\sec(xy)+2y}{x^2}$
+
+
+
+## Exercise 23
+
+### Statement
+
+若$\tan(x+y)=x+1$，求$\dfrac{d^2y}{dx^2}\bigg|_{(0, \frac{\pi}{4})}$
+
+### Solution
+
+$\dfrac{d}{dx}[\tan(x+y)]=\dfrac{d}{dx}(x+1)$
+
+$\Rightarrow \sec^2(x+y)(1+\dfrac{dy}{dx}) = 1$
+
+$\Rightarrow \dfrac{dy}{dx} = \dfrac{1-\sec^2(x+y)}{\sec^2(x+y)} = \dfrac{1}{\sec^2(x+y)}-1$
+
+$\dfrac{d}{dx}(\dfrac{dy}{dx}) = (\dfrac{1}{\sec^2(x+y)}-1)' = \dfrac{-2(\sec^2(x+y))'}{\sec^3(x+y)} = \dfrac{-2\tan(x+y)\sec(x+y)(1+\dfrac{dy}{dx})}{\sec^3(x+y)} = \dfrac{-2\tan(x+y)}{\sec^4(x+y)}$
+
+因此$\dfrac{d^2y}{dx^2}\bigg|_{(0, \frac{\pi}{4})} = \dfrac{-2(\tan(\dfrac{\pi}{4}))}{\sec^4(\dfrac{\pi}{4})} = -\dfrac{2}{4} = -\dfrac{1}{2}$
+
+
+
+### Answer
+
+$\dfrac{d^2y}{dx^2}\bigg|_{(0, \frac{\pi}{4})} = -\dfrac{1}{2}$
+
+
+
+## Exercise 24
+
+### Statement
+
+已知$(1-x)\dfrac{dy}{dx} = y$且點$(2, -1)$在此曲線上，求$\dfrac{d^2y}{dx^2}\bigg|_{(2, -1)}$
+
+
+
+### Solution
+
+$(1-x)\dfrac{dy}{dx} = y \Rightarrow \dfrac{dy}{dx} = \dfrac{y}{1-x}$
+
+因此$\dfrac{d}{dx}(\dfrac{dy}{dx}) = \dfrac{d^2y}{dx^2} = (\dfrac{y}{1-x})' = \dfrac{(y)'(1-x)-y\cdot(1-x)'}{(1-x)^2} = \dfrac{\dfrac{dy}{dx}(1-x)-y\cdot(-1)}{(1-x)^2} = \dfrac{2y}{(1-x)^2}$
+
+所以$\dfrac{d^2y}{dx^2}\bigg|_{(2, -1)} = \dfrac{2\cdot(-1)}{(1-2)^2} = -2$
+
+
+
+### Answer
+
+$\dfrac{d^2y}{dx^2}\bigg|_{(2, -1)} = -2$
+
